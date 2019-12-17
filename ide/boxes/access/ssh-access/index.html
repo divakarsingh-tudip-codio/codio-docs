@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>SSH into your Box - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SSH into your Box";
+    var mkdocs_page_input_path = "ide/boxes/access/ssh-access.md";
+    var mkdocs_page_url = "/ide/boxes/access/ssh-access/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>SSH into your Box</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Unless your project is utilising <a href="/ide/boxes/always-on/">Always On Boxes</a> you will need to open your Codio Project in order for the Box to be started and ready to receive incoming SSH connections.</p>
+<h3 id="generating-key-pairs">Generating Key Pairs<a class="headerlink" href="#generating-key-pairs" title="Permanent link"></a></h3>
+<p>There are several sites that explain generating SSH keys.</p>
+<ul>
+<li>Windows: <a href="http://kb.siteground.com/how_to_generate_an_ssh_key_on_windows_using_putty/">http://kb.siteground.com/how_to_generate_an_ssh_key_on_windows_using_putty/</a>. Please note that for Windows, you should generate SSH2 RSA key type</li>
+<li>Mac : <a href="https://help.github.com/articles/generating-ssh-keys#platform-mac">https://help.github.com/articles/generating-ssh-keys#platform-mac</a></li>
+<li>Linux: <a href="https://help.github.com/articles/generating-ssh-keys#platform-linux">https://help.github.com/articles/generating-ssh-keys#platform-linux</a></li>
+</ul>
+<h3 id="find-your-local-machines-ssh-public-key">Find your local machine's SSH public Key<a class="headerlink" href="#find-your-local-machines-ssh-public-key" title="Permanent link"></a></h3>
+<p>This is pretty easy to do. On a Mac or Linux box you can get your public key in one of two ways</p>
+<ul>
+<li><strong>either</strong> copy your local machine's public key to the clipboard from your local machine's terminal using <code>pbcopy &lt; ~/.ssh/id_rsa.pub</code></li>
+<li><strong>or</strong> on your local machine, open the file <code>~/.ssh/id_rsa.pub</code> and copy it to the clipboard. Be careful with some editors that include control characters that you don't want to be copied across.</li>
+</ul>
+<p>On a Windows machine you'll probably be using putty, so grab your key from there.</p>
+<h3 id="uploading-your-public-key-to-your-codio-box">Uploading your Public Key to your Codio Box<a class="headerlink" href="#uploading-your-public-key-to-your-codio-box" title="Permanent link"></a></h3>
+<p>You need to upload the public key you just found in the above steps. Once you have it copied to the clipboard, open a terminal tab in your Codio project and enter this key into the <code>.ssh/authorized_keys</code> file. The easiest way to do this is to enter <code>nano .ssh/authorized_keys</code> which will open this file in the nano editor and you can paste it in.</p>
+<p>You can view/check to see all/any Public key(s) you have uploaded into your project by opening the terminal and running <code>cat ~/.ssh/authorized_keys</code>.</p>
+<h3 id="enabling-and-connecting-to-your-box-from-your-local-machines-terminal">Enabling and Connecting to your Box from your local machine's Terminal<a class="headerlink" href="#enabling-and-connecting-to-your-box-from-your-local-machines-terminal" title="Permanent link"></a></h3>
+<ol>
+<li>Go to <strong>Project&gt;Settings</strong> and to the <a href="/ide/customization/project-settings/">Forwarding Settings</a> tab and click the 'Enable SSH Forwarding' button</li>
+<li>The connection string you need to use is shown there</li>
+</ol>
+<p>You will see connection details like this
+<code>SSH Forwarding: ssh codio@forwarding.codio.com:29119</code></p>
+<p>You can now connect to your Box from any Terminal window using (in the above example)
+<code>ssh codio@forwarding.codio.com -p 29119</code></p>
+<p>If you get a message <code>Permission denied (publickey)</code> then you have not uploaded your SSH Public Key correctly.</p>
+<p>You cannot connect to a Codio Box without using a Public Key.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

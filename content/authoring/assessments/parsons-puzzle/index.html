@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Parsons Puzzle - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Parsons Puzzle";
+    var mkdocs_page_input_path = "content/authoring/assessments/parsons-puzzle.md";
+    var mkdocs_page_url = "/content/authoring/assessments/parsons-puzzle/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Parsons Puzzle</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="what-are-parsons-puzzles">What are Parsons Puzzles?<a class="headerlink" href="#what-are-parsons-puzzles" title="Permanent link"></a></h2>
+<p>Parson’s Problems are available on Codio as Parsons Puzzles. Parson’s Problems are great formative assessments that ask students to arrange blocks of scrambled code, allowing them to focus on the purpose and flow of the code (often including a new pattern or feature) while not worrying about syntax.</p>
+<p>Codio uses a client-side implementation of Parson's Problems named <code>js-parsons</code>, whose official documentation is available <a href="http://js-parsons.github.io/documentation/">here</a>.</p>
+<h2 id="assessment-definition">Assessment definition<a class="headerlink" href="#assessment-definition" title="Permanent link"></a></h2>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata and Files.</p>
+<h3 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_general.png" class="simple"/></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user. It can be written in Markdown or HTML.</li>
+</ul>
+<h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_parsons_exec.png" class="simple"/></p>
+<ul>
+<li><strong>Initial Values</strong> is where you create the initial state of the puzzle for the students.</li>
+<li><strong>Options</strong> is where you can set options for the puzzle. For the available options for each grader type, see <a href="http://js-parsons.github.io/documentation/">Parson's Problems</a> documentation.</li>
+<li><strong>Grader</strong> is where you select the grader appropriate to the puzzle. Refer to the "Grader Description" section below for more details.</li>
+</ul>
+<h3 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_grading.png" class="simple"/></p>
+<ul>
+<li>The <strong>Points</strong> field is the number of points allocated for the question. You can choose any positive numeric value.</li>
+<li><strong>One Attempt Only</strong> can be used to restrict the student to answering the question once. If not enabled, students will be able to edit their answer until the Unit is marked as Completed.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_metadata.png" class="simple"/></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h3 id="files">Files<a class="headerlink" href="#files" title="Permanent link"></a></h3>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" class="simple"/></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h2 id="grader-description">Grader Description<a class="headerlink" href="#grader-description" title="Permanent link"></a></h2>
+<h3 id="variablecheckgrader">VariableCheckGrader<a class="headerlink" href="#variablecheckgrader" title="Permanent link"></a></h3>
+<p><code>VariableCheckGrader</code> is a grader that executes the code in the order submitted by the student and checks variable values afterwards.</p>
+<p>Expected and supported options:
+- <code>vartests</code> (required): array of variable test objects
+Each variable test object can/must have the following properties:
+- <code>initcode</code>: code that will be prepended before the learner solution code
+- <code>code</code>: code that will be appended after the learner solution code
+- <code>message</code> (required): a textual description of the test, shown to learner
+Properties specifying what is tested:
+- <code>variables</code>: an object with properties for each variable name to be tested; the value of the property is the expected value
+or
+- <code>variable</code>: a variable name to be tested
+- <code>expected</code>: expected value of the variable after code execution</p>
+<!-- Claire and Mohit's updates go here -->
+
+<h3 id="turtlegrader">TurtleGrader<a class="headerlink" href="#turtlegrader" title="Permanent link"></a></h3>
+<p><code>TurtleGrader</code> is a grader for exercises that draw turtle graphics in Python.</p>
+<p>Required options:</p>
+<ul>
+<li><code>turtleModelCode</code>: The code constructing the model drawing. The turtle is initialized to modelTurtle variable, so your code should use that variable.
+Options that can be specified (that is, optional):</li>
+<li><code>turtlePenDown</code>: a boolean specifying whether or not the pen should be put down initially for the student constructed code</li>
+<li><code>turtleModelCanvas</code>: ID of the canvas DOM element where the model solution will be drawn. Defaults to <code>modelCanvas</code>.</li>
+<li><code>turtleStudentCanvas</code>: ID of the canvas DOM element where student turtle will draw. Defaults to <code>studentCanvas</code>.</li>
+</ul>
+<p>Grading is based on comparing the commands executed by the model and student turtle. If the <code>executable_code</code> option is also specified, the code on each line of that option will be executed instead of the code in the student constructed lines. Note that the student code should use the variable <code>myTurtle</code> for commands to control the turtle in order for the grading to work.</p>
+<h3 id="unittestgrader">UnitTestGrader<a class="headerlink" href="#unittestgrader" title="Permanent link"></a></h3>
+<p><code>UnitTestGrader</code> is a grader that executes student code and Skulpt unit tests</p>
+<h3 id="languagetranslationgrader">LanguageTranslationGrader<a class="headerlink" href="#languagetranslationgrader" title="Permanent link"></a></h3>
+<p>Code "Translating" grader</p>
+<h3 id="linebasedgrader">LineBasedGrader<a class="headerlink" href="#linebasedgrader" title="Permanent link"></a></h3>
+<p><code>LineBasedGrader</code> is a grader that treats student answers as correct if and only if they match the order and indentation found in <strong>Initial Values</strong>. For incorrect answers, it highlights the lines that were not ordered or indented properly.</p>
+<h3 id="sample-starter-pack">Sample Starter Pack<a class="headerlink" href="#sample-starter-pack" title="Permanent link"></a></h3>
+<p>There is a Starter Pack project that you can add to your account that includes examples of Parson's Puzzle assessments.</p>
+<ul>
+<li>For Codio.com users: <a href="https://codio.com/home/starter-packs/cc68d38b-b0ea-4825-9814-46a3594c2b11/">Click here to install</a></li>
+<li>For Codio.co.uk users: <a href="https://codio.co.uk/home/starter-packs/7c69bc1a-7f20-4cd1-a726-63a1c056790f">Click here to install</a></li>
+</ul>
+<p>and <strong>Use Pack</strong> to create into your Codio account to review.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

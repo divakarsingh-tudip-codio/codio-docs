@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Stack Guidelines - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Stack Guidelines";
+    var mkdocs_page_input_path = "project/stacks/guidelines.md";
+    var mkdocs_page_url = "/project/stacks/guidelines/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Stack Guidelines</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>When creating a Stack, here are some ideas on strategy and how to make them as useful as possible.</p>
+<h2 id="starting-stack">Starting Stack<a class="headerlink" href="#starting-stack" title="Permanent link"></a></h2>
+<p>When you create a Stack, you should first create a new Project from the closest Stack that meets your requirements. You can also use the Base Stack and then <a href="/ide/boxes/installsw/box-parts/">install your own components</a>.</p>
+<h2 id="long-description">Long Description<a class="headerlink" href="#long-description" title="Permanent link"></a></h2>
+<p>You should include a full description of your Stack that appears when someone clicks on it within the Stacks listing. This information will also be available to users in Projects by going to <code>Project&gt;Stack Info</code> in their Project, which should open automatically. Check out some of Codio Certified Pack long descriptions.</p>
+<p>Below is a template you could use.</p>
+<pre><code class="markdown"># Title
+Put the name of your Stack here.
+
+## Using the Stack
+Describe how the user should get started.
+
+## Starter Pack
+If there are related Starter Packs you have created from this Stack that include code files, detail them here.
+
+## Components Installed
+It can be helpful to others or even to you later on to describe the installed Components and versions.
+
+## Configuration Files
+Detail where any component configuration files can be found. As you install components from `Tools&gt;Install Software` a log file of all this information will be opened.
+
+## General Information
+Include any general information on the use and operation of any installed components.
+
+## Codio Documentation
+We recommend you include useful links to the Codio Documentation.
+
+##Stack Specific Links
+Provide useful links on the Stack components.
+</code></pre>
+
+<h2 id="example-from-codio-certified-lamp-stack">Example (from Codio Certified LAMP Stack)<a class="headerlink" href="#example-from-codio-certified-lamp-stack" title="Permanent link"></a></h2>
+<pre><code class="markdown"># LAMP
+
+## Using this Stack
+This Codio Stack gives you a complete **LAMP** stack ready to use and with all services up and running.
+
+## Related Stacks &amp; Starter Packs
+There are various other Stacks and Starter Packs that may be of interest. Please search the listing for
+
+- Stack : **LEMP**
+- Stack : **LAPP**
+- Stack : **LAMP** + Composer
+- Starter Pack : **Laravel** (LAMP + Composer + Laravel)
+
+## Components Installed
+This Stack contains the following major component versions
+
+- **PHP** 5.5.9
+- **Apache** 2.4.7
+- **MySQL** 14.14 Distrib 5.5.46
+
+## Configuration Files
+You can find configuration files in the following locations
+
+- **PHP config file** : `/etc/php5/apache2/php.ini`
+- **Apache config** : `/etc/apache2/apache2.conf`
+- **MySQL default config file** :  `/etc/mysql/my.cnf`
+
+## General Information
+
+### Apache Server
+Apache should be started by default. You can manually start, stop and restart it using the following terminal commands:
+
+$ sudo service apache2 start
+$ sudo service  apache2 stop
+$ sudo service  apache2 restart
+
+
+### MySQL
+
+#### Start, Stop, Restart the MySQL server
+MySQL should be started by default. You can manually start, stop and restart the MySQL server using the following terminal commands:
+
+$ sudo service mysql start
+$ sudo service mysql stop
+$ sudo service mysql restart
+
+
+#### Connecting to the MySQL monitor
+Assuming the MySQL server is started, you can connect to it using `mysql` from the terminal. Exit using `ctrl+c`.
+
+#### Root Password
+If you want to set the root password, use the following command from the terminal
+
+mysqladmin -u root password NEWPASSWORD`
+
+
+## Codio Documentation
+Please be aware of the following useful links
+
+- [How to Access your Box](/ide/boxes/)
+- [If your firewall only allows access to port 80](/ide/boxes/ext-access/)
+- [Creating Codio menu items to avoid repetitive terminal commands](/ide/boxes/runmenu/)
+- [Using Git in Codio](/ide/editing/git/)
+- [Customizing the IDE settings](/ide/customization/)
+- [Restarting your Box](/ide/boxes/restart-reset/)
+- [Creating multiple code editing panels in the IDE](/ide/panels/)
+
+## Stack Specific Links
+
+- [PHP](http://php.net)
+- [Apache](http://httpd.apache.org)
+- [MySQL](http://dev.mysql.com)
+
+## Updating Components
+If this Stack is not using any of the latest components, please email support@codio.com and we will update it.
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

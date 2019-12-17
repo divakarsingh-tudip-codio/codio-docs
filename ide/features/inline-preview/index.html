@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Preview - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Preview";
+    var mkdocs_page_input_path = "ide/features/inline-preview.md";
+    var mkdocs_page_url = "/ide/features/inline-preview/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Preview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>It is important to understand the difference between Static and Dynamic content when using the Preview menu options. Codio provides a configurable menu item for Dynamic/Server Side content (rightmost Codio menu) as well as Static content.</p>
+<h3 id="static-content">Static content<a class="headerlink" href="#static-content" title="Permanent link"></a></h3>
+<p>You can use <strong>Preview static</strong> options on Static content only (HTML, CSS, JS and text).
+You can also preview static content on your mobile device easily using <strong>Project&gt;QR Code for Preview URL</strong> to generate a QR code you can scan with a QR Reader on your device.</p>
+<h3 id="dynamic-content">Dynamic content<a class="headerlink" href="#dynamic-content" title="Permanent link"></a></h3>
+<p>To access files or services that are executed on the server (PHP, Ruby, Node etc.), you need to use the right-most menu option. You can access your server side application by:</p>
+<ul>
+<li>word1-word2-port.codio.io which will access your box over port 80, which is useful if your corporate firewall blocks ports other than 80 and 443.</li>
+</ul>
+<p><code>word1-word2</code> is an automatically generated subdomain name for your Codio Box. You can configure your application to listen on ports defining the port in the URL, but please be aware than Codio supported a restricted range of ports. Please refer to <a href="/ide/boxes/ext-access">this section</a> for more details.</p>
+<p>Read on for information on how to configure your Static and Dynamic preview menus.</p>
+<h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link"></a></h2>
+<p>The Preview button lets you preview one or more web pages with a simple button press. Codio creates four default entries in the Preview menu automatically.</p>
+<p><img alt="authtoken" src="/img/preview-deploy.png" class="simple"/></p>
+<ul>
+<li><strong>Project Index</strong> - this is the default file to run for your project. It can be set by right-clicking a file in the file tree. This option should only be used to preview static content (typically <code>.html</code> files). For PHP, Ruby etc. you should use the <strong>Box URL</strong> option.</li>
+<li><strong>Current File</strong> - whichever code file currently has focus. This option should only be used to preview static content (typically <code>.html</code> files). For PHP, Ruby etc. you should use the <strong>Box URL</strong> option.</li>
+<li><strong>Box URL</strong> - use this option for previewing PHP, Ruby or other server side languages over http. <a href="/ide/boxes/ext-access">Click here</a> for more information on configuring port access for http.</li>
+<li><strong>Box URL SSL</strong> - use this option for previewing PHP, Ruby or other server side languages over SSL. <a href="/ide/boxes/ext-access">Click here</a> for more information on configuring port access for https.</li>
+</ul>
+<p>If you right-click a file in the file tree or the Tab, you can also select <strong>Preview Static</strong>.</p>
+<p><img alt="authtoken" src="/img/preview-deploy-right-click.png" class="simple"/></p>
+<h2 id="preview-in-a-codio-tab-or-new-browser-tab">Preview in a Codio tab or new browser tab<a class="headerlink" href="#preview-in-a-codio-tab-or-new-browser-tab" title="Permanent link"></a></h2>
+<p>In the Preview dropdown menu, you can select one of the following ways to preview</p>
+<ul>
+<li><strong>Inside Codio</strong> : displays the preview in a Codio tab; note that if you are accessing via any port other than Port 80 (the Box URL and Box URL SSL defaults in the screenshot at the top) then this option will only work if you are using HTTPS as Codio itself runs over HTTPS and the browser will not allow mixed HTTP/HTTPS. <a href="/ide/boxes/access/ext-access">See here</a> for more details on using HTTPS.</li>
+<li><strong>New browser tab</strong> : it will open up a new browser tab or window.</li>
+</ul>
+<p>If you are previewing a private project containing Static content and you have not enabled <strong>Allow Private Static Preview</strong> option (available only via <strong>Project&gt;Settings</strong>) you will be asked to authenticate with your username and password. If you signed up using GitHub/BitBucket/G+ method, a random password is created for your account. Go to <strong>Codio&gt;Account</strong> and on the Account tab you can set up a password of your own choosing.</p>
+<p>If though you have enabled this option, then you can preview static content without authentication. A new backend URL will be generated for this purpose that you can then share with anyone else you wish to be able to preview your project. You are also able to regenerate this URL at any time and access using the old URL will no longer function.</p>
+<p>This only applies to code being previewed over the standard ports 80 and 443. Previewing via any other port will have no authentication, because the code is being served from your application server, which we have no control over but you can add your own authentication.</p>
+<p>See <a href="https://wiki.apache.org/httpd/PasswordBasicAuth">Apache Password Basic Authentication</a> and <a href="http://php.net/manual/en/features.http-auth.php">HTTP Authentication with PHP</a> for some examples.</p>
+<h2 id="modifying-the-preview-menu">Modifying the Preview menu<a class="headerlink" href="#modifying-the-preview-menu" title="Permanent link"></a></h2>
+<p>You are free to customize the menu in either of the following ways</p>
+<ul>
+<li>From the <strong>Preview</strong> or <strong>Run</strong> drop down menus (the 2nd and 3rd right most Codio menu items), select <strong>Configure...</strong></li>
+<li>If it exists already, open the <code>.codio</code> file that lives in the root of your project.</li>
+</ul>
+<p>For details about the various tokens that can be inserted, please refer to <strong><a href="/ide/boxes/runmenu/">Customizing the Run menu</a></strong>.</p>
+<p><code>{{domain3000}}</code> is the most important token for the <strong>Preview menu</strong>. It is replaced by the public url required to access your project over port 80, which is useful if your corporate firewall blocks ports other than 80 and 443.
+<code>{{domain}}</code> can also be used in the <strong>Preview</strong> menu. In most cases you will want to add the Port number (default 3000) to your service. e.g <code>"Box URL": "http://{{domain3000}}/",</code></p>
+<pre><code class="json">{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  &quot;commands&quot;: {
+        &quot;Node version&quot;: &quot;node --version&quot;
+  },
+
+// Preview button configuration
+  &quot;preview&quot;: {
+        &quot;Project Index (static)&quot;: &quot;https://{{domain}}/{{index}}&quot;,
+        &quot;Current File (static)&quot;: &quot;https://{{domain}}/{{filepath}}&quot;,
+        &quot;Box URL&quot;: &quot;http://{{domain3000}}/&quot;,
+        &quot;Box URL SSL&quot;: &quot;https://{{domain3000}}/&quot;
+  }
+}
+</code></pre>
+
+<p>Note that static content is served over Port 80. To access dynamic content you may need to specify the appropriate Port.</p>
+<p>If you cannot access your project over SSL then this could be the way your application is configured.</p>
+<p>The full range of Codio <code>{{tokens}}</code> is explained in <a href="/ide/boxes/runmenu#tokens">this section</a>.</p>
+<h2 id="insecure-content-with-in-tab-preview-and-front-end-code-mixed-content">Insecure Content with In-Tab preview and front-end code (#mixed-content)<a class="headerlink" href="#insecure-content-with-in-tab-preview-and-front-end-code-mixed-content" title="Permanent link"></a></h2>
+<p>Codio runs over a secure connection using HTTPS, and therefore so does the inline preview. If your code references an external resource (script, font, image, etc.). For example:</p>
+<pre><code class="html">&lt;script src=&quot;http://code.angularjs.org/1.1.5/angular.js&quot;&gt;
+</code></pre>
+
+<p>You will get a browser error indicating that there is some form of insecure or mixed content because you are running in a mixed HTTP/HTTPS mode. This is a restriction of the browser, and cannot be modified easily, or in some browsers, it cannot be modified at all. It is intended to protect you from insecure content.</p>
+<p>There are 3 ways to avoid this:</p>
+<ul>
+<li>Modify your external references to use HTTPS.</li>
+<li>Expand the inline preview into a new browser tab (icon is in the small floating toolbar in the top right of the preview tab) and then modify the url from <code>https://codio.io/xxxx</code> to <code>http://codio.io/xxxx</code>.</li>
+<li>Modify your references to use the 'current protocol' by including '//' without http or https, so <code>&lt;script src="//code.angularjs.org/1.1.5/angular.js"&gt;</code>.</li>
+<li>If none of the above work, then download the external file, and include and reference it within the Codio project itself.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

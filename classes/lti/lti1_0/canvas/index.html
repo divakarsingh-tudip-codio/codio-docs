@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Canvas - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Canvas";
+    var mkdocs_page_input_path = "classes/lti/lti1_0/canvas.md";
+    var mkdocs_page_url = "/classes/lti/lti1_0/canvas/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Canvas</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Please be sure to check out the <a href="/classes/lti/lti1_0/ltiapp">Codio LTI App</a> which allows for an easy way to integrate and to map Codio class units to your Canvas system.</p>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
+<p>The following steps need to be taken only one time per class.</p>
+<h3 id="in-codio">In Codio<a class="headerlink" href="#in-codio" title="Permanent link"></a></h3>
+<ul>
+<li>Go to your organization account settings by clicking on your user name in the bottom left of your dashboard and then selecting your organization within <strong>My Organizations</strong>.</li>
+<li>Select the <strong>LTI Integrations</strong> tab.</li>
+<li>Scroll down to the <strong>LTI Integration 1.0</strong> section. You should see the following fields. Remain on this screen for the time being.</li>
+</ul>
+<p><img alt="LTI Fields" src="/img/lti/lti-org-fields.png" class="simple"/></p>
+<h3 id="in-canvas-adding-codio-as-an-app">In Canvas, adding Codio as an App<a class="headerlink" href="#in-canvas-adding-codio-as-an-app" title="Permanent link"></a></h3>
+<p>The Canvas user who carries out these steps must be a system administrator.</p>
+<ul>
+<li>Create a new Course in Canvas. We suggest you create a test course called <strong>Codio Canvas</strong> before you do it with a production course.</li>
+<li>Select the Course.</li>
+<li>Click on <strong>Settings</strong> in the left set of options.</li>
+<li>In the top links, select <strong>Apps</strong>.</li>
+<li>Click the large button <strong>View App Configurations</strong>.</li>
+<li>Click on the blue <strong>+ App</strong> button.</li>
+</ul>
+<h3 id="in-codio-and-canvas">In Codio and Canvas<a class="headerlink" href="#in-codio-and-canvas" title="Permanent link"></a></h3>
+<p>We will now copy the following global integration fields from Codio to Canvas.</p>
+<ul>
+<li>LTI Consumer -&gt; Consumer Key</li>
+<li>LTI Secret -&gt; Shared Secret</li>
+<li>LTI URL -&gt; Launch URL</li>
+</ul>
+<p>In Canvas you should then use one of the following steps</p>
+<h4 id="manual-entry">Manual Entry<a class="headerlink" href="#manual-entry" title="Permanent link"></a></h4>
+<ul>
+<li>Enter a suitable name (Codio Canvas LTI) in the <strong>Name</strong> field.</li>
+<li>Enter <strong>apollo.codio.com</strong> into the <strong>Domain</strong> field.</li>
+<li>In the <strong>Privacy</strong> field, select <strong>Public</strong></li>
+<li>Paste in the 3 Codio fields to the appropriate fields</li>
+</ul>
+<p>You should end up with something like this.</p>
+<p><img alt="Canvas Global" src="/img/lti/canvas-global.png" class="simple"/></p>
+<h4 id="by-url">By URL<a class="headerlink" href="#by-url" title="Permanent link"></a></h4>
+<ul>
+<li>Enter a suitable name (Codio Canvas LTI) in the <strong>Name</strong> field.</li>
+<li>In Codio select the Copy Consumer button to copy in to the Consumer Key field.</li>
+<li>select the Copy Secret Key to copy in to the Shared Secret field.</li>
+<li>select the Copy XML URL to copy in the to the Config URL field.</li>
+<li>and Submit</li>
+</ul>
+<h4 id="paste-xml">Paste XML<a class="headerlink" href="#paste-xml" title="Permanent link"></a></h4>
+<ul>
+<li>Enter a suitable name (Codio Canvas LTI) in the <strong>Name</strong> field.</li>
+<li>In Codio select the Copy Consumer button to copy in to the Consumer Key field.</li>
+<li>select the Copy Secret Key to copy in to the Shared Secret field.</li>
+<li>click on the <code>XML Configuration</code> link to open the XML and then copy in the to the XML Configuration field.</li>
+<li>and Submit</li>
+</ul>
+<h2 id="codio-class-setup">Codio Class setup<a class="headerlink" href="#codio-class-setup" title="Permanent link"></a></h2>
+<p>You need to perform the following actions one time only for a class. The Canvas user who carries out these steps does not need to be a system administrator but must have suitable privileges to edit courses and assignments.</p>
+<ul>
+<li>In Codio, create a new class and name it <strong>Canvas Demo</strong>.</li>
+<li>Click on the <strong>Admin</strong> tab near the top.</li>
+<li>Select <strong>Edit Details</strong> in the bottom of the page.</li>
+<li>Near the bottom is a switch <strong>Enable LTI</strong> which you should enable.</li>
+<li>Below this is an empty field <strong>Class LMS URL</strong>. Switch back to Canvas and make sure you are on the Home page of the course. Copy the url in the address bar of your browser to the clipboard and paste it into the above mentioned field in Codio. The url format should end with something like <code>/courses/1121212</code> although the number will be different.</li>
+</ul>
+<p>This URL ensures that Codio knows how to redirect students back to the correct Canvas course should they attempt to access the class through their dashboard.</p>
+<h2 id="mapping-a-unit-to-a-canvas-assignment">Mapping a Unit to a Canvas Assignment<a class="headerlink" href="#mapping-a-unit-to-a-canvas-assignment" title="Permanent link"></a></h2>
+<p>The final mapping step needs to be taken for each individual Unit within Codio. It maps a Canvas assignment to a Codio Unit.</p>
+<h3 id="in-codio_1">In Codio<a class="headerlink" href="#in-codio_1" title="Permanent link"></a></h3>
+<ul>
+<li>On the main class screen, make sure the <strong>Units</strong> tab is selected.</li>
+<li>Click the <strong>+</strong> button and select <strong>Add Project</strong>.</li>
+<li>Select a project that has some autograded assessments. The <strong>My First Project</strong> that you created earlier in the Onboarding Guide has some auto-graded assessments. You can also assign another project but you will need to manually grade the Unit so there are some scores to pass back to the Canvas gradebook.</li>
+<li>Once the Unit has been added to the class, you should click the icon with 3 blue dots and select <strong>LTI Integration URL</strong>.</li>
+<li>You should copy the LTI integration url to the clipboard by clicking on the field (it will auto copy).</li>
+</ul>
+<p><img alt="Unit URL" src="/img/lti/LMS-Unit-URL.png" class="simple"/></p>
+<h3 id="in-canvas">In Canvas<a class="headerlink" href="#in-canvas" title="Permanent link"></a></h3>
+<p>We now return to Canvas complete the mapping.</p>
+<ul>
+<li>Make sure you are in the Courses area.</li>
+<li>Click on the <strong>Assignments</strong> link in the left hand side.</li>
+<li>Provide a name for the Assignment.</li>
+<li>Set the points for the Assignment. When the grades get passed back later, the Codio percentage score will be scaled to the points value you specify here.</li>
+<li>Scroll down and look for the <strong>Submission Type</strong> field.</li>
+</ul>
+<p><img alt="Canvas Submission" src="/img/lti/canvas-submission-type.png" class="simple"/></p>
+<ul>
+<li>You should now click on the dropdown list and select <strong>External Tool</strong>.</li>
+<li>In the new set of fields that appear, paste the Codio <strong>LTI Integration URL</strong> field into the url field in Canvas.</li>
+<li>Select <strong>Load This Tool In a New Tab</strong>.</li>
+<li>Click the <strong>Save and Publish</strong> button.</li>
+<li>Make sure the Canvas course is published.</li>
+</ul>
+<h2 id="adding-faculty-and-students">Adding faculty and students<a class="headerlink" href="#adding-faculty-and-students" title="Permanent link"></a></h2>
+<p>The final step is to add students to your course. This is done from the People tab. We recommend that you add the same test students to Canvas that you have in Codio. The only field of data that needs to match is the email address. So, look up the Codio test student email addresses and add them to Canvas in the student role.</p>
+<p>When you add a student in Canvas you will need to confirm from the email you are sent.</p>
+<p><strong>Important</strong> : make sure you log out of your teacher based Canvas session before doing this.</p>
+<p>Next, you should login to Canvas as a test student and start the assignment. Please read on to see what happens next, which is dependent.</p>
+<p><strong>IMPORTANT</strong> : when you access Codio from Canvas, this user will become the dominant Codio user in the browser. This means that if you have a Codio session open (say you are logged in as faculty) and you start an assignment from Canvas as a student, the old Codio session will be invalidated. To get around this, you should think about running your teacher account in a separate browser type or in an incognito window. Just be aware of this when testing.</p>
+<h3 id="single-sign-in-and-account-creation">Single sign-in and account creation<a class="headerlink" href="#single-sign-in-and-account-creation" title="Permanent link"></a></h3>
+<p>It is important to understand how Codio maps Canvas users to Codio users. The following rules should be understood. If students or faculty access Codio via a Canvas assignment then Codio will use the Canvas email address to identify the user.</p>
+<ul>
+<li>If the user is not known to Codio then we will sign up the user as a new Codio user in the background and take the user directly into the Codio content. The Canvas user role will be carried over as well.</li>
+<li>If the user is known to Codio then Codio will take them directly into the Codio content without any sign-in required. If they are a Codio user but are not a member of your organization then they will be required to complete a verification via email.</li>
+</ul>
+<h2 id="generating-scores">Generating scores<a class="headerlink" href="#generating-scores" title="Permanent link"></a></h2>
+<p>You should now generate some scores to pass back to Codio. You can do either of the following.</p>
+<ul>
+<li>If your assigned Codio Unit has some autograded assessments (simple MCQs will do fine) then access the Codio content as students as answer the questions to generate a score</li>
+<li>You can also manually grade the student Unit in Codio. You will need to enter a percentage value here as the LMS/LTI interface requires this.</li>
+</ul>
+<h2 id="releasing-grades">Releasing grades<a class="headerlink" href="#releasing-grades" title="Permanent link"></a></h2>
+<p>By default, grades in Codio are neither passed back to the student nor to Canvas until they are</p>
+<ul>
+<li>Marked as complete by either the student or the teacher and</li>
+<li>the <strong>Release Grades</strong> switch is enabled.</li>
+</ul>
+<p>Once <strong>Release Grades</strong> is enabled, all completed student assignments are automatically sent through.</p>
+<p><img alt="Release Grades" src="/img/lti/release-complete.png" class="simple"/></p>
+<p>There are various ways to mark a student's work as complete</p>
+<ul>
+<li>The student can do this from either the classroom dashboard or from the <strong>Education-&gt;Mark as Complete</strong> menu in the assignment itself.</li>
+<li>The teacher can do the same in the unit when <a href="/classes/monitor/studentcode/">viewing students code</a></li>
+<li>The teacher can do the same from the Unit in the classroom dashboard by hovering in the left side of a student entry and then setting the completed switch.</li>
+<li>The teacher can mark all student assignments as completed in one action. This is done by</li>
+<li>selecting the Unit in the classroom</li>
+<li>pressing the <strong>Action</strong> button</li>
+<li>pressing the <strong>Mark all as Completed</strong> button</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Debugging - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Debugging";
+    var mkdocs_page_input_path = "ide/features/debugging.md";
+    var mkdocs_page_url = "/ide/features/debugging/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Debugging</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Codio offers an integrated, language specific debugger. Codio currently supports the following languages.</p>
+<ul>
+<li>Java</li>
+<li>Python 2</li>
+<li>Python 3</li>
+<li>NodeJS</li>
+<li>C and C++</li>
+</ul>
+<p>If you would like support for any languages that do not appear in the list, please <a href="/dashboard/support/">contact us</a> and we can look into adding it.</p>
+<h3 id="sample-project">Sample project<a class="headerlink" href="#sample-project" title="Permanent link"></a></h3>
+<p>If you created the account for your Codio Trial account then you will find <strong>Demo Codio Debugger</strong> in your My Projects list. You will find instructions in the README.md file when you open the project.</p>
+<p>If you cannot see it then <a href="https://codio.com/home/starter-packs/b83690d5-6ff5-4f86-970a-768292c70aec/">click here</a> to create it now. Press the <strong>Use Pack</strong> button to install.</p>
+<h3 id="video-overview">Video overview<a class="headerlink" href="#video-overview" title="Permanent link"></a></h3>
+<p>For anyone who has not used a debugger before, here is a useful video tutorial.</p>
+<iframe src="https://player.vimeo.com/video/165269077" width="640" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"></a></h3>
+<p>If you install Java, C or NodeJS from a stack, then the GBD components that support debugging will be automatically installed. However, if you have installed these languages manually then when you run the debugger, you will get a warning telling you to install the GDB component. A link will be provided to the Install Software feature that allows you to install it with a single click.</p>
+<p><a name="debugfilepath"></a></p>
+<h3 id="creating-and-managing-debug-targets">Creating and managing debug targets<a class="headerlink" href="#creating-and-managing-debug-targets" title="Permanent link"></a></h3>
+<p>You should first configure a debug target. Having multiple debug targets is useful for the following reasons.</p>
+<ul>
+<li>It allows you to quickly debug the same application with different command line arguments, allowing you to test different scenarios.</li>
+<li>You can debug more than one application.</li>
+</ul>
+<p>You manage debug targets from the following locations</p>
+<ul>
+<li>the rightmost toolbar menu item, select the <strong>Configure...</strong> option</li>
+<li><strong>Tools-&gt;Debugger Settings</strong></li>
+</ul>
+<p>This will bring up the list of any debug targets you may have previously configured.</p>
+<p><img alt="authtoken" src="/img/debug-targets.png" class="simple"/></p>
+<p>To create a new target, press the Create button. You can then configure your target. You can also edit any existing debug target. The following parameters can be configured.</p>
+<ul>
+<li>The programming language</li>
+<li>A friendly name to give the configuration</li>
+<li>The command to execute to your program along with any command line parameters you may wish to include</li>
+<li>Any command to execute before debugging starts. This is usually a compile process.</li>
+<li>You can also reference the active file in use using {{filepath}} token which inserts the path and full file name /path/to/file.ext</li>
+</ul>
+<p><img alt="authtoken" src="/img/debug-target.png" class="simple"/></p>
+<p>When creating a new target, you are also shown the debugger port and instruction but these can typically be ignored.</p>
+<h3 id="single-file-confgurations">Single file confgurations<a class="headerlink" href="#single-file-confgurations" title="Permanent link"></a></h3>
+<p>If you are using C, C++ or Java and debugging a simple single code file project (common in early programmng courses) then you should choose Single C File, Single C++ file or Single Java file Debugger Type. This frees you from having to worry about the detailed compile and run configuration.</p>
+<h4 id="language-specific-compilation-commands">Language specific compilation commands<a class="headerlink" href="#language-specific-compilation-commands" title="Permanent link"></a></h4>
+<p>If you are not using a single file configuration then you will need to provide the following information</p>
+<ul>
+<li><strong>Before Launch</strong> will typically be a compilation or build command</li>
+<li><strong>Launch</strong> will be the command to launch the program</li>
+</ul>
+<p>In java you are asked for a port number, which should always be set to <code>5105</code>.</p>
+<h3 id="starting-a-debugging-session">Starting a debugging session<a class="headerlink" href="#starting-a-debugging-session" title="Permanent link"></a></h3>
+<p>There are two ways you can launch an application in debug mode.</p>
+<ul>
+<li>from the rightmost toolbar menu you can select the debug target from the dropdown menu or just press the button to re-run the last executed debug target.</li>
+<li>from the debug targets list you can press the <strong>Debug</strong> button.</li>
+</ul>
+<p><img alt="authtoken" src="/img/debug-launch.png" class="simple"/></p>
+<p>At this point, the debugger will fire up and you will see a screen similar to the one show below.</p>
+<p><img alt="authtoken" src="/img/debug-started.png" class="simple"/></p>
+<p>You may need to wait a second or two for the debugger to load. It will automatically stop on the first line of code, regardless of whether there is a breakpoint set or not.</p>
+<h3 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link"></a></h3>
+<p>A breakpoint is a line of code where the debugger will pause code execution if in debug mode. To set a breakpoint you click in the gutter next to the line number. You can remove a breakpoint in the same way.</p>
+<p>When a breakpoint is set, a red dot will appear on the line.</p>
+<h3 id="controlling-the-debugger">Controlling the debugger<a class="headerlink" href="#controlling-the-debugger" title="Permanent link"></a></h3>
+<p>Once the debugger stops code execution you can control execution using the buttons at the top of the debug panel.</p>
+<p><img alt="authtoken" src="/img/debug-buttons.png" class="simple"/></p>
+<ul>
+<li><strong>Resume</strong> - this tells the debugger to carry on execution without stopping until another breakpoint is encountered.</li>
+<li><strong>Stop</strong> - execution will stop and the debug window will be closed.</li>
+<li><strong>Step over</strong> - the debugger will execute the next line of code and then stop. If the line of code about to be executed is a function, then it will execute the contents of that function but will not stop within it unless the function contains a breakpoint.</li>
+<li><strong>Step into</strong> - the debugger will execute the next line of code and then stop. If the line of code about to be executed is a function, then it will stop on the first line within that function.</li>
+<li><strong>Step out</strong> - the debugger will exit the current function and stop on the next line of the calling function. If the current line is the main entry function of the application then execution will cease but and the debugger will restart automatically.</li>
+</ul>
+<h3 id="other-features">Other features<a class="headerlink" href="#other-features" title="Permanent link"></a></h3>
+<p>The debug panel also contains other useful features.</p>
+<ul>
+<li><strong>Call stack</strong> - this shows the parent functions relative to the function that contains the currently executing line of code.</li>
+<li><strong>Local variables</strong> - all local variables of the current function and their current values are automatically displayed.</li>
+<li><strong>Watches</strong> - this allows you to watch a specific variable, and for some languages also expressions,</li>
+<li><strong>Breakpoints</strong> - this lists all the breakpoints currently set in any of your code files. You can disable them by unchecking the boxes.</li>
+<li><strong>Console</strong> - the console has two main functions; it displays status messages from the system in bold and your code can output data there by writing output to the console  (for example a <code>print('message')</code> statement in Python).</li>
+</ul>
+<h3 id="support-for-the-standard-input-when-debugging">Support for the standard input when debugging<a class="headerlink" href="#support-for-the-standard-input-when-debugging" title="Permanent link"></a></h3>
+<p>Support for stdin is available for:</p>
+<ul>
+<li>C/C++</li>
+<li>Node.js</li>
+<li>GDB</li>
+</ul>
+<p>Node example:</p>
+<pre><code class="javascript">function testStdIn() {
+    console.log(&quot;What is your name?&quot;);
+    process.stdin.once('data', (chunk) =&gt; {
+        let name = chunk.toString();
+        console.log(&quot;Hello, &quot; + name + &quot;!&quot;);
+    });
+}
+
+testStdIn()
+</code></pre>
+
+<h3 id="launching-the-debugger-from-codio-content">Launching the debugger from Codio content<a class="headerlink" href="#launching-the-debugger-from-codio-content" title="Permanent link"></a></h3>
+<p>It is also possible to launch any debugger configuration from a page. Please <a href="/content/authoring/page-edit/buttons/">click here</a> for details.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

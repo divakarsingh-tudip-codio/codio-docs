@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Search and replace - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Search and replace";
+    var mkdocs_page_input_path = "ide/editing/search-replace.md";
+    var mkdocs_page_url = "/ide/editing/search-replace/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Search and replace</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Codio supports local and global search and replace. You can access these feature by hotkey or from the Find menu.</p>
+<p>Hotkey shortcuts can be seen in the Find menu. You can override these from <a href="/ide/customization/codio-prefs">Preferences</a>.</p>
+<h2 id="local">Local<a class="headerlink" href="#local" title="Permanent link"></a></h2>
+<p>Search and replace is supported on the currently selected file.</p>
+<p>The hotkeys are defined in <a href="/ide/customization/codio-prefs">Preferences</a> and the defaults are</p>
+<pre><code class="ini">;Find.
+; Type: hotkey
+key_find = Cmd+F
+
+;Find next.
+; Type: hotkey
+key_find_next = Cmd+G
+
+;Find previous.
+; Type: hotkey
+key_find_prev = Shift+Cmd+G
+
+;Replace.
+; Type: hotkey
+key_replace = Cmd+Alt+F
+
+;Replace all.
+; Type: hotkey
+key_replace_all = Shift+Cmd+Alt+F
+</code></pre>
+
+<h2 id="global">Global<a class="headerlink" href="#global" title="Permanent link"></a></h2>
+<p>Global search and replace are available within the <strong>Find</strong> menu under <strong>Find in project</strong> and <strong>Replace in project</strong>.</p>
+<p>You can search using regular expressions, ignore case and whole word settings. The buttons on the left of the input fields control these settings.</p>
+<p><img alt="authtoken" src="/img/global-search.png" class="simple"/></p>
+<p>Once the search operation has completed you will see matches listed in a Codio tab. Double click on the highlighted match to open up that file in a new tab.</p>
+<p><img alt="global search dialog" src="/img/search-matches.png" class="simple"/></p>
+<h2 id="pattern-wildcard-matching-globs">Pattern &amp; Wildcard Matching (Globs)<a class="headerlink" href="#pattern-wildcard-matching-globs" title="Permanent link"></a></h2>
+<p>When you are searching, you can specify a search pattern in the <strong>Where</strong> field.</p>
+<p>Lets say you have the following project</p>
+<pre><code class="bash">|-- lib
+|  |-- index.js
+|  |-- hello_world.js
+|-- index.html
+|-- 404.html
+|-- app.js
+`-- gruntfile.coffee
+</code></pre>
+
+<p>then you can use globs to select files in this way:</p>
+<ul>
+<li>All files ending in <code>.js</code>: <code>**/*.js</code>.</li>
+<li><code>index.js</code></li>
+<li><code>hello_world.js</code></li>
+<li><code>app.js</code></li>
+<li>All files ending in <code>.html</code> in the root folder: <code>*.html</code></li>
+<li><code>index.html</code></li>
+<li><code>404.html</code></li>
+<li>All files in <code>lib</code>: <code>lib/*.*</code></li>
+<li><code>index.js</code></li>
+<li><code>hello_world.js</code></li>
+<li>All files ending in <code>.html</code> or <code>.coffee</code>: <code>**/*{.html,.coffee}</code></li>
+<li><code>index.html</code></li>
+<li><code>404.html</code></li>
+<li><code>gruntfile.coffee</code></li>
+<li>All files beginning with <code>index</code>: <code>**/index*</code></li>
+<li><code>index.js</code></li>
+<li><code>index.html</code></li>
+</ul>
+<h3 id="basic-rules">Basic Rules<a class="headerlink" href="#basic-rules" title="Permanent link"></a></h3>
+<p>Any character that appears in a pattern, other than the special pattern characters described below, matches itself. The NULL character may not occur in a pattern. A backslash escapes the following character; the escaping backslash is discarded when matching. The special pattern characters must be quoted if they are to be matched literally.</p>
+<p>The special pattern characters have the following meanings:</p>
+<ul>
+<li>
+<p><code>*</code> Matches any string, including the null string. When the globstar shell option is enabled, and <code>*</code> is used in a filename expansion context, two adjacent <code>*</code>s used as a single pattern will match all files and zero or more directories and subdirectories. If followed by a <code>/</code>, two adjacent <code>*</code>s will match only directories and subdirectories.</p>
+</li>
+<li>
+<p><code>?</code> Matches any single character.</p>
+</li>
+<li>
+<p><code>[…]</code> Matches any one of the enclosed characters. A pair of characters separated by a hyphen denotes a range expression; any character that sorts between those two characters, inclusive, using the current locale's collating sequence and character set, is matched. If the first character following the <code>[</code> is a <code>!</code> or a <code>^</code> then any character not enclosed is matched. A <code>-</code> may be matched by including it as the first or last character in the set. A <code>]</code> may be matched by including it as the first character in the set.</p>
+</li>
+</ul>
+<p>A character class matches any character belonging to that class. The word character class matches letters, digits, and the character <code>_</code>.</p>
+<p>Within <code>[</code> and <code>]</code>, an equivalence class can be specified using the syntax <code>[=c=]</code>, which matches all characters with the same collation weight (as defined by the current locale) as the character c.</p>
+<p>Within <code>[</code> and <code>]</code>, the syntax [.symbol.] matches the collating symbol symbol.</p>
+<ul>
+<li>
+<p><code>?(pattern-list)</code> Matches zero or one occurrence of the given patterns.</p>
+</li>
+<li>
+<p><code>*(pattern-list)</code> Matches zero or more occurrences of the given patterns.</p>
+</li>
+<li>
+<p><code>+(pattern-list)</code> Matches one or more occurrences of the given patterns.</p>
+</li>
+<li>
+<p><code>@(pattern-list)</code> Matches one of the given patterns.</p>
+</li>
+<li>
+<p><code>!(pattern-list)</code> Matches anything except one of the given patterns.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>GUI based output  - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "GUI based output ";
+    var mkdocs_page_input_path = "ide/boxes/installsw/gui.md";
+    var mkdocs_page_url = "/ide/boxes/installsw/gui/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>GUI based output </li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>If you are writing or using programs that have a GUI based output then please read this section. Whether you are using UI libraries like tkinter, qt or simply ubuntu applications that have a non web based UI, this section explains how to setup a virtual desktop.</p>
+<h2 id="sample-project">Sample Project<a class="headerlink" href="#sample-project" title="Permanent link"></a></h2>
+<p>If you created the account for your Codio Trial account then you will find <strong>Demo GUI Output</strong> in your My Projects list. You will find instructions in the README.md file when you open the project.</p>
+<p>If it is not there then <a href="https://codio.com/home/starter-packs/d9c00215-ec2a-46e7-b64e-85fab45b0872/">click here to install it in your projects list</a>. Press the <strong>Use Pack</strong> button to install.</p>
+<h3 id="uses-and-limitations">Uses and Limitations<a class="headerlink" href="#uses-and-limitations" title="Permanent link"></a></h3>
+<p>X Server is a virtual desktop that is very effective for Codio's cloud based infrastructure. Any application that relies on a graphical user interface has its graphical output redirected to it and Codio's viewer is then able to display the virtual desktop in a browser.</p>
+<p>As you will see when trying out the sample applications in the demo project above, some of which have very complex UIs (notably SQLite and StartUML), you can get a very good experience indeed. The limitations start to be felt when using fast motion graphics where the virtual screen content is changing so fast that it cannot be rendered in real time over the internet. If you have better bandwidth you will experience better performance and vice-versa.</p>
+<h2 id="installing-your-own-projects">Installing your own projects<a class="headerlink" href="#installing-your-own-projects" title="Permanent link"></a></h2>
+<h3 id="installing-x-server">Installing X Server<a class="headerlink" href="#installing-x-server" title="Permanent link"></a></h3>
+<p>To install X Server, go to the menu <strong>Tools-&gt;Install Software</strong> and locate X Server. Press the install button in the X Server row. The installation may take a few minutes and you should then <a href="/ide/boxes/restart-reset/">Restart</a> your Box before proceeding.</p>
+<h3 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link"></a></h3>
+<p>Before you can view any output, your program needs to run, so you should first start your code. When you start the viewer (see below), the UI output will be shown automatically.</p>
+<p><img alt="GUI Output" src="/img/guioutput.png" class="simple"/></p>
+<p>You also can start the viewer first but it will be empty until a program runs, whereupon it will refresh.</p>
+<h3 id="the-viewer">The viewer<a class="headerlink" href="#the-viewer" title="Permanent link"></a></h3>
+<p>The viewer is a special window that appears either inside Codio or in a separate browser tab. To open it, you should add <code>"Viewer": "https://{{domain3000}}/"</code> to the .codio file.</p>
+<pre><code>{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  &quot;commands&quot;: {
+        &quot;Run Python (tkinter)&quot;: &quot;python3 tkinterpy/demo.py&quot;,
+        &quot;Run Java (Lunar Phases)&quot;: &quot;cd swing &amp;&amp; java LunarPhases&quot;,
+        &quot;SQLite Browser App&quot;: &quot;sqlitebrowser&quot;,
+        &quot;StarUML&quot;: &quot;staruml&quot;
+  },
+
+// Preview button configuration
+  &quot;preview&quot;: {
+        &quot;Viewer&quot;: &quot;https://{{domain3000}}/&quot;
+  }
+}
+</code></pre>
+
+<p>You can also access the from any browser using <code>https://pagoda-cigar-3000.codio.io/</code> where you replace <code>pagoda-cigar</code> with your boxes domain name, which you can find in the menu at <strong>Project-&gt;Box Info</strong> (scroll to the section <strong>Web: Static content</strong>).</p>
+<h3 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link"></a></h3>
+<p>You can customise the X Server installation by modifying the config files in the normal way using vim or nano. For example you can</p>
+<ul>
+<li><code>sudo vim /etc/init/openbox.conf</code> opens the openbox desktop config so you could change the default virtual desktop size</li>
+<li><code>sudo vim /etc/init/novnc-3000.conf</code> would enable you to modify the port that the viewer runs on in case it conflicts with other services you may have configured on the default port 3000</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

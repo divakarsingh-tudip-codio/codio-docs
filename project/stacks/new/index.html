@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Creating a Stack - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Creating a Stack";
+    var mkdocs_page_input_path = "project/stacks/new.md";
+    var mkdocs_page_url = "/project/stacks/new/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Creating a Stack</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Please make sure you have read <a href="/project/stacks/stack-overview">What is a stack?</a> as this contains important concepts and information.</p>
+<p>This page explains how to create a new stack or a new stack version from a project. Stack management for <a href="/courses/units/publish">course units</a> and <a href="/books/publish">books</a> is handled by the publish action and is explained in their respective sections.</p>
+<h2 id="create-new-stack-from-the-ide">Create new stack from the IDE<a class="headerlink" href="#create-new-stack-from-the-ide" title="Permanent link"></a></h2>
+<p>With the project open in the IDE, select the menu option <strong>Project-&gt;Stack-&gt;Create New</strong>. This will allow you to create a new stack or a new version of an existing stack you have the rights to update. By default it will be private to you. If you wish to make it available to others, please refer to the <strong>Visibility</strong> information below.</p>
+<p><img alt="Stacks Create New" src="/img/stacks_createnew.png" class="simple"/></p>
+<h2 id="create-new-stack-from-the-dashboard">Create new stack from the dashboard<a class="headerlink" href="#create-new-stack-from-the-dashboard" title="Permanent link"></a></h2>
+<p>From the dashboard, click on the <strong>Stacks</strong> item on the left hand side. On the stacks listing page, press the large blue <strong>+</strong> button to create a new stack. You then point to your project.</p>
+<p><img alt="Stacks Create" src="/img/stacks_create.png" class="simple"/></p>
+<p>When you have completed the required fields and pressed the <code>Create</code> button, we will generate a Stack image for you. This can take a few minutes, depending on the size of the Stack image. You  do not need to remain on this screen while the Stack is created, so feel free to continue to other parts of Codio. The source project will not be accessible until the stack has been created.</p>
+<ul>
+<li><strong>Stack Blueprint</strong>: you should specify is the Codio project that you want to use for your Stack blueprint. Enter any part of your Project name and you will see them listed in a dropdown.</li>
+<li><strong>Name and Description</strong>: next, add a short name for your Stack and a longer description. You can also add a more detailed overview of your Stack by selecting the "add a long description" link. You can write this long description in Markdown.</li>
+<li><strong>Image</strong>: you can also add an image to make your Stack more instantly recognizable in the listing. This should be a square image, which will be reduced in size and will appear in a circle as shown below.</li>
+<li><strong>Tags</strong>: you can also add tags to your Stack. The tags should be component names ideally. There is an autocomplete function that will help you to use already defined tags to avoid tag duplication and ensure maximum efficiency when searching.</li>
+</ul>
+<h2 id="visibility-and-ownership">Visibility and Ownership<a class="headerlink" href="#visibility-and-ownership" title="Permanent link"></a></h2>
+<p>See <a href="/project/stacks/visibility">visibility settings</a> for information on who can access or edit your stack.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>

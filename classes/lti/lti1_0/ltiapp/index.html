@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Codio LTI App - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Codio LTI App";
+    var mkdocs_page_input_path = "classes/lti/lti1_0/ltiapp.md";
+    var mkdocs_page_url = "/classes/lti/lti1_0/ltiapp/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Codio LTI App</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>The <strong>Codio LTI App</strong> allows an easy way to integrate Codio with supported LMS systems.</p>
+<p><strong>Please note the steps below are for implementation in Canvas.</strong></p>
+<p>For details of other supported systems see <a href="https://www.eduappcenter.com/tutorials">https://www.eduappcenter.com/tutorials</a>.</p>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
+<p>The following steps need to be taken only one time per class.</p>
+<h3 id="in-codio">In Codio<a class="headerlink" href="#in-codio" title="Permanent link"></a></h3>
+<ul>
+<li>Go to your organization account settings by clicking on your user name in the bottom left of your dashboard and then selecting your organization within <strong>My Organizations</strong>.</li>
+<li>Select the <strong>LTI Integrations</strong> tab.</li>
+<li>Scroll down to the <strong>LTI Integration 1.0</strong> section. You should see the following fields. Remain on this screen for the time being.</li>
+</ul>
+<p><img alt="LTI Fields" src="/img/lti/lti-org-fields.png" class="simple"/></p>
+<h3 id="in-canvas">In Canvas<a class="headerlink" href="#in-canvas" title="Permanent link"></a></h3>
+<p>The Canvas user who carries out these steps must be a system administrator.</p>
+<ul>
+<li>Create a new Course in your LMS system. We suggest you create a test course called <strong>Codio Test Course</strong> before you do it with a production course.</li>
+<li>Select the Course.</li>
+<li>Click on <strong>Settings</strong> in the left set of options.</li>
+<li>In the top links, select <strong>Apps</strong>.</li>
+<li>Click the large button <strong>View App Configurations</strong>.</li>
+<li>Click on the <strong>View App Center</strong> button.</li>
+</ul>
+<p><img alt="appcenter" src="/img/lti/appcenter.png" class="simple"/></p>
+<ul>
+<li>Navigate (or filter) to find the <strong>Codio</strong> app, select and <strong>+ Add App</strong></li>
+</ul>
+<h3 id="in-codio-and-canvas">In Codio and Canvas<a class="headerlink" href="#in-codio-and-canvas" title="Permanent link"></a></h3>
+<p>We will now copy the following global integration fields from Codio to Canvas.</p>
+<ul>
+<li>LTI Consumer -&gt; Consumer Key</li>
+<li>LTI Secret -&gt; Shared Secret</li>
+</ul>
+<p>and select the <strong>Add App</strong> button to confirm.
+You should then have something similar to this:</p>
+<p><img alt="appconfigured" src="/img/lti/appsetup.png" class="simple"/></p>
+<h3 id="class-url">Class URL<a class="headerlink" href="#class-url" title="Permanent link"></a></h3>
+<p>The <strong>Class URL</strong> is used to map an LMS course to a Codio class. It ensures that Codio knows how to redirect students back to the correct course should they attempt to access the class through the Codio dashboard.</p>
+<p>The LMS user who carries out these steps does not need to be a system administrator but must have suitable privileges to edit courses and assignments.</p>
+<ul>
+<li>In Codio, go to the <strong>Admin</strong> tab near the top.</li>
+<li>Select <strong>Edit Details</strong> in the bottom of the page.</li>
+<li>Near the bottom is a switch <strong>Enable LTI</strong> which you should enable.</li>
+<li>Below this is an empty field <strong>Class LMS URL</strong>. Switch back to your LMS and make sure you are on the Home page of the course. Copy the url in the address bar of your browser to the clipboard and paste it into the above mentioned field in Codio.</li>
+</ul>
+<p><img alt="lti-class-url" src="/img/lti/lti-class-url.png" class="simple"/></p>
+<h3 id="mapping-codio-units-to-canvas-unitassignment">Mapping Codio units to Canvas unit/assignment<a class="headerlink" href="#mapping-codio-units-to-canvas-unitassignment" title="Permanent link"></a></h3>
+<p>The <strong>Unit URL</strong> is where you map each individual Unit within your Codio Class to the corresponding unit/assignment in your LMS.</p>
+<p>Where you have enabled the Codio LTI App in your LMS system, you can easily integrate units from your Codio class.</p>
+<ul>
+<li>Go to your Canvas Course and to <strong>Pages</strong> to add a new page,</li>
+<li>Click the Codio icon that will be available</li>
+</ul>
+<p><img alt="codioicon" src="/img/lti/codioicon.png" class="simple"/></p>
+<ul>
+<li>A list of the Codio class contents will be shown, simply select the unit(s) you wish to add to Canvas and Save</li>
+</ul>
+<p><img alt="classunits" src="/img/lti/classunits.png" class="simple"/></p>
+<p>The assignment(s) and course will need to be published before students will be able to access them</p>
+<p>For other methods to integrate Codio with LMS systems, check out the pages that follow</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

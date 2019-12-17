@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Viewing GitHub Repos - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Viewing GitHub Repos";
+    var mkdocs_page_input_path = "ide/editing/git/git-viewing.md";
+    var mkdocs_page_url = "/ide/editing/git/git-viewing/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Viewing GitHub Repos</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>GitHub let's you browse around a repo but it's not the same as using an IDE. Codio gives you a great way of viewing any GitHub (or Git) repo. For web apps, you can even run and <a href="/ide/features/inline-preview">preview</a> within Codio.</p>
+<h2 id="offering-linkbutton-in-the-repo-readmemd-file">Offering link/button in the repo readme.md file<a class="headerlink" href="#offering-linkbutton-in-the-repo-readmemd-file" title="Permanent link"></a></h2>
+<p>This is great for anyone wanting to offer a link into a GitHub README page and then, when clicked, it initiates the creation of a project, importing in from the repo for the user in their Codio account.</p>
+<p>The advantage of this approach is that changes you make to your repo will be automatically shown in Codio as it creates a brand new Codio project whenever clicked on. If a project of that name already exists, users can change the name on the project creation page.</p>
+<p><img alt="create from GitHub" src="/img/github-readme.png" class="simple"/></p>
+<p>You just use the following link format in your GitHub README file (or anywhere else for that matter).</p>
+<pre><code>https://codio.com/home/projects/new?importType=git&amp;activeTab=3&amp;name=your_codio_project_name&amp;importGitUrl=git@github.com:your_github_name/your_repo_name&amp;stackVersion=stack_version_id
+
+</code></pre>
+
+<p>In some cases, you may want to specify a specific branch. The common usage for this is if you have a demo or GitHub Pages site that you want to load into Codio. In this case you do the following</p>
+<pre><code>https://codio.com/home/projects/new?importType=git&amp;activeTab=3&amp;name=your_codio_project_name&amp;importGitUrl=git@github.com:your_github_name/your_repo_name&amp;branch=other_branch&amp;stackVersion=stack_version_id
+
+</code></pre>
+
+<h3 id="finding-the-stack-version-id">Finding the stack version ID<a class="headerlink" href="#finding-the-stack-version-id" title="Permanent link"></a></h3>
+<p>Go to the <strong>Stacks</strong> area and find the appropriate stack you wish to be used with your repo. Select <strong>Use Stack</strong> and from the address bar you will see the stack version ID to add to your link</p>
+<p>Example showing the <strong>Empty Stack</strong> stack version ID</p>
+<p><img alt="Empty Stack Version ID" src="/img/stackversionid.png" class="simple"/></p>
+<p>You are free to use any way of linking to Codio but we would recommend using the following images</p>
+<p><img alt="show" src="https://codio-public.s3.amazonaws.com/sharing/open-in-ide.png" class="simple"/>
+<img alt="show" src="https://codio-public.s3.amazonaws.com/sharing/demo-in-ide.png" class="simple"/></p>
+<h3 id="how-get-manually-import-a-git-repo-into-codio">How get manually import a Git repo into Codio<a class="headerlink" href="#how-get-manually-import-a-git-repo-into-codio" title="Permanent link"></a></h3>
+<p><img alt="create from GitHub" src="/img/github-clone-url.png" class="simple"/></p>
+<ul>
+<li>If you are on the GitHub site and looking at a repo, you will see the <strong>Clone URL</strong> link (circled above).</li>
+<li>Click to copy the link to the clipboard; if you clone using SSH, you must have added the Codio SSH public key first as <a href="/dashboard/account/publickey">described here</a></li>
+<li>Login to Codio</li>
+<li>Click on <strong>New Project</strong> and then the <strong>Click here</strong> for more options</li>
+<li>Select <strong>Import</strong> and then from the <strong>Source</strong> drop-down, select <strong>Git</strong></li>
+<li>Paste in the Git URL (see below) and add any additional details you require</li>
+<li>Press <strong>Create</strong> and Codio will load the repo and then display it</li>
+</ul>
+<p><img alt="create from GitHub" src="/img/github-create.png" class="simple"/></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Adding your own packages - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Adding your own packages";
+    var mkdocs_page_input_path = "ide/boxes/installsw/parts-coding.md";
+    var mkdocs_page_url = "/ide/boxes/installsw/parts-coding/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Adding your own packages</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+<p>If you cannot find the software you want to install in the list then you can add your own package to the Install Software list by forking our GitHub repository, making the necessary modifications and finally submitting a pull request.</p>
+<p>The repository can be found at <a href="https://github.com/codio/install_software">https://github.com/codio/install_software</a></p>
+<h3 id="what-is-a-script">What is a script?<a class="headerlink" href="#what-is-a-script" title="Permanent link"></a></h3>
+<p>A script is typically, but not necessarily, a bash script that runs a series of commands as you would on the command line to install or configure software on your Codio box. However, it can be any executable code you choose.</p>
+<p>The scripts written by Codio typically use Ansible, a very friendly deployment management system that greatly reduces complexity.</p>
+<h4 id="package_listjson"><code>package_list.json</code><a class="headerlink" href="#package_listjson" title="Permanent link"></a></h4>
+<p>This is the manifest that lists the entire contents of the publicly available scripts. Each script has an entry in this file and you should add a new item.</p>
+<p>Here's a reminder of the MySQL entry.</p>
+<pre><code>&quot;mysql&quot;: {
+  &quot;name&quot;: &quot;MySQL&quot;,
+  &quot;description&quot;: &quot;MySQL is an open-source relational database management system (RDBMS)&quot;,
+  &quot;script&quot;: &quot;mysql/install.sh&quot;,
+  &quot;version&quot;: &quot;5.5.49&quot;,
+  &quot;category&quot;: &quot;data_stores&quot;
+}
+</code></pre>
+
+<p>Whenever a user loads the Install Software dialog, this Install Software manifest is retrieved from our GitHub repo.</p>
+<h4 id="script"><code>script</code><a class="headerlink" href="#script" title="Permanent link"></a></h4>
+<p>The script is the path, relative to the root of the repo, where the installation script can be found.</p>
+<h4 id="category"><code>category</code><a class="headerlink" href="#category" title="Permanent link"></a></h4>
+<p>You can specify the category that the component belongs to by updating the <code>category</code> field. You can choose from one of the following.</p>
+<pre><code>'data_stores'
+'deployment'
+'development_tools'
+'libraries'
+'shells'
+'programming_languages'
+'utilities'
+'web_development'
+</code></pre>
+
+<h5 id="example-mysql">Example : MySQL<a class="headerlink" href="#example-mysql" title="Permanent link"></a></h5>
+<p>The following example shows how to install MySQL from the Install Software menu in a few seconds. Try running the MySQL installation on a new box. The MySQL entry in the <code>package_list.json</code> file looks like this</p>
+<pre><code>&quot;mysql&quot;: {
+  &quot;name&quot;: &quot;MySQL&quot;,
+  &quot;description&quot;: &quot;MySQL is an open-source relational database management system (RDBMS)&quot;,
+  &quot;script&quot;: &quot;mysql/install.sh&quot;,
+  &quot;version&quot;: &quot;5.5.49&quot;,
+  &quot;category&quot;: &quot;data_stores&quot;
+}
+</code></pre>
+
+<p>You can see the reference to the <code>mysql/install.sh</code> script.</p>
+<h5 id="bash-script">Bash script<a class="headerlink" href="#bash-script" title="Permanent link"></a></h5>
+<p>This script calls our standard Ansible loader script, which in turn loads the relevant playbook.</p>
+<pre><code>#!/bin/bash
+
+bash -c &quot;$(curl -fsSL https://raw.github.com/codio/install_software/master/tools/ansible.sh)&quot; mysql
+
+echo &quot;Mysql password root user password is 'codio'&quot;
+</code></pre>
+
+<h5 id="ansible-playbook-script">Ansible playbook script<a class="headerlink" href="#ansible-playbook-script" title="Permanent link"></a></h5>
+<p>As Ansible makes installations and configurations so easy, we use this to make our lives easier. We could have accomplished the same thing within the main bash script using standard Ubuntu commands but it would be less readable and harder to maintain than using Ansible.</p>
+<p>If you are interested in finding out more about Ansible playbooks, <a href="http://docs.ansible.com/">click here</a>.</p>
+<pre><code>---
+- name: Install MySQL
+  hosts: 127.0.0.1
+  sudo: True
+  vars:
+    MySQL_root_pass: codio
+  tasks:
+    - name: Set MySQL root password before installing
+      debconf: name='mysql-server' question='mysql-server/root_password' value='{{MySQL_root_pass | quote}}' vtype='password'
+    - name: Set MySQL root again password before installing
+      debconf: name='mysql-server' question='mysql-server/root_password_again' value='{{MySQL_root_pass | quote}}' vtype='password'
+    - name: Install MySQL
+      apt: name={{ item }} state=present
+      with_items:
+        - mysql-server
+        - mysql-client
+        - python-mysqldb
+    - copy: src=my.cnf dest=/home/codio/.my.cnf
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

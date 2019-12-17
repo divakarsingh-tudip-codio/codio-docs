@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Custom Buttons - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Custom Buttons";
+    var mkdocs_page_input_path = "content/authoring/page-edit/buttons.md";
+    var mkdocs_page_url = "/content/authoring/page-edit/buttons/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Custom Buttons</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Custom buttons are a powerful feature that let you insert a button into your guide content that when pressed can carry out any custom action.</p>
+<p>There are a number of ways to use a custom button</p>
+<h2 id="to-jump-to-a-page-in-the-content">To jump to a page in the content<a class="headerlink" href="#to-jump-to-a-page-in-the-content" title="Permanent link"></a></h2>
+<p>This will jump to a specific page in the guide</p>
+<pre><code class="javascript">{Button Text | go-to-section-titled}(section title)
+</code></pre>
+
+<p>e.g.</p>
+<pre><code class="javascript">{Go to Section: LTI | go-to-section-titled}(LTI)
+</code></pre>
+
+<h2 id="to-launch-a-process">To launch a process<a class="headerlink" href="#to-launch-a-process" title="Permanent link"></a></h2>
+<p>This will launch a process and execute a terminal command.</p>
+<pre><code class="javascript">{Button Text}(command paramater1 parameter2 parameterN)
+</code></pre>
+
+<h2 id="launching-a-process-in-a-terminal-window">Launching a process in a terminal window<a class="headerlink" href="#launching-a-process-in-a-terminal-window" title="Permanent link"></a></h2>
+<p>There are cases where you will want to launch a command in a dedicated terminal window. A typical example is when student code requires input from the user. Codio cannot handle standard input through the guides window, so use the following button command.</p>
+<pre><code class="bash">{Button Text | terminal}(command)
+</code></pre>
+
+<h2 id="launching-a-debugger-configuration">Launching a debugger configuration<a class="headerlink" href="#launching-a-debugger-configuration" title="Permanent link"></a></h2>
+<p>You can launch a debugger configuration as shown below. It is important to specify the configuration name exactly.</p>
+<pre><code class="bash">{Button text | debugger}(debugger configuration name)
+</code></pre>
+
+<p><a name="restorebutton"></a></p>
+<h2 id="to-restore-current-files-in-guides">To restore current files in guides<a class="headerlink" href="#to-restore-current-files-in-guides" title="Permanent link"></a></h2>
+<p>Students can restore current files to the default setting from the <a href="/dashboard/student/guides/">setting</a> menu but you can also offer them a button within your guides content as well.</p>
+<pre><code class="bash">{Button text | reset}(optional commands to run)
+</code></pre>
+
+<h2 id="writing-a-custom-event-handler">Writing a custom event handler<a class="headerlink" href="#writing-a-custom-event-handler" title="Permanent link"></a></h2>
+<p>This offers you the most flexibility and allows you to write your own custom button press handler. A common use case is executing tests on user code.</p>
+<p>To do this, you should use the following format for your custom button.</p>
+<pre><code class="bash">{Button Text|custom}(myId)
+</code></pre>
+
+<p>If you wish to use a custom event handler to allow students to restore current files and handle other functions, you can do so but you will need to include this code in your custom script</p>
+<pre><code class="bash">window.addEventListener('codio-button-custom', function (ev) {
+  if(codio) {
+    codio.resetCurrentFiles()
+  }
+});
+</code></pre>
+
+<h2 id="loading-scripts">Loading Scripts<a class="headerlink" href="#loading-scripts" title="Permanent link"></a></h2>
+<p>You should point your content page to a script file to load javascript scripts. You can do this from <strong>Settings&gt;Global&gt;Scripts</strong>.</p>
+<p><img alt="authtoken" src="/img/guides/scripts.png" class="simple"/></p>
+<p><a name="eventlistener"></a></p>
+<h2 id="event-listener">Event Listener<a class="headerlink" href="#event-listener" title="Permanent link"></a></h2>
+<p>The event listener is able to execute your custom task. It will display a custom message area beneath it into which you can write your own results data. The message data can be a custom message that a test might return and can be plain text or HTML.</p>
+<p>For the event listener to run you should include in <strong>Settings&gt;Global&gt;Scripts</strong>:</p>
+<ul>
+<li>https://codio.com/codio-client.js (where your account is running on codio.com)</li>
+<li>https://codio.co.uk/codio-client.js (where your account is running on codio.co.uk)</li>
+</ul>
+<p>The icon that appears in the top left of the message area can be controlled from your event listener, as shown in the example below.</p>
+<pre><code class="javascript">window.addEventListener('codio-button-custom', function (ev) {
+  console.log('id:', ev.id, 'cmd:', ev.cmd, ev);
+  if (codio) {
+    codio.setButtonValue(ev.id, codio.BUTTON_STATE.PROGRESS, 'Checking');
+    codio.setButtonValue(ev.id, codio.BUTTON_STATE.FAILURE, 'Bad Job :(');
+    codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
+    window.setTimeout(function () {
+      codio.setButtonValue(ev.id, codio.BUTTON_STATE.SUCCESS, 'Extremely well done!');
+    },1000);
+
+  }
+});
+console.log('test.js script loaded');
+</code></pre>
+
+<ul>
+<li><code>ev.id</code> is the contents internal id for the button.</li>
+<li><code>ev.cmd</code> is the <code>myId</code> text you specified in the button with <code>{Button Text|custom}(myId)</code>. This is typically used to indicate the id of the test you wish to run or just the specific button that is being pressed.</li>
+</ul>
+<p>The available button commands are</p>
+<pre><code class="javascript">codio.setButtonValue(ev.id, codio.BUTTON_STATE.PROGRESS, 'Checking..');
+codio.setButtonValue(ev.id, codio.BUTTON_STATE.SUCCESS, 'Good job!');
+codio.setButtonValue(ev.id, codio.BUTTON_STATE.FAILURE, 'Bad Job :(');
+codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
+</code></pre>
+
+<p>The 3rd parameter can contain any text to display in the button's attached message area. It can be plain text or HTML.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>

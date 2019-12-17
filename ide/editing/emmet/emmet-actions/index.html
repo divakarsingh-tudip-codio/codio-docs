@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Codio team">
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+  <title>Special Keyboard Actions - Codio Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Special Keyboard Actions";
+    var mkdocs_page_input_path = "ide/editing/emmet/emmet-actions.md";
+    var mkdocs_page_url = "/ide/editing/emmet/emmet-actions/";
+  </script>
+  
+  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://www.codio.com">Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/support">Support queries</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/navigation">Navigating Codio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/account">Account settings and info</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/dashboard/student">The student view</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/what-is-a-project">Projects</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/stacks">Stack templates</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="/project/packs">Starter pack templates</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../..">Codio Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Special Keyboard Actions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Emmet also offers a very nice range of keyboard shortcuts to speed productivity even further. Keyboard actions can be modified in <a href="/ide/customization/codio-prefs">Preferences</a></p>
+<h2 id="match-tag-pair">Match Tag Pair<a class="headerlink" href="#match-tag-pair" title="Permanent link"></a></h2>
+<p><code>Mac:Cmd+D (inward) and Shift+Cmd+D (outward)</code>
+<code>WinLin:Ctrl+D (inward) and Shift+Ctrl+D (outward)</code></p>
+<p>A well-known tag balancing: searches for tag or tag's content bounds from current cursor position and selects it. It will expand (outward balancing) or shrink (inward balancing) selection when called multiple times. Not every editor supports both inward and outward balancing due of some implementation issues, most editors have outward balancing only.</p>
+<p><a href="http://docs.emmet.io/actions/match-pair/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="go-to-matching-pair">Go To Matching Pair<a class="headerlink" href="#go-to-matching-pair" title="Permanent link"></a></h2>
+<p><code>Mac: Shift+Cmd+T</code>
+<code>Win: Shift+Ctrl+T</code></p>
+<p>In HTML, allows you to quickly traverse between opening and closing tag.</p>
+<p><a href="http://docs.emmet.io/actions/go-to-pair/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="wrap-with-abbreviation">Wrap with Abbreviation<a class="headerlink" href="#wrap-with-abbreviation" title="Permanent link"></a></h2>
+<p><code>Mac/Win: Shift+Cmd+A</code></p>
+<p>A very powerful feature, it takes an abbreviation, expands it and places currently selected content in the last element of generated snippet. If there’s no selection, action will silently call “Match Tag Pair” to wrap context element.</p>
+<p><a href="http://docs.emmet.io/actions/wrap-with-abbreviation/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="go-to-edit-point">Go to Edit Point<a class="headerlink" href="#go-to-edit-point" title="Permanent link"></a></h2>
+<p><code>Win: Ctrl+Alt+Right Arrow or Left Arrow</code></p>
+<p>This action works for HTML code blocks and allows you to quickly traverse between important code points:</p>
+<ul>
+<li>between tags</li>
+<li>empty attributes</li>
+<li>newlines with indentation</li>
+</ul>
+<p><a href="http://docs.emmet.io/actions/go-to-edit-point/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="select-item">Select Item<a class="headerlink" href="#select-item" title="Permanent link"></a></h2>
+<p><code>Mac/Win: Shift+Cmd+</code></p>
+<p>Action is similar to “Go to Edit Point”, but selects important code parts.</p>
+<p>In HTML, these are tag name, full attribute and attribute value. For class attribute it also selects distinct classes.</p>
+<p>In CSS, it matches selector, full property and property value. For complex values and functions like 1px solid red or url(image.jpg) also selects part of it.</p>
+<p><a href="http://docs.emmet.io/actions/select-item/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="toggle-comment">Toggle Comment<a class="headerlink" href="#toggle-comment" title="Permanent link"></a></h2>
+<p><code>Mac: Cmd+/</code>
+<code>Win: Ctrl+/</code></p>
+<p>This action, as name says, toggles comments on and off for the selected line. Works nicely in CSS and HTML files.</p>
+<p><a href="http://docs.emmet.io/actions/toggle-comment/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="remove-tag">Remove Tag<a class="headerlink" href="#remove-tag" title="Permanent link"></a></h2>
+<p><code>Mac: Cmd+K</code>
+<code>Win: Ctrl+K</code></p>
+<p>Quickly removes tag, found by “Match Tag Pair” from current cursor position, and adjusts indentation.</p>
+<p><a href="http://docs.emmet.io/actions/remove-tag/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="merge-lines">Merge Lines<a class="headerlink" href="#merge-lines" title="Permanent link"></a></h2>
+<p><code>Mac: Shift+Cmd+M</code>
+<code>Win: Shift+Ctrl+M</code></p>
+<p>Merges selected lines into a single line. But when there’s no selection, will match context HTML tag.</p>
+<p><a href="http://docs.emmet.io/actions/merge-lines/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="inline-calculator">Inline Calculator<a class="headerlink" href="#inline-calculator" title="Permanent link"></a></h2>
+<p><code>Mac: Shift+Cmd+Y</code>
+<code>Win: Shift+Ctrl+Y</code></p>
+<p>Evaluates simple math expressions like 2*4 or 10/2 and outputs its result. You can use <code>\</code> operator which is equivalent to round(a/b).</p>
+<p>Very useful in CSS where numeric values should be modified frequently.</p>
+<p><a href="http://docs.emmet.io/actions/evaluate-math/" target"_blank">Click here to see it in the Emmet site.</a></p>
+<h2 id="incrementdecrement-number">Increment/Decrement Number<a class="headerlink" href="#incrementdecrement-number" title="Permanent link"></a></h2>
+<p><code>Mac/Win : Alt+Up/Down (inc/dec by 0.1)</code>
+<code>Mac/Win : Ctrl+Up/Down (inc/dec by 1)</code>
+<code>Mac/Win : Ctrl+Alt+Up/Down (inc/dec by 10)</code></p>
+<p>This action, as name says, increments or decrements the number under the cursor with different steps: 0.1, 1 or 10.</p>
+<p><a href="http://docs.emmet.io/actions/inc-dec-number/" target"_blank">Click here to see it in the Emmet site.</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2019 Codio Inc.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../..';</script>
+    <script src="../../../../js/theme.js" defer></script>
+      <script src="../../../../search/main.js" defer></script>
+
+</body>
+</html>
