@@ -1,156 +1,103 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Codio team">
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Permissions and collaboration - Codio Documentation</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/books/permissions/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Permissions and collaboration - Codio Documentation</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Permissions and collaboration";
-    var mkdocs_page_input_path = "books/permissions.md";
-    var mkdocs_page_url = "/books/permissions/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body>
 
-  <div class="wy-grid-for-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Codio Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Codio Documentation</a>
+                </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="https://www.codio.com">Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/support">Support queries</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/navigation">Navigating Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/account">Account settings and info</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/student">The student view</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/what-is-a-project">Projects</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/stacks">Stack templates</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/packs">Starter pack templates</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                        </ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Codio Documentation</a>
-      </nav>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#private-public-visibility">Private / Public visibility</a></li>
+        <li class="main "><a href="#permissions-and-collaboration">Permissions and collaboration</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Permissions and collaboration</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p>By default, a book is only available to you for editing purposes and only you can create courses from a Book.</p>
+<p>By default, a book is only available to you for editing purposes and only you can create courses from a Book.</p>
 <p>You can change permissions to allow others</p>
 <ul>
 <li>to edit your book</li>
 <li>to create courses from your book.</li>
 </ul>
 <p>To modify the permissions, goto <strong>Books</strong> from the dashboard. Then select the settings icon.</p>
-<p><img alt="Book settings" src="/img/booksettings.png" class="simple"/></p>
-<h3 id="private-public-visibility">Private / Public visibility<a class="headerlink" href="#private-public-visibility" title="Permanent link"></a></h3>
+<p><img alt="Book settings" src="/img/booksettings.png" /></p>
+<h1 id="private-public-visibility">Private / Public visibility<a class="headerlink" href="#private-public-visibility" title="Permanent link"></a></h1>
 <p>If the book is set to <strong>Private</strong>, unless you override the permissions, only you can modify a book contents and create course units from it. Private books cannot be assigned to public courses.</p>
 <p>If the book is set to <strong>Public</strong>, then any Codio user inside or outside your organization can create courses from your book but they will not be able to edit it.  The default organization setting restricts the ability to create Public books. To allow this, see <a href="/dashboard/create/public_private">Public/Private Settings</a>.</p>
-<p><img alt="Book settings page" src="/img/booksettingspage.png" class="simple"/></p>
-<h3 id="permissions-and-collaboration">Permissions and collaboration<a class="headerlink" href="#permissions-and-collaboration" title="Permanent link"></a></h3>
+<p><img alt="Book settings page" src="/img/booksettingspage.png" /></p>
+<h1 id="permissions-and-collaboration">Permissions and collaboration<a class="headerlink" href="#permissions-and-collaboration" title="Permanent link"></a></h1>
 <p>If you want 2 or more people to collaborate on a book, you need to understand how Codio manages this process.</p>
 <p>You need to give explicit permission to other users or to an organization and apply write permissions.</p>
 <p>The permissions can be changed by selecting the <strong>Permissions</strong> tab on the book settings screen. You should first specify which user or organization you want to grant permissions to. You need to know the precise organization or user name and this is case sensitive. We do not support lookups as the potential for incorrect assignment is too great.</p>
-<p><img alt="Book permissions" src="/img/book-permissions.png" class="simple"/></p>
+<p><img alt="Book permissions" src="/img/book-permissions.png" /></p>
 <p>You can grant the following permissions.</p>
 <ul>
 <li><strong>Read</strong> : this allows the user or organization specified to create course units from your book.</li>
@@ -161,45 +108,85 @@
 <p>Let's say User A has created a book and authored some content. User A now wants User B to be able to work on the content. User A should first <a href="/books/publish">publish</a> the book. Be aware that if User A does not publish the book, then User B will start with an empty book.</p>
 <p>When User B accesses the book (from the <strong>Shared with me</strong> tab on the main books listing), Codio will take a snapshot of the published book and User B can start work on it. In other words, User B is <strong>not</strong> editing User A's book, User B is now working on a clone of the published book.</p>
 <p>User B now makes changes to the book. When done, User B should publish the book and inform User A that the changes are complete and published. At this point, when User A opens the project, a dialog will appear showing that User B has published new changes. User A can now update her own version of the book from this published version. And so the cycle continues.</p>
-<p><img alt="Book New Version" src="/img/bookversion.png" class="simple"/></p>
-<p>You can do this with as many users as you like, provided that only one user is making changes at a time.</p>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2019 Codio Inc.</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+<p><img alt="Book New Version" src="/img/bookversion.png" /></p>
+<p>You can do this with as many users as you like, provided that only one user is making changes at a time.</p></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
 
-</body>
+    </body>
 </html>

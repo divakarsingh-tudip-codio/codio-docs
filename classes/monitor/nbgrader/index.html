@@ -1,141 +1,94 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Codio team">
-  <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>nbgrader autograding support - Codio Documentation</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/classes/monitor/nbgrader/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>nbgrader autograding support - Codio Documentation</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "nbgrader autograding support";
-    var mkdocs_page_input_path = "classes/monitor/nbgrader.md";
-    var mkdocs_page_url = "/classes/monitor/nbgrader/";
-  </script>
-  
-  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body>
 
-  <div class="wy-grid-for-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../../.." class="icon icon-home"> Codio Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Codio Documentation</a>
+                </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="https://www.codio.com">Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/support">Support queries</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/navigation">Navigating Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/account">Account settings and info</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/student">The student view</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/what-is-a-project">Projects</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/stacks">Stack templates</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/packs">Starter pack templates</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                        </ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../..">Codio Documentation</a>
-      </nav>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#overview">Overview</a></li>
+        <li class="main "><a href="#configuration">Configuration</a></li>
+            <li><a href="#extend-timeout-period">Extend Timeout period</a></li>
+            <li><a href="#lock-all-cells">Lock all cells</a></li>
+            <li><a href="#lock-all-grade-cells">Lock all grade cells</a></li>
+            <li><a href="#lock-all-read-only-cells">Lock all read-only cells</a></li>
+            <li><a href="#lock-all-solution-cells">Lock all solution cells</a></li>
+            <li><a href="#execute-preprocessor-on-timeout">Execute preprocessor on timeout</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>nbgrader autograding support</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p><strong><a href="https://jupyter.org/">Jupyter notebook</a></strong> has auto-grade functionality through <strong><a href="http://nbgrader.readthedocs.io/en/stable/index.html">nbgrader</a></strong> that Codio supports</p>
-<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h3>
+<p><strong><a href="https://jupyter.org/">Jupyter notebook</a></strong> has auto-grade functionality through <strong><a href="http://nbgrader.readthedocs.io/en/stable/index.html">nbgrader</a></strong> that Codio supports</p>
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h1>
 <p>Unit creators create the unit with <a href="https://jupyter.org/">Jupyter notebook</a> files for the assignment.</p>
 <p><strong>nbgrader</strong> support doesn't require <a href="/content/authoring/">guides</a> or any other <a href="/content/authoring/assessments/">assessments</a>.</p>
 <p>Any user configurations required should be stored in a <code>.codio-jupyter</code> file.</p>
@@ -143,88 +96,128 @@
 <p>When the unit is published to a class, either as an <a href="/classes/unitmanagement/assign-project">individual project</a> or as part of a <a href="/classes/unitmanagement/assign-module">course/module</a>, the release version is created for the student.</p>
 <p>When the student submits the assignment by marking the unit as complete, it will be <a href="/classes/unitmanagement/settings-info/autograde">autograded</a> automatically.</p>
 <p><a href="/classes/monitor/grading/">Manual grading</a> is also available if required</p>
-<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"></a></h3>
+<h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"></a></h1>
 <p><a name="nbgradertimeout"></a></p>
-<h4 id="extend-timeout-period">Extend Timeout period<a class="headerlink" href="#extend-timeout-period" title="Permanent link"></a></h4>
+<h2 id="extend-timeout-period">Extend Timeout period<a class="headerlink" href="#extend-timeout-period" title="Permanent link"></a></h2>
 <p>To extend the time required for completion (to 90 seconds in this example), you can add</p>
 <pre><code class="yaml">nbgrader:
    ExecutePreprocessor.timeout: 90
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<h4 id="lock-all-cells">Lock all cells<a class="headerlink" href="#lock-all-cells" title="Permanent link"></a></h4>
+<h2 id="lock-all-cells">Lock all cells<a class="headerlink" href="#lock-all-cells" title="Permanent link"></a></h2>
 <p>To lock all cells (Default: False)</p>
 <pre><code class="yaml">nbgrader:
    LockCells.lock_all_cells: True
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<h4 id="lock-all-grade-cells">Lock all grade cells<a class="headerlink" href="#lock-all-grade-cells" title="Permanent link"></a></h4>
+<h2 id="lock-all-grade-cells">Lock all grade cells<a class="headerlink" href="#lock-all-grade-cells" title="Permanent link"></a></h2>
 <p>To lock all grade cells (Default: True) where grade cells are locked (non-deletable)</p>
 <pre><code class="yaml">nbgrader:
    LockCells.lock_grade_cells: True
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<h4 id="lock-all-read-only-cells">Lock all read-only cells<a class="headerlink" href="#lock-all-read-only-cells" title="Permanent link"></a></h4>
+<h2 id="lock-all-read-only-cells">Lock all read-only cells<a class="headerlink" href="#lock-all-read-only-cells" title="Permanent link"></a></h2>
 <p>To lock all grade cells (Default: True) where read only cells are locked (non-deletable and non-editable)</p>
 <pre><code class="yaml">nbgrader:
    LockCells.lock_readonly_cells: True
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<h4 id="lock-all-solution-cells">Lock all solution cells<a class="headerlink" href="#lock-all-solution-cells" title="Permanent link"></a></h4>
+<h2 id="lock-all-solution-cells">Lock all solution cells<a class="headerlink" href="#lock-all-solution-cells" title="Permanent link"></a></h2>
 <p>To lock all solution cells (Default: True) where solution cells are locked (non-deletable and non-editable)</p>
 <pre><code class="yaml">nbgrader:
    LockCells.lock_solution_cells: True
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<h4 id="execute-preprocessor-on-timeout">Execute preprocessor on timeout<a class="headerlink" href="#execute-preprocessor-on-timeout" title="Permanent link"></a></h4>
+<h2 id="execute-preprocessor-on-timeout">Execute preprocessor on timeout<a class="headerlink" href="#execute-preprocessor-on-timeout" title="Permanent link"></a></h2>
 <p>If execution of a cell times out, interrupt the kernel and continue executing other cells rather than throwing an error and stopping.</p>
 <pre><code class="yaml">nbgrader:
    ExecutePreprocessor.interrupt_on_timeout: True
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<p>If you require any assistance at all, or would like us to consider adding additional functions, please don't hesitate to <a href="/dashboard/support/">contact us</a></p>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2019 Codio Inc.</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+<p>If you require any assistance at all, or would like us to consider adding additional functions, please don't hesitate to <a href="/dashboard/support/">contact us</a></p></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
 
-</body>
+    </body>
 </html>

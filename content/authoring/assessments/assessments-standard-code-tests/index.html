@@ -1,162 +1,119 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Codio team">
-  <link rel="shortcut icon" href="../../../../img/favicon.ico">
-  <title>Standard code tests - Codio Documentation</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/content/authoring/assessments/assessments-standard-code-tests/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Standard code tests - Codio Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Standard code tests";
-    var mkdocs_page_input_path = "content/authoring/assessments/assessments-standard-code-tests.md";
-    var mkdocs_page_url = "/content/authoring/assessments/assessments-standard-code-tests/";
-  </script>
-  
-  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body>
 
-  <div class="wy-grid-for-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Codio Documentation</a>
+                </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="https://www.codio.com">Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/support">Support queries</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/navigation">Navigating Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/account">Account settings and info</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/student">The student view</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/what-is-a-project">Projects</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/stacks">Stack templates</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/packs">Starter pack templates</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                        </ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../..">Codio Documentation</a>
-      </nav>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#sample-starter-pack">Sample Starter Pack</a></li>
+        <li class="main "><a href="#basic-setup">Basic setup</a></li>
+        <li class="main "><a href="#general">General</a></li>
+        <li class="main "><a href="#execution">Execution</a></li>
+        <li class="main "><a href="#grading">Grading</a></li>
+        <li class="main "><a href="#metadata">Metadata</a></li>
+        <li class="main "><a href="#files">Files</a></li>
+            <li><a href="#cheating-opportunities">Cheating opportunities</a></li>
+            <li><a href="#specifying-inputs-and-outputs">Specifying inputs and outputs</a></li>
+        <li class="main "><a href="#inputs-using-arguments">Inputs using arguments</a></li>
+        <li class="main "><a href="#inputs-using-stdin">Inputs using stdin</a></li>
+        <li class="main "><a href="#error-feedback">Error Feedback</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../../../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Standard code tests</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p>If you want to write code tests that give you in depth control by allowing you to write your own code to execute tests, then please <a href="/content/authoring/assessments/assessments-code-tests/">refer to the advanced code tests</a>. The majority of code tests, however, can be produced without writing any code at all using standard code tests.</p>
+<p>If you want to write code tests that give you in depth control by allowing you to write your own code to execute tests, then please <a href="/content/authoring/assessments/assessments-code-tests/">refer to the advanced code tests</a>. The majority of code tests, however, can be produced without writing any code at all using standard code tests.</p>
 <p>Standard code tests are dialog driven. You specify input data and the expected output for that input data. Codio will then execute the student code, supply the specified input data, and compare the expected output to the student code's actual output.</p>
 <h2 id="sample-starter-pack">Sample Starter Pack<a class="headerlink" href="#sample-starter-pack" title="Permanent link"></a></h2>
 <p>There is a Starter Pack project that you can add to your account. <a href="https://codio.com/home/starter-packs/cc68d38b-b0ea-4825-9814-46a3594c2b11/">Click here to install</a> and <strong>Use Pack</strong> to create into your Codio account to review. This project contains examples for all assessment types as well as a guides authoring cheat sheet.</p>
 <h2 id="basic-setup">Basic setup<a class="headerlink" href="#basic-setup" title="Permanent link"></a></h2>
 <p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
-<h3 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h3>
+<h1 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h1>
 <p>The screenshot below shows the basic configuration fields for the <em>General</em> section:</p>
-<p><img alt="" src="/img/guides/assessment_general.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
 <ul>
 <li><strong>Name</strong> is a short name that describes the test. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
 <li><strong>Instructions</strong> is the actual text that should be shown to the user, written in Markdown.</li>
 </ul>
-<h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h3>
+<h1 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h1>
 <p>The screenshot below shows the configuration fields for the <em>Execution</em> section:</p>
-<p><img alt="" src="/img/guides/assessment_sct_execution.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/assessment_sct_execution.png" /></p>
 <ul>
 <li><strong>Command</strong> is the command that executes the student code itself. If you store the assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data.</li>
 <li><strong>Pre-exec command</strong> is the command to execute before you run each test. This will normally be a compile command.</li>
 </ul>
-<h3 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link"></a></h3>
+<h1 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link"></a></h1>
 <p>The screenshot below shows the configuration fields for the <em>Grading</em> section:</p>
-<p><img alt="" src="/img/guides/assessment_sct_grading.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/assessment_sct_grading.png" /></p>
 <ul>
 <li><strong>Points</strong> is the score given to the student if the code test passes. You can enter any positive numeric value.</li>
 <li><strong>Case insensitive</strong> tells Codio to make a case insensitive output comparison. By default, the comparison will be case sensitive.</li>
@@ -167,8 +124,8 @@
 <li><strong>Answer and rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
 </ul>
 <p><a name="metadata"></a></p>
-<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link"></a></h3>
-<p><img alt="" src="/img/guides/assessment_metadata.png" class="simple"/></p>
+<h1 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link"></a></h1>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
 <p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
 <ul>
 <li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
@@ -176,23 +133,23 @@
 <li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
 </ul>
 <p><a name="files"></a></p>
-<h3 id="files">Files<a class="headerlink" href="#files" title="Permanent link"></a></h3>
+<h1 id="files">Files<a class="headerlink" href="#files" title="Permanent link"></a></h1>
 <p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
-<p><img alt="" src="/img/guides/assessment_files.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
 <p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
 <h2 id="cheating-opportunities">Cheating opportunities<a class="headerlink" href="#cheating-opportunities" title="Permanent link"></a></h2>
 <p>If you show the expected output and allow multiple attempts, students may figure out that all they need to do is run the test, look at the expected output and then write the required output data. To avoid this, we recommend that you create one standard code assessment that shows expected inputs and outputs so the student can test. You award no points for this assessment.</p>
 <p>You then would create a second assessment that does not show expected output and allows only a single attempt. This way, the student will not know what input data is being passed in and does not have another opportunity to modify their code and re-run the assessment.</p>
 <h2 id="specifying-inputs-and-outputs">Specifying inputs and outputs<a class="headerlink" href="#specifying-inputs-and-outputs" title="Permanent link"></a></h2>
 <p>The final step in configuring an assessment is to set up the inputs and outputs in the <em>Grading</em> section. There are some important details to understand.</p>
-<p><img alt="" src="/img/guides/std-assessment-args.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/std-assessment-args.png" /></p>
 <p>The first set of empty input/output fields is provided. You should choose between supplying your inputs as arguments or as <code>stdin</code> data. These are explained in more detail below.</p>
 <p>You should be aware of case sensitivity and whitespace characters as explained above. Generally speaking, using the 'ignore whitespace' setting is a good idea unless you do need to be exact in this respect.</p>
 <p>If you only have one input/output pair then the student could write code that simply outputs the expected output without writing any real logic. To protect against this you can create multiple input/output test cases that are run through sequentially.</p>
 <p>To add a new test case, press the <strong>Add item to check</strong> button which generates a new pair.</p>
-<h3 id="inputs-using-arguments">Inputs using arguments<a class="headerlink" href="#inputs-using-arguments" title="Permanent link"></a></h3>
+<h1 id="inputs-using-arguments">Inputs using arguments<a class="headerlink" href="#inputs-using-arguments" title="Permanent link"></a></h1>
 <p>The easiest way of supplying input data is in the <strong>Input - Arguments</strong> field as shown in the previous image. The argument data can then be read by the student code.</p>
-<h3 id="inputs-using-stdin">Inputs using <code>stdin</code><a class="headerlink" href="#inputs-using-stdin" title="Permanent link"></a></h3>
+<h1 id="inputs-using-stdin">Inputs using <code>stdin</code><a class="headerlink" href="#inputs-using-stdin" title="Permanent link"></a></h1>
 <p>If you want to handle manual data input cases such as "Enter your Name: " then you would use the <strong>Input - Stdin</strong> field. This field allows you to supply the data that would normally be entered manually in the console. The following is important to avoid mistakes.</p>
 <ul>
 <li>The input data should have a new line if this would be expected in the actual program execution.</li>
@@ -200,50 +157,90 @@
 <li>We recommend that you enable the <strong>Ignore white space</strong> and <strong>Substring match</strong> options to be more tolerant.</li>
 </ul>
 <p>The following image shows how to format input and output fields if you are <strong>not</strong> ignoring white space or doing a <strong>Substring match</strong>. Note how the input field only supplied the values to be input, not the prompt itself (which is actually a part of <code>stdout</code>). It is important to accurately account for all spaces and carriage returns.</p>
-<p><img alt="" src="/img/guides/std-assessment-stdin.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/std-assessment-stdin.png" /></p>
 <p>The following image shows the more tolerant approach that has the <strong>Ignore whitespace</strong> option set. In this case, we have put everything on its own line for readability. The whitespace characters will be stripped out of both the expected output and the student output at runtime.</p>
-<p><img alt="" src="/img/guides/std-assessment-stdin-ignore.png" class="simple"/></p>
+<p><img alt="" src="/img/guides/std-assessment-stdin-ignore.png" /></p>
 <p><a name="errorfeedback"></a></p>
-<h3 id="error-feedback">Error Feedback<a class="headerlink" href="#error-feedback" title="Permanent link"></a></h3>
+<h1 id="error-feedback">Error Feedback<a class="headerlink" href="#error-feedback" title="Permanent link"></a></h1>
 <p>To provide extended feedback about issues in the student's code, you can enable this option if you wish to show feedback to the student in the event the test fails.</p>
-<p><img alt="" src="/img/guides/std-assessment-error.png" class="simple"/></p>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2019 Codio Inc.</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+<p><img alt="" src="/img/guides/std-assessment-error.png" /></p></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '../../../..';</script>
-    <script src="../../../../js/theme.js" defer></script>
-      <script src="../../../../search/main.js" defer></script>
 
-</body>
+    </body>
 </html>

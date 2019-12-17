@@ -1,150 +1,107 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Codio team">
-  <link rel="shortcut icon" href="../../../../img/favicon.ico">
-  <title>Blackboard - Codio Documentation</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/classes/lti/lti1_0/blackboard/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Blackboard - Codio Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Blackboard";
-    var mkdocs_page_input_path = "classes/lti/lti1_0/blackboard.md";
-    var mkdocs_page_url = "/classes/lti/lti1_0/blackboard/";
-  </script>
-  
-  <script src="../../../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-<body class="wy-body-for-nav" role="document">
+    <body>
 
-  <div class="wy-grid-for-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
 
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../../../.." class="icon icon-home"> Codio Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../../..">Codio Documentation</a>
+                </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="https://www.codio.com">Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/support">Support queries</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/navigation">Navigating Codio</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/obg-overview">Dashboard overview</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/account">Account settings and info</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/dashboard/student">The student view</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/what-is-a-project">Projects</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/stacks">Stack templates</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="/project/packs">Starter pack templates</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../../../..">Home</a>
+                            </li>
+                        </ul>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../..">Codio Documentation</a>
-      </nav>
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#preparation">Preparation</a></li>
+        <li class="main "><a href="#in-codio">In Codio</a></li>
+        <li class="main "><a href="#in-blackboard">In Blackboard</a></li>
+        <li class="main "><a href="#in-codio-and-blackboard">In Codio and Blackboard</a></li>
+            <li><a href="#codio-class-setup">Codio Class setup</a></li>
+            <li><a href="#mapping-a-unit-to-blackboard-content">Mapping a Unit to Blackboard Content</a></li>
+        <li class="main "><a href="#in-codio_1">In Codio</a></li>
+        <li class="main "><a href="#in-blackboard_1">In Blackboard</a></li>
+            <li><a href="#adding-faculty-and-students">Adding faculty and students</a></li>
+        <li class="main "><a href="#single-sign-in-and-account-creation">Single sign-in and account creation</a></li>
+            <li><a href="#generating-scores">Generating scores</a></li>
+            <li><a href="#releasing-grades">Releasing grades</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../../../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Blackboard</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p>Please be sure to check out the <a href="/classes/lti/lti1_0/ltiapp">Codio LTI App</a> which allows for an easy way to integrate and to map Codio class units to your LMS system. The <a href="http://library.blackboard.com/ref/df5b20ed-ce8d-4428-a595-a0091b23dda3/Content/_admin_app_system/admin_app_basic_lti_tool_providers.htm">following page</a> explains how to set up external apps in Blackboard Learn.</p>
+<p>Please be sure to check out the <a href="/classes/lti/lti1_0/ltiapp">Codio LTI App</a> which allows for an easy way to integrate and to map Codio class units to your LMS system. The <a href="http://library.blackboard.com/ref/df5b20ed-ce8d-4428-a595-a0091b23dda3/Content/_admin_app_system/admin_app_basic_lti_tool_providers.htm">following page</a> explains how to set up external apps in Blackboard Learn.</p>
 <h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
 <p>The following steps need to be taken only one time per class.</p>
-<h3 id="in-codio">In Codio<a class="headerlink" href="#in-codio" title="Permanent link"></a></h3>
+<h1 id="in-codio">In Codio<a class="headerlink" href="#in-codio" title="Permanent link"></a></h1>
 <ul>
 <li>Go to your organization account settings by clicking on your user name in the bottom left of your dashboard and then selecting your organization within <strong>My Organizations</strong>.</li>
 <li>Select the <strong>LTI Integrations</strong> tab.</li>
 <li>Scroll down to the <strong>LTI Integration 1.0</strong> section. You should see the following fields. Remain on this screen for the time being.</li>
 </ul>
-<p><img alt="LTI Fields" src="/img/lti/lti-org-fields.png" class="simple"/></p>
-<h3 id="in-blackboard">In Blackboard<a class="headerlink" href="#in-blackboard" title="Permanent link"></a></h3>
+<p><img alt="LTI Fields" src="/img/lti/lti-org-fields.png" /></p>
+<h1 id="in-blackboard">In Blackboard<a class="headerlink" href="#in-blackboard" title="Permanent link"></a></h1>
 <p>The Blackboard user who carries out these steps must be a Blackboard system administrator.</p>
 <ul>
 <li>Create a new Course in Blackboard. We suggest you create a test course called <strong>Codio Blackboard</strong> before you do it with a production course.</li>
@@ -158,7 +115,7 @@
 <li>set <strong>Send User Data</strong> to <strong>Send user data only over SSL</strong>.</li>
 <li>in <strong>User Fields to Send</strong> you should set all 3 fields (Constituency in Course, Name, Email Address).</li>
 </ul>
-<h3 id="in-codio-and-blackboard">In Codio and Blackboard<a class="headerlink" href="#in-codio-and-blackboard" title="Permanent link"></a></h3>
+<h1 id="in-codio-and-blackboard">In Codio and Blackboard<a class="headerlink" href="#in-codio-and-blackboard" title="Permanent link"></a></h1>
 <p>Now return to the <strong>Default Configuration</strong> section in Blackboard. We will now copy the following global integration fields from Codio to Blackboard.</p>
 <ul>
 <li>LTI Consumer -&gt; Tool Provider Key</li>
@@ -176,7 +133,7 @@
 <p>This URL ensures that Codio knows how to redirect students back to the correct Blackboard course should they attempt to access the class through their dashboard.</p>
 <h2 id="mapping-a-unit-to-blackboard-content">Mapping a Unit to Blackboard Content<a class="headerlink" href="#mapping-a-unit-to-blackboard-content" title="Permanent link"></a></h2>
 <p>The final mapping step needs to be taken for each individual Unit within Codio. It maps a piece of Blackboard content to a Codio Unit.</p>
-<h3 id="in-codio_1">In Codio<a class="headerlink" href="#in-codio_1" title="Permanent link"></a></h3>
+<h1 id="in-codio_1">In Codio<a class="headerlink" href="#in-codio_1" title="Permanent link"></a></h1>
 <ul>
 <li>On the main class screen, make sure the <strong>Units</strong> tab is selected.</li>
 <li>Click the <strong>+</strong> button and select <strong>Add Project</strong>.</li>
@@ -184,8 +141,8 @@
 <li>Once the Unit has been added to the class, you should click the icon with 3 blue dots and select <strong>LTI Integration URL</strong>.</li>
 <li>You should copy the LTI integration url to the clipboard by clicking on the field (it will auto copy).</li>
 </ul>
-<p><img alt="Unit URL" src="/img/lti/LMS-Unit-URL.png" class="simple"/></p>
-<h3 id="in-blackboard_1">In Blackboard<a class="headerlink" href="#in-blackboard_1" title="Permanent link"></a></h3>
+<p><img alt="Unit URL" src="/img/lti/LMS-Unit-URL.png" /></p>
+<h1 id="in-blackboard_1">In Blackboard<a class="headerlink" href="#in-blackboard_1" title="Permanent link"></a></h1>
 <p>We now return to Blackboard complete the mapping.</p>
 <ul>
 <li>Make sure you have selected the Blackboard course.</li>
@@ -204,7 +161,7 @@
 <p>The final step is to add students to your course. This is done from the People tab. We recommend that you add the same test students to Blackboard that you have in Codio. The only field of data that needs to match is the email address. So, look up the Codio test student email addresses and add them to Blackboard in the student role.</p>
 <p>Next, you should login to Blackboard as a test student and start the assignment. Please read on to see what happens next, which is dependent.</p>
 <p><strong>IMPORTANT</strong> : when you access Codio from Blackboard, this user will become the dominant Codio user in the browser. This means that if you have a Codio session open (say you are logged in as faculty) and open some content from Blackboard as a student, the old Codio session will be invalidated. To get around this, you should think about running your teacher account in a separate browser type or in an incognito window. Just be aware of this when testing.</p>
-<h3 id="single-sign-in-and-account-creation">Single sign-in and account creation<a class="headerlink" href="#single-sign-in-and-account-creation" title="Permanent link"></a></h3>
+<h1 id="single-sign-in-and-account-creation">Single sign-in and account creation<a class="headerlink" href="#single-sign-in-and-account-creation" title="Permanent link"></a></h1>
 <p>It is important to understand how Codio maps Blackboard users to Codio users. The following rules should be understood. If students or faculty access Codio via a Blackboard assignment then Codio will use the Blackboard email address to identify the user.</p>
 <ul>
 <li>If the user is not known to Codio then we will sign up the user as a new Codio user in the background and take the user directly into the Codio content. The Blackboard user role will be carried over as well.</li>
@@ -223,7 +180,7 @@
 <li>the <strong>Release Grades</strong> switch is enabled.</li>
 </ul>
 <p>Once <strong>Release Grades</strong> is enabled, all completed student assignments are automatically sent through.</p>
-<p><img alt="Release Grades" src="/img/lti/release-complete.png" class="simple"/></p>
+<p><img alt="Release Grades" src="/img/lti/release-complete.png" /></p>
 <p>There are various ways to mark a student's work as complete</p>
 <ul>
 <li>The student can do this from either the classroom dashboard or from the <strong>Education-&gt;Mark as Complete</strong> menu in the assignment itself.</li>
@@ -234,44 +191,84 @@
 <li>pressing the <strong>Action</strong> button</li>
 <li>pressing the <strong>Mark all as Completed</strong> button</li>
 </ul>
-<p><strong>Important</strong> : If you are running a staging or test Blackboard environment then you must have a valid SSL certificate on your Blackboard server otherwise grades will not be pass back to Blackboard successfully.</p>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2019 Codio Inc.</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+<p><strong>Important</strong> : If you are running a staging or test Blackboard environment then you must have a valid SSL certificate on your Blackboard server otherwise grades will not be pass back to Blackboard successfully.</p></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/codio/codio-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-      
-    </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '../../../..';</script>
-    <script src="../../../../js/theme.js" defer></script>
-      <script src="../../../../search/main.js" defer></script>
 
-</body>
+    </body>
 </html>
