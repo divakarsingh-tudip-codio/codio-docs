@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/courses/assessments/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Assessments - Codio Documentation</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Codio Documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#assessments">Assessments</a></li>
+            <li><a href="#example-project">Example Project</a></li>
+            <li><a href="#submit-buttons-and-marking-as-complete">Submit buttons and marking as complete</a></li>
+            <li><a href="#adding-a-new-assessment">Adding a new assessment</a></li>
+            <li><a href="#editing-an-existing-assessment">Editing an existing assessment</a></li>
+            <li><a href="#deleting-an-assessment">Deleting an assessment</a></li>
+            <li><a href="#autograding-when-a-student-completes-a-unit">Autograding when a student completes a unit</a></li>
+            <li><a href="#secure-script-execution">Secure Script execution</a></li>
+        <li class="main "><a href="#student-submission-options">Student submission options</a></li>
+            <li><a href="#the-submit-button">The submit button</a></li>
+            <li><a href="#mark-as-complete">Mark as Complete</a></li>
+            <li><a href="#penalty-deadlines">Penalty deadlines</a></li>
+        <li class="main "><a href="#standard-code-tests">Standard code tests</a></li>
+            <li><a href="#sample-starter-pack">Sample Starter Pack</a></li>
+            <li><a href="#basic-setup">Basic setup</a></li>
+            <li><a href="#cheating-opportunities">Cheating opportunities</a></li>
+            <li><a href="#specifying-inputs-and-outputs">Specifying inputs and outputs</a></li>
+            <li><a href="#error-feedback">Error Feedback</a></li>
+        <li class="main "><a href="#advanced-code-tests">Advanced code tests</a></li>
+            <li><a href="#sample-starter-pack_1">Sample Starter Pack</a></li>
+            <li><a href="#test-definition">Test definition</a></li>
+            <li><a href="#custom">Custom</a></li>
+            <li><a href="#grading_1">Grading</a></li>
+            <li><a href="#metadata_1">Metadata</a></li>
+            <li><a href="#files_1">Files</a></li>
+            <li><a href="#test-code-location">Test code location</a></li>
+            <li><a href="#test-framework">Test framework</a></li>
+            <li><a href="#dashboard-score">Dashboard score</a></li>
+            <li><a href="#inputs-and-outputs-to-student-code">Inputs and outputs to student code</a></li>
+        <li class="main "><a href="#multiple-choice">Multiple choice</a></li>
+            <li><a href="#assessment-definition">Assessment definition</a></li>
+            <li><a href="#one-attempt-only">One attempt only</a></li>
+        <li class="main "><a href="#fill-in-the-blank">Fill in the blank</a></li>
+            <li><a href="#free-text">Free Text</a></li>
+            <li><a href="#drop-down">Drop Down</a></li>
+            <li><a href="#assessment-definition_1">Assessment definition</a></li>
+        <li class="main "><a href="#free-text_1">Free text</a></li>
+            <li><a href="#assessment-definition_2">Assessment definition</a></li>
+            <li><a href="#preview-type">Preview type</a></li>
+            <li><a href="#completing-a-free-text-assessment">Completing a free text assessment</a></li>
+            <li><a href="#grading-free-text-assessments">Grading free text assessments</a></li>
+            <li><a href="#navigating-students-assessments">Navigating students assessments</a></li>
+            <li><a href="#viewing-graded-free-text-assessments">Viewing graded free text assessments</a></li>
+        <li class="main "><a href="#autograde-free-text">Autograde Free text</a></li>
+            <li><a href="#assessment-definition_3">Assessment definition</a></li>
+            <li><a href="#student-feedback">Student Feedback</a></li>
+            <li><a href="#preview-type_1">Preview type</a></li>
+            <li><a href="#completing-an-autograde-free-text-assessment">Completing an autograde free text assessment</a></li>
+            <li><a href="#examples">Examples</a></li>
+        <li class="main "><a href="#math-assessments">Math assessments</a></li>
+            <li><a href="#manually-graded-assessments-using-free-text">Manually graded assessments using free text</a></li>
+            <li><a href="#multiple-choice_1">Multiple choice</a></li>
+        <li class="main "><a href="#grade-book-assessments">Grade Book assessments</a></li>
+            <li><a href="#test-definition_1">Test definition</a></li>
+        <li class="main "><a href="#parsons-puzzle-assessments">Parsons Puzzle assessments</a></li>
+        <li class="main "><a href="#what-are-parsons-puzzles">What are Parsons Puzzles?</a></li>
+            <li><a href="#assessment-definition_4">Assessment definition</a></li>
+            <li><a href="#grader-description">Grader Description</a></li>
+        <li class="main "><a href="#sense-network">Sense Network</a></li>
+            <li><a href="#assessment-definition_5">Assessment definition</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="assessments">Assessments<a class="headerlink" href="#assessments" title="Permanent link"></a></h2>
+<p>Assessments allow you to ask any number of automatically or manually graded questions within your content.</p>
+<ul>
+<li>They allow a student or a teacher to assess how well they are grasping the subject matter.</li>
+<li>Many assessment types are automatically graded, saving precious time for teachers and giving students instant feedback.</li>
+<li>A wide range of assessment types (automatic code tests, multiple choice tests, fill in the blanks, drop-down selection, free text responses and project grading) allow the broadest possible measurement of a student's progress.</li>
+<li>In classroom scenarios, all assessment responses feed through to a teacher dashboard.</li>
+<li>For multiple choice tests, fill in the blanks and drop-down selection assessment types, each individual assessment can only be answered once, giving a true reflection of understanding rather than being able to carry on answering until the correct answer is achieved.</li>
+<li>When an answer is submitted, the correct answer is shown to the student by default, but this can be disabled if required.</li>
+</ul>
+<p>You can choose to weave assessments into the tutorial materials or to create dedicated assessments content.</p>
+<h3 id="example-project">Example Project<a class="headerlink" href="#example-project" title="Permanent link"></a></h3>
+<p>https://codio.com/codio-units/java-example is a project that you can <a href="/ide/features/fork/">fork</a> into your own Codio account and shows you how to create code tests and setup automatic marking. We would also recommend that you check out our <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">Guides Cheat Sheet</a> and <strong>Use Pack</strong> to create into your Codio account to review.</p>
+<h3 id="submit-buttons-and-marking-as-complete">Submit buttons and marking as complete<a class="headerlink" href="#submit-buttons-and-marking-as-complete" title="Permanent link"></a></h3>
+<p>There are two concepts that are important to understand in order to control the way the student submits questions and the way a student marks a project as complete. <a href="/content/authoring/assessments/submitcomplete">Click here</a> for a detailed discussion on these.</p>
+<h3 id="adding-a-new-assessment">Adding a new assessment<a class="headerlink" href="#adding-a-new-assessment" title="Permanent link"></a></h3>
+<p>To add a new assessment, you should first position the cursor in your content where you want it to appear. Then, from the assessments drop-down, select the type of assessment you wish to insert.</p>
+<p><img alt="authtoken" src="/img/guides/add_assessment.png" /></p>
+<h3 id="editing-an-existing-assessment">Editing an existing assessment<a class="headerlink" href="#editing-an-existing-assessment" title="Permanent link"></a></h3>
+<p>If you want to edit an existing assessment on the page you are viewing, you should press the settings button in the guide toolbar. In the lower section of the drop down list you will find any assessments on that page. Select one to edit.</p>
+<h3 id="deleting-an-assessment">Deleting an assessment<a class="headerlink" href="#deleting-an-assessment" title="Permanent link"></a></h3>
+<p>Select the page where your assessment is located. Then remove the assessment token from the page. As assessment token looks like this.</p>
+<p><img alt="Assessment token" src="/img/assessmenttoken.png" /></p>
+<p>Once deleted, an assessment remains hidden. To fully remove it, press the <strong>Settings</strong> icon in the authoring toolbar then select the <strong>Assessments</strong> tab. All assessments present in the current project are listed. Deleted ones are highlighted in red. Press the red <strong>x</strong> button to delete it.</p>
+<h3 id="autograding-when-a-student-completes-a-unit">Autograding when a student completes a unit<a class="headerlink" href="#autograding-when-a-student-completes-a-unit" title="Permanent link"></a></h3>
+<p>Codio allows you to run a special auto-grading script as soon as a unit is completed by the student. This special type of assessment is managed from the unit settings page in a class. <a href="/classes/unitmanagement/settings-info/autograde/">Click here</a> for details.</p>
+<p><a name="secure"></a></p>
+<h3 id="secure-script-execution">Secure Script execution<a class="headerlink" href="#secure-script-execution" title="Permanent link"></a></h3>
+<p>If you store assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data. Codio ensures that only the original project author is able to access this folder but when it is assigned to Students as a Unit, it is not accessible in any way and the script runs in an ephemeral container isolated from the students unit.
+Any other scripts in the unit that are not in this folder can be accessible to the students</p>
+<h2 id="student-submission-options">Student submission options<a class="headerlink" href="#student-submission-options" title="Permanent link"></a></h2>
+<p>There are two important settings that control</p>
+<ul>
+<li>the way that a student submits individual questions and</li>
+<li>the way a student notifies the class instructors that a unit is completed.</li>
+</ul>
+<h3 id="the-submit-button">The submit button<a class="headerlink" href="#the-submit-button" title="Permanent link"></a></h3>
+<p>Until November 20th 2017, each assessment has a submit button beneath the assessment. Once pressed, the answer is autograded, if an MCQ, Fill In The Blank or Free Text question. If the <strong>One attempt only</strong> setting is selected for the assessment, then the student will be warned that they will not be able to resubmit. If this setting is not selected, then they will be able to resubmit a response.</p>
+<p>It is now possible to suppress the submit button entirely. The advantage of this is that students do not need to worry about the effect of pressing the button. They can simply provide a response and then move on to other assessments or pages in the guide.</p>
+<p>To suppress the use of the <strong>Submit</strong> button, you should go to the global settings tab in the guide and disable <strong>Use submit buttons</strong>.</p>
+<p><img alt="Global Settings" src="/img/guides/globalsettings.png" /></p>
+<p>Once the project is marked as complete (see below) then all assessment responses are fully submitted automatically. You should make sure that all students' work is marked as complete either manually or using the automated mark as complete option on the final deadline.</p>
+<h3 id="mark-as-complete">Mark as Complete<a class="headerlink" href="#mark-as-complete" title="Permanent link"></a></h3>
+<p>To suppress the student <strong>Mark as complete</strong> action, you should go to the guide global settings (see above screenshot) and disable <strong>Use mark as complete</strong>.</p>
+<p>A student can proactively mark as unit as complete. This can trigger a <a href="/classes/unitmanagement/settings-info/autograde">unit level autograde script</a> and it is also flagged up in the teacher dashboard against that student.</p>
+<p>The drawback to using the student driven mark as complete option is that once students mark a unit as complete, they are no longer able to make changes to the unit, including answering assessments. The advantage is that instructors are able to grade those students' work ahead of a deadline.</p>
+<p>If the project has been marked as completed, students can click on the 'completed' button to access the grade feedback but if they wish to view the project, direct them to click on the name of the project on the left hand side. As the unit is completed they will not be able to edit anything but can view the content.</p>
+<p>It is possible to disable the student side mark as complete option entirely so students do not need to think about doing it. It also means that instructors don't get requests from students to re-enable the unit if they submitted by mistake or decided they want to change something.</p>
+<p>If you do not want students to mark as complete, then you will likely want to do one of the following</p>
+<ul>
+<li>Once an arbitrary deadline has been reached, after which you want to start grading student work, you should <a href="/classes/unitmanagement/settings-info/complete-unit/">mark all students' work as complete</a> from the teacher dashboard.</li>
+<li>Set an <a href="/classes/unitmanagement/settings-info/unit-duration/">end of unit date</a> and specify that once the date is reached, the students' work should be marked as complete automatically.</li>
+</ul>
+<h3 id="penalty-deadlines">Penalty deadlines<a class="headerlink" href="#penalty-deadlines" title="Permanent link"></a></h3>
+<p>Another powerful feature that you may want to use is <strong>Penalty deadlines</strong>. This allows you to specify deadlines, before the final grading deadline, where a percentage deduction of the final grade is made. <a href="/classes/unitmanagement/settings-info/penalties/">Click here</a> for more information on managing penalty deadlines.</p>
+<h2 id="standard-code-tests">Standard code tests<a class="headerlink" href="#standard-code-tests" title="Permanent link"></a></h2>
+<p>If you want to write code tests that give you in depth control by allowing you to write your own code to execute tests, then please <a href="/content/authoring/assessments/assessments-code-tests/">refer to the advanced code tests</a>. The majority of code tests, however, can be produced without writing any code at all using standard code tests.</p>
+<p>Standard code tests are dialog driven. You specify input data and the expected output for that input data. Codio will then execute the student code, supply the specified input data, and compare the expected output to the student code's actual output.</p>
+<h3 id="sample-starter-pack">Sample Starter Pack<a class="headerlink" href="#sample-starter-pack" title="Permanent link"></a></h3>
+<p>There is a Starter Pack project that you can add to your account. <a href="https://codio.com/home/starter-packs/cc68d38b-b0ea-4825-9814-46a3594c2b11/">Click here to install</a> and <strong>Use Pack</strong> to create into your Codio account to review. This project contains examples for all assessment types as well as a guides authoring cheat sheet.</p>
+<h3 id="basic-setup">Basic setup<a class="headerlink" href="#basic-setup" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h4>
+<p>The screenshot below shows the basic configuration fields for the <em>General</em> section:</p>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the test. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user, written in Markdown.</li>
+</ul>
+<h4 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link"></a></h4>
+<p>The screenshot below shows the configuration fields for the <em>Execution</em> section:</p>
+<p><img alt="" src="/img/guides/assessment_sct_execution.png" /></p>
+<ul>
+<li><strong>Command</strong> is the command that executes the student code itself. If you store the assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data.</li>
+<li><strong>Pre-exec command</strong> is the command to execute before you run each test. This will normally be a compile command.</li>
+</ul>
+<h4 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link"></a></h4>
+<p>The screenshot below shows the configuration fields for the <em>Grading</em> section:</p>
+<p><img alt="" src="/img/guides/assessment_sct_grading.png" /></p>
+<ul>
+<li><strong>Points</strong> is the score given to the student if the code test passes. You can enter any positive numeric value.</li>
+<li><strong>Case insensitive</strong> tells Codio to make a case insensitive output comparison. By default, the comparison will be case sensitive.</li>
+<li><strong>Ignore white space</strong> tells Codio to strip out any white space characters (carriage return, line feed, tab etc.) from both the expected output and the student output. It can be very helpful to enable this as it means you do not have to be over precise when specifying the fields or instructions. More information is provided below.</li>
+<li><strong>Substring match</strong> tells Codio to perform a substring match when comparing the expected output to the student output.</li>
+<li><strong>One attempt only</strong> allows the assessment to run only once. The student will be warned that they will not be able to resubmit. You would usually want to provide a <a href="/ide/boxes/runmenu/">run button</a> or other means for the user to test the code before running the actual assessment.</li>
+<li><strong>Show expected answer</strong> will show the students the expected output when they have submitted an answer for the question. To suppress this, flip the switch.</li>
+<li><strong>Answer and rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<p><a name="metadata"></a></p>
+<h4 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<p><a name="files"></a></p>
+<h4 id="files">Files<a class="headerlink" href="#files" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="cheating-opportunities">Cheating opportunities<a class="headerlink" href="#cheating-opportunities" title="Permanent link"></a></h3>
+<p>If you show the expected output and allow multiple attempts, students may figure out that all they need to do is run the test, look at the expected output and then write the required output data. To avoid this, we recommend that you create one standard code assessment that shows expected inputs and outputs so the student can test. You award no points for this assessment.</p>
+<p>You then would create a second assessment that does not show expected output and allows only a single attempt. This way, the student will not know what input data is being passed in and does not have another opportunity to modify their code and re-run the assessment.</p>
+<h3 id="specifying-inputs-and-outputs">Specifying inputs and outputs<a class="headerlink" href="#specifying-inputs-and-outputs" title="Permanent link"></a></h3>
+<p>The final step in configuring an assessment is to set up the inputs and outputs in the <em>Grading</em> section. There are some important details to understand.</p>
+<p><img alt="" src="/img/guides/std-assessment-args.png" /></p>
+<p>The first set of empty input/output fields is provided. You should choose between supplying your inputs as arguments or as <code>stdin</code> data. These are explained in more detail below.</p>
+<p>You should be aware of case sensitivity and whitespace characters as explained above. Generally speaking, using the 'ignore whitespace' setting is a good idea unless you do need to be exact in this respect.</p>
+<p>If you only have one input/output pair then the student could write code that simply outputs the expected output without writing any real logic. To protect against this you can create multiple input/output test cases that are run through sequentially.</p>
+<p>To add a new test case, press the <strong>Add item to check</strong> button which generates a new pair.</p>
+<h4 id="inputs-using-arguments">Inputs using arguments<a class="headerlink" href="#inputs-using-arguments" title="Permanent link"></a></h4>
+<p>The easiest way of supplying input data is in the <strong>Input - Arguments</strong> field as shown in the previous image. The argument data can then be read by the student code.</p>
+<h4 id="inputs-using-stdin">Inputs using <code>stdin</code><a class="headerlink" href="#inputs-using-stdin" title="Permanent link"></a></h4>
+<p>If you want to handle manual data input cases such as "Enter your Name: " then you would use the <strong>Input - Stdin</strong> field. This field allows you to supply the data that would normally be entered manually in the console. The following is important to avoid mistakes.</p>
+<ul>
+<li>The input data should have a new line if this would be expected in the actual program execution.</li>
+<li>In the output field, you need to be aware that the prompt text that is displayed to the user appears in <code>stdout</code> and so it should be reflected in your output field but without the data entered by the user. Normally, you would <strong>not</strong> put a new line in the output field between each input prompt as the new line character is generated by the user when pressing the enter key is not a part of the output.</li>
+<li>We recommend that you enable the <strong>Ignore white space</strong> and <strong>Substring match</strong> options to be more tolerant.</li>
+</ul>
+<p>The following image shows how to format input and output fields if you are <strong>not</strong> ignoring white space or doing a <strong>Substring match</strong>. Note how the input field only supplied the values to be input, not the prompt itself (which is actually a part of <code>stdout</code>). It is important to accurately account for all spaces and carriage returns.</p>
+<p><img alt="" src="/img/guides/std-assessment-stdin.png" /></p>
+<p>The following image shows the more tolerant approach that has the <strong>Ignore whitespace</strong> option set. In this case, we have put everything on its own line for readability. The whitespace characters will be stripped out of both the expected output and the student output at runtime.</p>
+<p><img alt="" src="/img/guides/std-assessment-stdin-ignore.png" /></p>
+<p><a name="errorfeedback"></a></p>
+<h3 id="error-feedback">Error Feedback<a class="headerlink" href="#error-feedback" title="Permanent link"></a></h3>
+<p>To provide extended feedback about issues in the student's code, you can enable this option if you wish to show feedback to the student in the event the test fails.</p>
+<p><img alt="" src="/img/guides/std-assessment-error.png" /></p>
+<h2 id="advanced-code-tests">Advanced code tests<a class="headerlink" href="#advanced-code-tests" title="Permanent link"></a></h2>
+<p>Before you read about the advanced code test, please be sure to check the <a href="/content/authoring/assessments/assessments-standard-code-tests/">standard code tests</a> as these require no coding at all, are very quick to set up and cover the majority of test cases you are likely to want to create.</p>
+<p>The advanced code test assessment type allows you to write code that checks code a student has written. You can write the code in any language you like provided it can be run from the command line.</p>
+<p>You should be aware that if students are able to access the command line, they are able to explore the box and find the folder where your test scripts are located. For scripting languages, this would allow them to modify the script. For compiled executables they could theoretically create their own executable and then replace yours with their own one. They would need to know how the callbacks work to succeed at this.</p>
+<p>If you want to make your scripts as secure as possible, please <a href="/classes/unitmanagement/settings-info/autograde#securescripts">click here</a> for information on secure scripts run when a unit is marked as complete.</p>
+<h3 id="sample-starter-pack_1">Sample Starter Pack<a class="headerlink" href="#sample-starter-pack_1" title="Permanent link"></a></h3>
+<p>There is a Starter Pack project that you can add to your account. <a href="https://codio.com/home/starter-packs/cc68d38b-b0ea-4825-9814-46a3594c2b11/">Click here to install</a> and <strong>Use Pack</strong> to create into your Codio account to review. This project contains examples for all types of auto-graded assessments as well as a Codio authoring cheat sheet.</p>
+<h3 id="test-definition">Test definition<a class="headerlink" href="#test-definition" title="Permanent link"></a></h3>
+<p>Setting up a Code Test within the Guide editor is very simple. The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_1">General<a class="headerlink" href="#general_1" title="Permanent link"></a></h4>
+<p>The screenshot below shows the basic configuration fields for the <em>General</em> section:</p>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the test. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user, written in Markdown.</li>
+</ul>
+<h4 id="execution_1">Execution<a class="headerlink" href="#execution_1" title="Permanent link"></a></h4>
+<p>You can evaluate student code using a variety of languages and frameworks that are already supported. You can also use a custom grading script.</p>
+<p>Supported languages and frameworks:</p>
+<ul>
+<li><strong>Ruby</strong>: <code>rubocop</code> or <code>rspec</code></li>
+<li><strong>Java</strong>: <a href="/ide/features/junit/">JUnit</a> or <code>checkstyle</code></li>
+<li><strong>Python</strong>: <code>pycodestyle</code> or <code>UnitTest</code></li>
+<li><strong>JavaScript</strong>: <code>jshint</code> or <code>jslint</code></li>
+</ul>
+<h4 id="using-pycodestyle">Using <code>pycodestyle</code><a class="headerlink" href="#using-pycodestyle" title="Permanent link"></a></h4>
+<p>Before using the <code>pycodestyle</code> option, <code>pycodestyle</code> has to be installed. You may use the following commands to do so:</p>
+<pre><code class="bash">sudo apt update
+sudo apt install python3-pip
+sudo python3 -m pip install pycodestyle
+</code></pre>
+
+<p><img alt="" src="/img/guides/assessment_act_exec_pycodestyle.png" /></p>
+<p>To add individual Python source files whose style should be checked, either enter their relative path to <code>~/namespace</code> or drag them from the Filetree into the <strong>Add Case</strong> input box, and click <strong>Add Case</strong>. You may add as many cases as needed. When the assessment executes, <code>pycodestyle</code> will inspect each added file and output all styling issues that it found.</p>
+<h4 id="using-jshint-or-jslint">Using <code>jshint</code> or <code>jslint</code><a class="headerlink" href="#using-jshint-or-jslint" title="Permanent link"></a></h4>
+<p>Before using them, <code>jshint</code> or <code>jslint</code> must be installed as a Node.js global package. You may use the following command to do so:</p>
+<p><code>sudo npm install -g jshint jslint</code></p>
+<p>To add individual JavaScript source files whose style should be checked, either enter their relative path to <code>~/namespace</code> or drag them from the Filetree into the <strong>Add Case</strong> input box, and click <strong>Add Case</strong>. You may add as many cases as needed. You may also select either JSLint or JSHint in the <strong>Language Assessment Subtype</strong> dropdown. When the assessment executes, your choice of either <code>jshint</code> or <code>jslint</code> will inspect each added file and output all styling issues that it found.</p>
+<h3 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_act_exec_custom.png" /></p>
+<ul>
+<li><strong>Command</strong> is the command to run to invoke your test. See the section <a href="#test-code-location">Test code location</a> below for more details. If you store the assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data.</li>
+<li>Enabling the <strong>Allow Partial Points</strong> switch will allow partial points to be given. See the section <a href="#partial-score">Partial Score</a> lower down on this page.</li>
+<li><strong>Timeout</strong> is the period of time (seconds) the test will run before terminating.</li>
+</ul>
+<h3 id="grading_1">Grading<a class="headerlink" href="#grading_1" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_grading.png" /></p>
+<ul>
+<li><strong>Points</strong> is the score given to the student if the code test passes. You can choose any positive numeric value.</li>
+<li><strong>One attempt only</strong> allows the assessment to be run only once. This generally not advised unless you make it clear to the student that a failed test cannot be repeated. You should also provide a Run button in the Guide (or provide other instructions) so the user can test the code before running the actual assessment.</li>
+<li><strong>Answer and rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h3 id="metadata_1">Metadata<a class="headerlink" href="#metadata_1" title="Permanent link"></a></h3>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h3 id="files_1">Files<a class="headerlink" href="#files_1" title="Permanent link"></a></h3>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="test-code-location">Test code location<a class="headerlink" href="#test-code-location" title="Permanent link"></a></h3>
+<p>You can place your test code anywhere you like, but if you store the assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data. Another suitable location could be to to create a <code>.guides/tests</code> folder.</p>
+<p>When specifying a command to run, you could specify it in either of these ways (the ~/workspace folder is assumed if you do not specify a full path).</p>
+<pre><code>node .guides/tests/mytest.js
+node /home/codio/workspace/.guides/tests/mytest.js
+</code></pre>
+
+<p>This example uses Node.js, but you can use any language you'd like.</p>
+<h3 id="test-framework">Test framework<a class="headerlink" href="#test-framework" title="Permanent link"></a></h3>
+<p>Codio provides a simple framework for communicating with the Codio authored content. When defining a test, you specify the points that should be awarded for a successful answer.</p>
+<h4 id="success-or-failure">Success or Failure<a class="headerlink" href="#success-or-failure" title="Permanent link"></a></h4>
+<p>To let Codio know whether the test passed, your code should simply exit with 0. A Bash script would return with <code>exit(0)</code>, Node.js with <code>process.exit(0)</code> etc.</p>
+<p>To indicate failure, exit with a non-zero value.</p>
+<h4 id="partial-score">Partial Score<a class="headerlink" href="#partial-score" title="Permanent link"></a></h4>
+<p>Codio also provides a way for you to award a partial score rather than the all or nothing approach described above.</p>
+<p>If your test was written using a bash script, it would be done like this.</p>
+<pre><code class="bash">POINTS=5
+curl -s &quot;$CODIO_PARTIAL_POINTS_URL&amp;points=${POINTS}&quot; &gt; /dev/null
+</code></pre>
+
+<p>A Python script might look like this.</p>
+<pre><code class="python">#!/usr/bin/env python
+import os, requests, sys
+
+points = 5
+url = &quot;{0}&amp;points={1}&quot;.format(os.environ['CODIO_PARTIAL_POINTS_URL'], points)
+r = requests.get(url)
+</code></pre>
+
+<p>The score you award should be any value between 0 and the maximum score you specified when defining the assessment in the Codio authoring editor.</p>
+<h4 id="displaying-information-to-the-student">Displaying information to the student<a class="headerlink" href="#displaying-information-to-the-student" title="Permanent link"></a></h4>
+<p>You can return text to the user that is shown once the test has concluded. Your test output is captured from <code>stderr</code> and <code>stdout</code>, so for Node.js, for example, <code>console.log('Well done!!')</code> would work.</p>
+<p>For success, you might simply return <code>'Well done!'</code>. For failure, aim to provide as much explanation to the student as possible regarding why they failed.</p>
+<p>You can return plain text, but if you want to format your response text, you can return HTML. To do so, make sure you enclose your HTML within <code>&lt;html&gt; &lt;/html&gt;</code> tags.</p>
+<h3 id="dashboard-score">Dashboard score<a class="headerlink" href="#dashboard-score" title="Permanent link"></a></h3>
+<p>If <strong>Allow Partial Points</strong> is disabled and your test returns 0, then Codio will give a dashboard score specified in the Points field; if it returns a non-zero value, then a score of 0 is assumed.</p>
+<p>If <strong>Allow Partial Points</strong> is enabled, then Codio will give a dashboard score based on the request it received at <code>CODIO_PARTIAL_POINTS_URL</code>. If no request was received, then a score of 0 is assumed.</p>
+<h3 id="inputs-and-outputs-to-student-code">Inputs and outputs to student code<a class="headerlink" href="#inputs-and-outputs-to-student-code" title="Permanent link"></a></h3>
+<p>If your assessment requires that inputs are passed into the student code or data should be returned from the student code, then it is your responsibility to implement this. You should make it clear how the student should process your test's inputs and how to return data back to your test.</p>
+<h2 id="multiple-choice">Multiple choice<a class="headerlink" href="#multiple-choice" title="Permanent link"></a></h2>
+<p>Codio support both single and multiple response versions of MCQs.</p>
+<h3 id="assessment-definition">Assessment definition<a class="headerlink" href="#assessment-definition" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_2">General<a class="headerlink" href="#general_2" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_mc_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Question</strong> is the question instruction that is shown to the student.</li>
+</ul>
+<h4 id="execution_2">Execution<a class="headerlink" href="#execution_2" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_mc_exec.png" /></p>
+<ul>
+<li>The <strong>Multiple Response</strong> slider indicates whether the user can select more than one answer, in which case check boxes are used instead of radio buttons to specify correct answers.</li>
+<li><strong>Answers</strong> is where you add as many individual answers as you require. To indicate the correct answer(s), toggle the sliders for multiple response or the radio button for single response.</li>
+</ul>
+<h4 id="grading_2">Grading<a class="headerlink" href="#grading_2" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_mc_grading.png" /></p>
+<ul>
+<li><strong>Show Expected Answer</strong> will show the students the correct answer when they have submitted an answer for this question. To suppress this, flip the switch.</li>
+<li><strong>Correct Points</strong> is the score given to the student if the student makes the correct selection. You can choose any positive numeric value.</li>
+<li><strong>Incorrect Points</strong> is the score to be deducted if the student makes an incorrect selection. Typically, this value will be 0 but you can assign any positive numeric value if you wish to penalize guessing.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h4 id="metadata_2">Metadata<a class="headerlink" href="#metadata_2" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_2">Files<a class="headerlink" href="#files_2" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="one-attempt-only">One attempt only<a class="headerlink" href="#one-attempt-only" title="Permanent link"></a></h3>
+<p>Codio allows users to make their selections and move on to other content pages or assessments without actually submitting their answer. However, once the answer has been submitted, it cannot be resubmitted. This gives teachers a far clearer understanding of which students are understanding the materials properly. There is little point to tests if the student simply changes the answers until the correct one appears.</p>
+<h2 id="fill-in-the-blank">Fill in the blank<a class="headerlink" href="#fill-in-the-blank" title="Permanent link"></a></h2>
+<p>A 'fill in the blank' question comes in two flavours.</p>
+<h3 id="free-text">Free Text<a class="headerlink" href="#free-text" title="Permanent link"></a></h3>
+<p>The example below shows a typical question where the student has to complete the missing words. This is then auto-marked by the Guide as explained below.</p>
+<p><img alt="authtoken" src="/img/guides/assessments-fitb1.png" /></p>
+<h3 id="drop-down">Drop Down<a class="headerlink" href="#drop-down" title="Permanent link"></a></h3>
+<p>The example below shows a variation, where the student is given a list of possible answers and has to select the right answer from a drop down list of possible answers. This is then auto-graded as explained below.</p>
+<p><img alt="authtoken" src="/img/guides/assessments-fitb2.png" /></p>
+<h3 id="assessment-definition_1">Assessment definition<a class="headerlink" href="#assessment-definition_1" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_3">General<a class="headerlink" href="#general_3" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instruction</strong> contains any general instructions you want to provide to the student.</li>
+</ul>
+<h4 id="execution_3">Execution<a class="headerlink" href="#execution_3" title="Permanent link"></a></h4>
+<p><img alt="authtoken" src="/img/guides/assessment_fitb_exec.png" /></p>
+<p><strong>Text</strong> is the Markdown that you write including the correct answer specification. Below is an example of how the question should be specified.</p>
+<p><code>A prime number (or a prime) is a &lt;&lt;&lt;natural&gt;&gt;&gt; number greater than &lt;&lt;&lt;1&gt;&gt;&gt; that has no positive divisors other than &lt;&lt;&lt;1&gt;&gt;&gt; and &lt;&lt;&lt;itself&gt;&gt;&gt;.</code></p>
+<p>For a free text question (<strong>Show Possible Values</strong> slider to the left), Codio shows blank text fields. The student should then enter the correct text. Codio ensures that the response is case insensitive. For obvious reasons, the longer and more complex the correct answer, the easier it is for the student to make minor spelling errors that will then be scored as an incorrect answer.</p>
+<p>For a drop-down question (<strong>Show Possible Values</strong> slider to the right) Codio will gather all correct values (anything within the <code>&lt;&lt;&lt; &gt;&gt;&gt;</code> chevrons) into a drop-down list and offer the same list in each of the answer positions.</p>
+<h4 id="grading_3">Grading<a class="headerlink" href="#grading_3" title="Permanent link"></a></h4>
+<p><img alt="authtoken" src="/img/guides/assessment_fitb_grading.png" /></p>
+<ul>
+<li><strong>Points</strong> is the score given to the student if the student answers all parts of the assessment correctly. You can choose any positive numeric value. A score of 0 is given if any of the responses is incorrect.</li>
+<li>The <strong>Show Possible Values</strong> switch determines whether the question is text based (the slider is gray and in the left position) or drop-down based (the slider is blue and in the right position).</li>
+<li><strong>Show Expected Answer</strong> will show the students the correct answer when they have submitted an answer for this question. To suppress this, flip the switch.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h4 id="metadata_3">Metadata<a class="headerlink" href="#metadata_3" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_3">Files<a class="headerlink" href="#files_3" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h2 id="free-text_1">Free text<a class="headerlink" href="#free-text_1" title="Permanent link"></a></h2>
+<p>Free text assessments allow students to answer questions in their own words. Teachers are then able to review and manually grade their answers.</p>
+<h3 id="assessment-definition_2">Assessment definition<a class="headerlink" href="#assessment-definition_2" title="Permanent link"></a></h3>
+<p>Setting up a free text assessment is very simple. The configuration fields for a free text assessment are split into four sections: General, Grading, Metadata, and Files.</p>
+<h4 id="general_4">General<a class="headerlink" href="#general_4" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_free_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user, written in Markdown.</li>
+</ul>
+<h4 id="grading_4">Grading<a class="headerlink" href="#grading_4" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_free_grading.png" /></p>
+<ul>
+<li>The <strong>Points</strong> field is the number of points allocated for the question. You can choose any positive numeric value. Enabling the <strong>Allow Partial Points</strong> switch will allow the teacher when grading the answer to select the points to give for the students answer.</li>
+<li><strong>Preview Type</strong> specified the expected input by the student. Codio offers plaintext and markdown options. LaTeX is also supported. Please refer to the <strong>Preview type</strong> section below for details.</li>
+<li><strong>One Attempt Only</strong> can be used to restrict the student to answering the question once. If not enabled, students will be able to edit their answer until the Unit is marked as Completed.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h5 id="metadata_4">Metadata<a class="headerlink" href="#metadata_4" title="Permanent link"></a></h5>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_4">Files<a class="headerlink" href="#files_4" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="preview-type">Preview type<a class="headerlink" href="#preview-type" title="Permanent link"></a></h3>
+<p>The following preview options are available. They dictate the expected input format and whether a fully rendered preview pane appears below the student input. Markdown is useful if the student wants to enter text formatting commands.
+Here is a reference for Markdown:</p>
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/basics">Daring Fireball</a> - the author of Markdown</li>
+</ul>
+<p>LaTeX is useful where you want students to enter mathematical formulae in their answers. <a href="/content/authoring/page-edit/latex/">Click here</a> for information on LaTeX.</p>
+<ul>
+<li><strong>Plaintext</strong> - the student is expected to enter ordinary text, without support for markdown formatting. There is no preview window.</li>
+<li><strong>Plaintext + LaTeX</strong> - this expects plaintext to be entered, therefore no support for markdown with additional support for LaTeX commands. A preview pane is shown beneath so the student is able to see the rendered LaTeX output.</li>
+<li><strong>Markdown + LaTeX</strong> - this supports markdown input with LaTeX support. A preview pane is shown beneath so the student is able to see the rendered markdown and LaTeX output.</li>
+</ul>
+<h3 id="completing-a-free-text-assessment">Completing a free text assessment<a class="headerlink" href="#completing-a-free-text-assessment" title="Permanent link"></a></h3>
+<p>If <strong>One Attempt Only</strong> is enabled, students will only be able to submit their answer once. If this is not enabled them students will be able to revisit the question and edit their answer until they mark the unit as completed</p>
+<p><a name="grading-free"></a></p>
+<h3 id="grading-free-text-assessments">Grading free text assessments<a class="headerlink" href="#grading-free-text-assessments" title="Permanent link"></a></h3>
+<p>To review and grade answers given by student, select the student and a list of all the assessments in the unit are shown.</p>
+<p><img alt="Free Text Grading" src="/img/guides/freetext-grading.png" /></p>
+<p>Free text assessments are identifiable from the icon</p>
+<p><img alt="authtoken" src="/img/guides/freetexticon.png" /></p>
+<p>Click one line and you will then see the question asked of the student and the answer they submitted.</p>
+<p>If the question was not set to <strong>Allow Partial Points</strong>, the teacher can select <strong>Correct</strong> or <strong>Incorrect</strong></p>
+<p><img alt="Partial points not allowed" src="/img/guides/notpartial.png" /></p>
+<p>If the question was set to use <strong>Allow Partial Points</strong> the teacher can select the points to give to the answer up to the maximum <strong>Points</strong>.</p>
+<p><img alt="Partial points allowed" src="/img/guides/partial.png" /></p>
+<p>Comments can also be added and will be shown to the student when grades are released. The comment field supports <a href="/content/authoring/page-edit/latex/">LATex</a> and <a href="/content/authoring/page-edit/edit/">markdown</a> with a preview area below the text area to allow the grader review the input. The comment field will autoexpand as required</p>
+<p><a name="freetextassessments"></a></p>
+<h3 id="navigating-students-assessments">Navigating students assessments<a class="headerlink" href="#navigating-students-assessments" title="Permanent link"></a></h3>
+<p>Using the <strong>&lt;</strong> and <strong>&gt;</strong> buttons at the top of the assessments grading dialog you can quickly navigate either to the same assessment for other students or to other assessments for the select student</p>
+<p><img alt="Navigate assessments" src="/img/guides/freetext_navigate.png" /></p>
+<h3 id="viewing-graded-free-text-assessments">Viewing graded free text assessments<a class="headerlink" href="#viewing-graded-free-text-assessments" title="Permanent link"></a></h3>
+<p>For any free text assessments that have been graded by a teacher in a unit, you will see the points given and the field in the <strong>Correct</strong> column checked.</p>
+<p><img alt="authtoken" src="/img/guides/freetextanswer.png" /></p>
+<h2 id="autograde-free-text">Autograde Free text<a class="headerlink" href="#autograde-free-text" title="Permanent link"></a></h2>
+<p>The Autograde Free text assessment is similar to the <a href="/content/authoring/assessments/assessments-free">free text</a> assessment but includes a field for a command line to execute a script allowing autograding.</p>
+<p>The answer will be passed to the script as <code>stdin</code>.</p>
+<h3 id="assessment-definition_3">Assessment definition<a class="headerlink" href="#assessment-definition_3" title="Permanent link"></a></h3>
+<p>Setting up an assessment is very simple. The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_5">General<a class="headerlink" href="#general_5" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user, written in Markdown.</li>
+</ul>
+<h4 id="execution_4">Execution<a class="headerlink" href="#execution_4" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_autofree_exec.png" /></p>
+<ul>
+<li><strong>Command</strong> is the command to execute a script to autograde. If you store the assessment scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data.</li>
+<li><strong>Timeout</strong> is the time to abort the script from executing in the event of a problem.</li>
+</ul>
+<h4 id="grading_5">Grading<a class="headerlink" href="#grading_5" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_free_grading.png" /></p>
+<ul>
+<li>The <strong>Points</strong> field is the number of points allocated for the question. You can choose any positive numeric value. Enabling the <strong>Allow Partial Points</strong> switch will allow the teacher when grading the answer to select the points to give for the students answer.</li>
+<li><strong>Preview Type</strong> specified the expected input by the student. Codio offers plaintext and markdown options. Latex is also supported. Please refer to the <strong>Preview type</strong> section below for details.</li>
+<li><strong>One Attempt Only</strong> can be used to restrict the student to answering the question once. If not enabled, students will be able to edit their answer until the Unit is marked as Completed.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h4 id="metadata_5">Metadata<a class="headerlink" href="#metadata_5" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_5">Files<a class="headerlink" href="#files_5" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="student-feedback">Student Feedback<a class="headerlink" href="#student-feedback" title="Permanent link"></a></h3>
+<p>If your autograde script is to return feedback to your students as they submit the assessment, enable <a href="/classes/monitor/grading/#releasegradesstatus">Release Grades Automatically</a>.</p>
+<h3 id="preview-type_1">Preview type<a class="headerlink" href="#preview-type_1" title="Permanent link"></a></h3>
+<p>The following preview options are available. They dictate the expected input format and whether a fully rendered preview pane appears below the student input. Markdown is useful if the student wants to enter text formatting commands.
+Here is a reference for Markdown:</p>
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/basics">Daring Fireball</a> - the author of Markdown</li>
+</ul>
+<p>LaTeX is useful where you want students to enter mathematical formulae in their answers. <a href="/content/authoring/page-edit/latex/">Click here</a> for information on LaTeX.</p>
+<ul>
+<li><strong>Plaintext</strong> - the student is expected to enter ordinary text, without support for markdown formatting. There is no preview window.</li>
+<li><strong>Plaintext + LaTeX</strong> - this expects plaintext to be entered, therefore no support for markdown with additional support for LaTeX commands. A preview pane is shown beneath so the student is able to see the rendered LaTeX output.</li>
+<li><strong>Markdown + LaTeX</strong> - this supports markdown input with LaTeX support. A preview pane is shown beneath so the student is able to see the rendered markdown and LaTeX output.</li>
+</ul>
+<h3 id="completing-an-autograde-free-text-assessment">Completing an autograde free text assessment<a class="headerlink" href="#completing-an-autograde-free-text-assessment" title="Permanent link"></a></h3>
+<p>If <strong>One Attempt Only</strong> is enabled, students will only be able to submit their answer once. If this is not enabled them students will be able to revisit the question and edit their answer until they mark the unit as completed</p>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link"></a></h3>
+<h4 id="a-simple-bash-script-example">A simple Bash script example<a class="headerlink" href="#a-simple-bash-script-example" title="Permanent link"></a></h4>
+<pre><code class="bash">#!/usr/bin/env bash
+POINTS=0
+if [ &quot;${CODIO_FREE_TEXT_ANSWER}&quot; == &quot;answer1&quot; ]
+then
+  POINTS=1
+fi
+if [ &quot;${CODIO_FREE_TEXT_ANSWER}&quot; == &quot;answer5&quot; ]
+then
+  POINTS=5
+fi
+if [ &quot;${CODIO_FREE_TEXT_ANSWER}&quot; == &quot;answer10&quot; ]
+then
+  POINTS=10
+fi
+curl &quot;$CODIO_PARTIAL_POINTS_URL&amp;points=${POINTS}&quot; &gt; /dev/null
+</code></pre>
+
+<h4 id="a-complex-python-example">A complex Python example<a class="headerlink" href="#a-complex-python-example" title="Permanent link"></a></h4>
+<pre><code class="python">#!/usr/bin/env python
+import sqlite3
+import tempfile
+import os, requests, sys
+new_file, filename = tempfile.mkstemp()
+conn = sqlite3.connect(filename)
+text = os.environ['CODIO_FREE_TEXT_ANSWER']
+try:
+  conn.execute(text)
+except Exception as e:
+  os.remove(filename)
+  raise e
+cur = conn.cursor()
+points = 2
+try:
+  # check empty values
+  cur.execute(&quot;insert into users values (?, ?, ?, ?)&quot;, (1, None, None, None))
+  points = points - 2
+except sqlite3.IntegrityError as e:
+  points = points + 2
+try:
+  # check optional years
+  cur.execute(&quot;insert into users values (?, ?, ?, ?)&quot;, (2, &quot;2&quot;, &quot;2&quot;, None))
+  points = points + 2
+except sqlite3.IntegrityError as e:
+  points = points - 2
+
+
+try:
+  # check constraint check for years
+  cur.execute(&quot;insert into users values (?, ?, ?, ?)&quot;, (3, &quot;2&quot;, &quot;2&quot;, -10))
+  points = points - 2
+except sqlite3.IntegrityError as e:
+  points = points + 2
+
+try:
+  # check correct values
+  cur.execute(&quot;insert into users values (?, ?, ?, ?)&quot;, (4, &quot;2&quot;, &quot;2&quot;, 10))
+  points = points + 2
+except sqlite3.IntegrityError as e:
+  points = points - 2
+os.remove(filename)
+url = &quot;{0}&amp;points={1}&quot;.format(os.environ['CODIO_PARTIAL_POINTS_URL'], points)
+r = requests.get(url)
+</code></pre>
+
+<h4 id="example-instructions">Example Instructions<a class="headerlink" href="#example-instructions" title="Permanent link"></a></h4>
+<p>It is recommended that clear instructions are given to students on any specific items that are expected to be included in their answer. The following is an example:</p>
+<pre><code class="markdown">Create a table `users` with the fields:
+- id - primary key
+- name - text
+- email - text
+- years - integer
+- name and email should be required
+- years - optional, but if present - should be more or equal to 0
+</code></pre>
+
+<h4 id="expected-solution">Expected Solution<a class="headerlink" href="#expected-solution" title="Permanent link"></a></h4>
+<pre><code class="sql">CREATE TABLE users(
+  id int PRIMARY KEY,
+  name text NOT NULL,
+  email text NOT NULL,
+  years int CHECK(years &gt; 0)
+);
+</code></pre>
+
+<h2 id="math-assessments">Math assessments<a class="headerlink" href="#math-assessments" title="Permanent link"></a></h2>
+<p>Codio allows you to set and grade math questions for any type and level of mathematics. As of September 2017, we only offer manual grading of mathematical expressions or proofs.</p>
+<p>If you require math assessments, please <a href="/dashboard/support/">contact us</a> and we can arrange to enable this for your organisation</p>
+<h3 id="manually-graded-assessments-using-free-text">Manually graded assessments using free text<a class="headerlink" href="#manually-graded-assessments-using-free-text" title="Permanent link"></a></h3>
+<p>To create a manually graded math question, you can use the <strong>Free text</strong> assessment type. This allows the students to enter expressions or even full proofs and worked answers using Latex. For more information about Latex, please <a href="/content/authoring/page-edit/latex/">click here</a>.</p>
+<p>You can enter Latex in the <strong>Question</strong> and <strong>Answer rationale</strong> fields.</p>
+<p>You should also set the <strong>Preview type</strong> drop down to either <strong>Plaintext + Latex</strong> or <strong>Markdown + Latex</strong>. Both of these ensure that the student sees a preview pane beneath their answer entry fully rendered in markdown and/or Latex. Please <a href="/content/authoring/assessments/assessments-free/">click here</a> to review the free text assessment.</p>
+<h3 id="multiple-choice_1">Multiple choice<a class="headerlink" href="#multiple-choice_1" title="Permanent link"></a></h3>
+<p>You can also use the multiple choice assessment type to create answers containing properly rendered Latex expressions.</p>
+<h2 id="grade-book-assessments">Grade Book assessments<a class="headerlink" href="#grade-book-assessments" title="Permanent link"></a></h2>
+<p>A Grade book assessment is for manually graded assessments. A student does not need to answer it, and it is available for grading immediately</p>
+<p>Comments and points given will be visible to the student when the assessment is graded and the grades are released.</p>
+<h3 id="test-definition_1">Test definition<a class="headerlink" href="#test-definition_1" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_6">General<a class="headerlink" href="#general_6" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_gradebook_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the test. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely what the assessment is. In many cases, you do not want to see this text appear to the student. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+</ul>
+<h4 id="execution_5">Execution<a class="headerlink" href="#execution_5" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_gradebook_exec.png" /></p>
+<ul>
+<li><strong>Collapsed on start</strong> allows the assessment field to be collapsed when the page opens.</li>
+</ul>
+<h4 id="grading_6">Grading<a class="headerlink" href="#grading_6" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_gradebook_grading.png" /></p>
+<ul>
+<li><strong>Points</strong> is the score given to the student. You can choose any positive numeric value. Enabling the <strong>Allow Partial Points</strong> switch will allow partial points to be given.</li>
+</ul>
+<h4 id="metadata_6">Metadata<a class="headerlink" href="#metadata_6" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_6">Files<a class="headerlink" href="#files_6" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h2 id="parsons-puzzle-assessments">Parsons Puzzle assessments<a class="headerlink" href="#parsons-puzzle-assessments" title="Permanent link"></a></h2>
+<h2 id="what-are-parsons-puzzles">What are Parsons Puzzles?<a class="headerlink" href="#what-are-parsons-puzzles" title="Permanent link"></a></h2>
+<p>Parson’s Problems are available on Codio as Parsons Puzzles. Parson’s Problems are great formative assessments that ask students to arrange blocks of scrambled code, allowing them to focus on the purpose and flow of the code (often including a new pattern or feature) while not worrying about syntax.</p>
+<p>Codio uses a client-side implementation of Parson's Problems named <code>js-parsons</code>, whose official documentation is available <a href="http://js-parsons.github.io/documentation/">here</a>.</p>
+<h3 id="assessment-definition_4">Assessment definition<a class="headerlink" href="#assessment-definition_4" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata and Files.</p>
+<h4 id="general_7">General<a class="headerlink" href="#general_7" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_general.png" /></p>
+<ul>
+<li><strong>Name</strong> is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> is the actual text that should be shown to the user. It can be written in Markdown or HTML.</li>
+</ul>
+<h4 id="execution_6">Execution<a class="headerlink" href="#execution_6" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_parsons_exec.png" /></p>
+<ul>
+<li><strong>Initial Values</strong> is where you create the initial state of the puzzle for the students.</li>
+<li><strong>Options</strong> is where you can set options for the puzzle. For the available options for each grader type, see <a href="http://js-parsons.github.io/documentation/">Parson's Problems</a> documentation.</li>
+<li><strong>Grader</strong> is where you select the grader appropriate to the puzzle. Refer to the "Grader Description" section below for more details.</li>
+</ul>
+<h4 id="grading_7">Grading<a class="headerlink" href="#grading_7" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_grading.png" /></p>
+<ul>
+<li>The <strong>Points</strong> field is the number of points allocated for the question. You can choose any positive numeric value.</li>
+<li><strong>One Attempt Only</strong> can be used to restrict the student to answering the question once. If not enabled, students will be able to edit their answer until the Unit is marked as Completed.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h4 id="metadata_7">Metadata<a class="headerlink" href="#metadata_7" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_7">Files<a class="headerlink" href="#files_7" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p>
+<h3 id="grader-description">Grader Description<a class="headerlink" href="#grader-description" title="Permanent link"></a></h3>
+<h4 id="variablecheckgrader">VariableCheckGrader<a class="headerlink" href="#variablecheckgrader" title="Permanent link"></a></h4>
+<p><code>VariableCheckGrader</code> is a grader that executes the code in the order submitted by the student and checks variable values afterwards.</p>
+<p>Expected and supported options:
+- <code>vartests</code> (required): array of variable test objects
+Each variable test object can/must have the following properties:
+- <code>initcode</code>: code that will be prepended before the learner solution code
+- <code>code</code>: code that will be appended after the learner solution code
+- <code>message</code> (required): a textual description of the test, shown to learner
+Properties specifying what is tested:
+- <code>variables</code>: an object with properties for each variable name to be tested; the value of the property is the expected value
+or
+- <code>variable</code>: a variable name to be tested
+- <code>expected</code>: expected value of the variable after code execution</p>
+<!-- Claire and Mohit's updates go here -->
+
+<h4 id="turtlegrader">TurtleGrader<a class="headerlink" href="#turtlegrader" title="Permanent link"></a></h4>
+<p><code>TurtleGrader</code> is a grader for exercises that draw turtle graphics in Python.</p>
+<p>Required options:</p>
+<ul>
+<li><code>turtleModelCode</code>: The code constructing the model drawing. The turtle is initialized to modelTurtle variable, so your code should use that variable.
+Options that can be specified (that is, optional):</li>
+<li><code>turtlePenDown</code>: a boolean specifying whether or not the pen should be put down initially for the student constructed code</li>
+<li><code>turtleModelCanvas</code>: ID of the canvas DOM element where the model solution will be drawn. Defaults to <code>modelCanvas</code>.</li>
+<li><code>turtleStudentCanvas</code>: ID of the canvas DOM element where student turtle will draw. Defaults to <code>studentCanvas</code>.</li>
+</ul>
+<p>Grading is based on comparing the commands executed by the model and student turtle. If the <code>executable_code</code> option is also specified, the code on each line of that option will be executed instead of the code in the student constructed lines. Note that the student code should use the variable <code>myTurtle</code> for commands to control the turtle in order for the grading to work.</p>
+<h4 id="unittestgrader">UnitTestGrader<a class="headerlink" href="#unittestgrader" title="Permanent link"></a></h4>
+<p><code>UnitTestGrader</code> is a grader that executes student code and Skulpt unit tests</p>
+<h4 id="languagetranslationgrader">LanguageTranslationGrader<a class="headerlink" href="#languagetranslationgrader" title="Permanent link"></a></h4>
+<p>Code "Translating" grader</p>
+<h4 id="linebasedgrader">LineBasedGrader<a class="headerlink" href="#linebasedgrader" title="Permanent link"></a></h4>
+<p><code>LineBasedGrader</code> is a grader that treats student answers as correct if and only if they match the order and indentation found in <strong>Initial Values</strong>. For incorrect answers, it highlights the lines that were not ordered or indented properly.</p>
+<h4 id="sample-starter-pack_2">Sample Starter Pack<a class="headerlink" href="#sample-starter-pack_2" title="Permanent link"></a></h4>
+<p>There is a Starter Pack project that you can add to your account that includes examples of Parson's Puzzle assessments.</p>
+<ul>
+<li>For Codio.com users: <a href="https://codio.com/home/starter-packs/cc68d38b-b0ea-4825-9814-46a3594c2b11/">Click here to install</a></li>
+<li>For Codio.co.uk users: <a href="https://codio.co.uk/home/starter-packs/7c69bc1a-7f20-4cd1-a726-63a1c056790f">Click here to install</a></li>
+</ul>
+<p>and <strong>Use Pack</strong> to create into your Codio account to review.</p>
+<h2 id="sense-network">Sense Network<a class="headerlink" href="#sense-network" title="Permanent link"></a></h2>
+<p><a href="https://www.sense.education/">Sense.Education</a> is an AI-Based code analysis package to give students feedback on their code submissions and is supported in Codio in the Sense.Network assessment type.</p>
+<p>Students can submit their work and will be able to view feedback from Sense and if <strong>One Attempt Only</strong> is not enabled can review their code and submit again.</p>
+<p>To help and track students activity through sense, <a href="/dashboard/create/custom-script">custom script</a> can be enabled.</p>
+<p>This assessment type is only visible when the sense.network api key is entered in the <strong>Organisation&gt;Integrations</strong> area. See <a href="/dashboard/create/adminrole/">organisation admin roles</a> for more on this.</p>
+<p><img alt="Organisation integrations" src="/img/guides/org_integrations.png" /></p>
+<h3 id="assessment-definition_5">Assessment definition<a class="headerlink" href="#assessment-definition_5" title="Permanent link"></a></h3>
+<p>The configuration fields for an assessment are split into five sections: General, Execution, Grading, Metadata, and Files.</p>
+<h4 id="general_8">General<a class="headerlink" href="#general_8" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_sn_general.png" /></p>
+<ul>
+<li><strong>Name</strong> (required) is a short name that describes the assessment. This name will appear in teacher dashboards, so naming it clearly is important so teachers can see precisely which challenges are successfully met (or not) by students. In many cases, you do not want to see this text appear within the challenge text the student sees. To suppress this text, flip the <strong>Show Name</strong> switch next to the name field.</li>
+<li><strong>Instructions</strong> (optional) is the text that should be shown to the user, written in Markdown.</li>
+</ul>
+<h4 id="execution_7">Execution<a class="headerlink" href="#execution_7" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_sn_exec.png" /></p>
+<ul>
+<li><strong>Pre-exec command</strong> (optional) is where a check can be run to confirm any code is compiling as required. If you store the scripts in the <code>.guides/secure</code> folder, they will run securely such that the student has no way of either viewing the script or viewing other files in that folder that might contain secure data.</li>
+<li><strong>Pre-exec feedback</strong> (optional) field is used to show feedback if <strong>Pre-exec command</strong> fails,  otherwise will show pre-exec output.</li>
+<li><strong>Sense feedback Url</strong> (required) to extract assignment id</li>
+<li><strong>Filename</strong> (optional) is the path to the file to pass. If empty, will send the currently opened file</li>
+</ul>
+<h4 id="grading_8">Grading<a class="headerlink" href="#grading_8" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_sn_grading.png" /></p>
+<ul>
+<li><strong>Gradable</strong> enable if the assignment is to be used within the grade total for the unit. If this is not enabled students can be given feedback on their submission for this assessment without it being graded. Please note <strong>Answer and Rationale</strong> will not return anything to the student if the assignment is not gradable. When enabled, each submission will override any previous submissions for grading purposes.</li>
+<li><strong>One Attempt Only</strong> can be used to restrict the student to answering the question once. If not enabled, students will be able to edit their answer until the Unit is marked as Completed.</li>
+<li>The <strong>Points</strong> field is the number of points allocated for the question. You can choose any positive numeric value.</li>
+<li><strong>Answer and Rationale</strong> is where guidance for the assessment can be entered where the assessment is <strong>Gradable</strong>. This is not required if the assignment is not gradable. This will be visible to the teacher when the project is opened using the <a href="/classes/unitmanagement/settings-info/teachersolutions">Open as Teacher</a> method. This guidance information can also be shown to students after they have submitted their answer and also if they reload the unit after marking it as completed. To enable this, flip the <strong>Show Answer and Rationale to Student</strong> switch below the guidance field.</li>
+</ul>
+<h4 id="metadata_8">Metadata<a class="headerlink" href="#metadata_8" title="Permanent link"></a></h4>
+<p><img alt="" src="/img/guides/assessment_metadata.png" /></p>
+<p>The Metadata section contains fields that further describe the current assessment using a variety of factors:</p>
+<ul>
+<li><strong>Bloom's Level</strong>: The options for this field correspond to the general levels of <a href="https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/">Bloom's Taxonomy</a>, which is a comprehensive system of classification for educational content. Your selection in this field should reflect the Bloom's level of the current assessment.</li>
+<li><strong>Learning Objectives</strong>:  What you enter in this field should reflect the specific educational goal of the current assessment. It is conventional that learning objective statements begin with "SWBAT" (Students Will Be Able To). For example, if an assessment asks the student to predict the output of a recursive code segment, then its Learning Objectives could be: <em>"SWBAT follow the flow of recursive execution"</em>.</li>
+<li><strong>Tags</strong>: In addition to Bloom's Level and Learning Objectives, you may add arbitrary tags to an assessment. The existing tags, <strong>Content</strong> and <strong>Programming Language</strong>, are required. To add your own tags, click <strong>Add Tag</strong> and populate their names and values in the empty input boxes at the bottom.</li>
+</ul>
+<h4 id="files_8">Files<a class="headerlink" href="#files_8" title="Permanent link"></a></h4>
+<p>Sometimes, an assessment requires external files to function correctly. For example, if you wish to include an image in an assessment's instructions, your assessment would require the image to be present; if you have a custom grading script for an <a href="/content/authoring/assessments/assessments-code-tests/">Advanced Code Test</a>, your assessment would require the script to be present. The Files section allows you to specify the current assessment's file dependencies such that if the assessment is ever distributed to students or other instructors, its dependencies are also included.</p>
+<p><img alt="" src="/img/guides/assessment_files.png" /></p>
+<p>To mark a file to be included with the assessment, simply locate it in the file tree under <strong>Project files</strong> and tick the checkbox next to its name. Ticked files will appear under <strong>Additional content</strong>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

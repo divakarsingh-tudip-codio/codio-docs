@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/resources/schoolscontent/tkinter/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Tkinter - Codio Documentation</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Codio Documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#starter-pack-clean">Starter Pack : Clean</a></li>
+        <li class="main "><a href="#starter-pack-widgets">Starter Pack - Widgets</a></li>
+        <li class="main "><a href="#tkinter-widgets">TKinter Widgets</a></li>
+            <li><a href="#full-widget-demo">Full Widget Demo</a></li>
+            <li><a href="#individual-python-file">Individual python file</a></li>
+            <li><a href="#stack">Stack</a></li>
+        <li class="main "><a href="#running-the-python-file">Running the Python file</a></li>
+            <li><a href="#from-scratch">From scratch</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<blockquote>
+<p><strong>Important:</strong> Tkinter is used to build User Interfaces for Python development. For those following the OCR GCSE, this is not a requirement. For more advanced students, OCR and Codio recommend that you use HTML, CSS and Javascript for building modern front-end UIs that have far superior workplace relevance than Python+Tkinter.</p>
+</blockquote>
+<p>There are a number of teachers who use the Tkinter UI library for Python. Tkinter normally relies on a local PC with a graphics card. Codio, being Cloud based, does not not have graphics cards. Nevertheless, we have implemented a fully functional solution that works within a browser and in the Cloud.</p>
+<p>This page describes the various ways you can get Tkinter up and running.</p>
+<ul>
+<li><strong>Starter Pack : Clean</strong> - gives you a clean Tkinter project with preconfigured menu buttons for running your Python file and the viewer.</li>
+<li><strong>Starter Pack : Widgets</strong> - gives you a set of demo widgets you can play with.</li>
+<li><strong>Stack</strong> - gives you an empty project with tkinter ready to run.</li>
+<li><strong>From scratch</strong> - describes how to make any existing Codio project ready to run Tkinter that was not initially set up to run Tkinter.</li>
+</ul>
+<h2 id="starter-pack-clean">Starter Pack : Clean<a class="headerlink" href="#starter-pack-clean" title="Permanent link"></a></h2>
+<p>Perhaps the best place for most users to start is the <strong>TKinter Clean</strong> Starter Pack. This gives you a clean project with a simple demo Python file to play with.</p>
+<p>Here is a video that runs you through the entire process.</p>
+<div class="video">
+<div class="video-wrapper">
+<iframe src="//player.vimeo.com/video/131579422" width="600" height="370" frameborder="0" webkitallowfullscreen mozallowflscreen allowfullscreen></iframe>
+</div>
+</div>
+
+<p>From the main dashboard, select <strong>Starter Packs</strong> on the left, then the Certified tab at the top of the main page.</p>
+<p><img alt="Tkinter Pack" src="/img/tkinter-pack.png" /></p>
+<p>Search for <strong>tkinter</strong> in the search field then select the <strong>TKinter Clean</strong> pack as shown in step 4. above. You will be taken to the new project screen where you can enter a name for your project. Finally, press the <strong>Create</strong> button at the bottom of the page and a new project will be created.</p>
+<p>Once it is loaded, follow these steps to see the demo file working.</p>
+<ol>
+<li>Open up <code>demo.py</code> in the file tree.</li>
+<li>In the Codio menu, press the <strong>Start Current</strong> button (the one with the rocket icon next to it). This will run your Python file. It opens a new terminal window, which you should leave open.</li>
+<li>The right most Codio menu item should be <strong>Viewer</strong>. Press this to run the viewer. It will take a few seconds to load.</li>
+</ol>
+<p>If you change your Python code, you will need to close the terminal window and then press the <strong>Start Current</strong> button again to reload it. You do not need to reload the Viewer, which will automatically reconnect when you rerun your Python file.</p>
+<h2 id="starter-pack-widgets">Starter Pack - Widgets<a class="headerlink" href="#starter-pack-widgets" title="Permanent link"></a></h2>
+<p>This gives you a complete set of demo widgets. From the main dashboard, select <strong>Starter Packs</strong> on the left, then the Certified tab at the top of the main page.</p>
+<p><img alt="Tkinter Widgets" src="/img/tkinter-pack.png" /></p>
+<p>Search for <strong>tkinter</strong> in the search field then select the <strong>TKinter Widgets</strong> pack as shown in step 4. above. You will be taken to the new project screen where you can enter a name for your project. Finally, press the <strong>Create</strong> button at the bottom of the page and a new project will be created.</p>
+<h1 id="tkinter-widgets">TKinter Widgets<a class="headerlink" href="#tkinter-widgets" title="Permanent link"></a></h1>
+<p>This Pack contains a set of widget demo files that you can play with.</p>
+<p>Once your project opens, you can quickly play with this in one of 2 ways using the <strong>Rocket</strong> menu item. This is the Codio menu item with a rocket next to it.</p>
+<h2 id="full-widget-demo">Full Widget Demo<a class="headerlink" href="#full-widget-demo" title="Permanent link"></a></h2>
+<ul>
+<li>In the Codio menu, select 'Start widget.py’.</li>
+<li>From the neighbouring menu item, press <strong>View widget demo</strong>.</li>
+</ul>
+<h2 id="individual-python-file">Individual python file<a class="headerlink" href="#individual-python-file" title="Permanent link"></a></h2>
+<ul>
+<li>Open a python file in the file tree.</li>
+<li>From the neighbouring menu item, press <strong>View widget demo</strong>.</li>
+</ul>
+<h2 id="stack">Stack<a class="headerlink" href="#stack" title="Permanent link"></a></h2>
+<p>If you want to create a completely empty Codio project that is Tkinter ready, then go to the Stacks menu item in the main dashboard.</p>
+<ol>
+<li>Click on the Certified tab at the top</li>
+<li>then search for <strong>tkinter</strong></li>
+<li>Finally, select the stack</li>
+<li>after which you will be taken to the new project screen. Enter a project name then press the <strong>Create</strong> button at the bottom of the page and a new project will be created.</li>
+</ol>
+<p><img alt="Tkinter Stack" src="/img/tkinter-stack.png" /></p>
+<p>This Stack will not give you any preconfigured buttons (see the above <strong>Starter Pack: Clean</strong> for this).
+You can now create your Python files and run Tkinter. Here are some tips on how to do this.</p>
+<h1 id="running-the-python-file">Running the Python file<a class="headerlink" href="#running-the-python-file" title="Permanent link"></a></h1>
+<p>To run a Python file you will need to use the Terminal or configure you own Codio button shortcut. To use the terminal, open a new Terminal from the <strong>Tools-&gt;Terminal</strong> menu item. Then make sure you are in the correct folder and type <code>python3 mypythonfile.py</code>.</p>
+<p>Once this is running, do not close the terminal window or you will terminate the Python process. Go to the right most Codio menu and from the dropdown, select <strong>Box URL SSL</strong>. This will open up the viewer.</p>
+<p>For information on how to set up your own Codio menu buttons, <a href="/ide/boxes/runmenu/">click here</a>.</p>
+<h2 id="from-scratch">From scratch<a class="headerlink" href="#from-scratch" title="Permanent link"></a></h2>
+<p>For those of you who want to add Tkinter support to an existing Codio project, you should follow the steps below. Adding the XServer component will add support for any application that writes to the screen.</p>
+<p><img alt="Xserver" src="/img/xserver-install.png" /></p>
+<ul>
+<li>Open the Install Software screen from the <strong>Tools-&gt;Install Software</strong> menu.</li>
+<li>Type <code>x server</code> into the search box.</li>
+<li>Press the <strong>Install</strong> button to install the XServer component.</li>
+<li>When the installation has completed (This can take some time, so be patient), <a href="/ide/boxes/restart-reset">Restart</a> the box</li>
+</ul>
+<p>We would recommend that you configure your <code>.codio</code> file to have an option to start the viewer. This is <a href="/ide/boxes/runmenu/">described here</a>. You should either overwrite the entire contents of this file with the content shown below, or if you already have a <code>.codio</code> file with contents you want to keep, just add the line with the <strong>Viewer</strong> entry you can see below into the <code>preview</code> section.</p>
+<pre><code class="javascript">{
+  // Configure your Run and Preview buttons here.
+
+  // Run button configuration
+  &quot;commands&quot;: {
+    &quot;Start Current&quot;: &quot;python3 {{filename}}&quot;
+  },
+
+  // Preview button configuration
+  &quot;preview&quot;: {
+    &quot;Viewer&quot;: &quot;https://{{domain}}:9500/&quot;
+  }
+}
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Codio platform documentation">
+        
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/ide/navigation/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Codio Documentation</title>
+        <title>Basic IDE Features - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -29,7 +29,7 @@
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -75,13 +75,98 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#exiting-the-ide">Exiting the IDE</a></li>
+        <li class="main "><a href="#editing-a-file">Editing a file</a></li>
+        <li class="main "><a href="#uploading-files">Uploading files</a></li>
+        <li class="main "><a href="#downloading-files">Downloading files</a></li>
+        <li class="main "><a href="#adding-files">Adding files</a></li>
+        <li class="main "><a href="#creating-a-folder">Creating a folder</a></li>
+        <li class="main "><a href="#deleting-a-folder">Deleting a folder</a></li>
+        <li class="main "><a href="#warning">Warning</a></li>
+        <li class="main "><a href="#dragging-files-folders">Dragging files &amp; folders</a></li>
+        <li class="main "><a href="#readme-info-pages">Readme info pages</a></li>
+        <li class="main "><a href="#exporting-an-app">Exporting an app</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <p>No special knowledge is needed to use Codio’s IDE.</p>
 <p>It's easy enough for beginners who are learning to code.</p>
-<p>Because it’s web-based, there’s nothing to download, install or update.</p></div>
+<p>Because it’s web-based, there’s nothing to download, install or update.</p>
+<h2 id="exiting-the-ide">Exiting the IDE<a class="headerlink" href="#exiting-the-ide" title="Permanent link"></a></h2>
+<p>You can exit the IDE and return to the Dasboard in one of the following ways</p>
+<ul>
+<li>Select <strong>Project &gt; Close</strong> from the menu</li>
+<li>Click on the Gravatar in the top bar</li>
+<li>Click on your user name in the top bar</li>
+</ul>
+<h2 id="editing-a-file">Editing a file<a class="headerlink" href="#editing-a-file" title="Permanent link"></a></h2>
+<p>You can open an existing file from the tree or create a new one from either the <strong>File &gt; New File</strong> menu or by right-clicking in the file tree.</p>
+<p>When you open a file, it will appear in a tab in the currently active <a href="/ide/panels">Panel</a>.</p>
+<p>Codio will syntax highlight based on the file type. You can see the detected file type in the status bar. Clicking on that file type will allow you to force the syntax highlighting to another language format.</p>
+<h2 id="uploading-files">Uploading files<a class="headerlink" href="#uploading-files" title="Permanent link"></a></h2>
+<p>You can upload a file into your project in the following ways</p>
+<p><img alt="show" src="/img/right-click.png" /></p>
+<ul>
+<li>Right-click within the file tree, taking into account folders</li>
+<li>Select the <strong>File &gt; Upload</strong> menu option, having first selected a folder in the file tree.</li>
+</ul>
+<p>Having selected on of these options, you can upload files by</p>
+<ul>
+<li>Pressing the <strong>browse for files</strong> button and selecting your files</li>
+<li>Dragging files from your destop or file explorer into the dialog. Dragging of a folder and its contents is only supported in Chrome.</li>
+</ul>
+<p><strong>Important:</strong> if you select both files and folders to upload, only the files within the main folder will get uploaded. You will need to upload one folder at a time.</p>
+<h2 id="downloading-files">Downloading files<a class="headerlink" href="#downloading-files" title="Permanent link"></a></h2>
+<p>You can download individual files from your project.</p>
+<p><img alt="show" src="/img/downloadfile.png" /></p>
+<ul>
+<li>Right-click the file from the file tree,</li>
+<li>Select the <strong>Download</strong> option.</li>
+</ul>
+<h2 id="adding-files">Adding files<a class="headerlink" href="#adding-files" title="Permanent link"></a></h2>
+<p>Adding a file is done in one of two ways. First, make sure you have selected the folder within the file tree where you want the file created.</p>
+<ul>
+<li>Right-click within the file tree, taking into account your folders</li>
+<li><strong>Select File &gt; New</strong> from the menu</li>
+</ul>
+<p>You should specify both the file name and the extension.</p>
+<p>Right-clicking also allows you to Copy/Paste existing files.</p>
+<h2 id="creating-a-folder">Creating a folder<a class="headerlink" href="#creating-a-folder" title="Permanent link"></a></h2>
+<p>Creating a new folder is done in one of two ways:</p>
+<ul>
+<li>Right-click within the file tree, taking into account the existing folder structure</li>
+<li>Select the <strong>File &gt; New folder</strong> item from the menu</li>
+</ul>
+<p>Right-clicking also allows you to Copy/Paste existing folders along with its contents.</p>
+<h2 id="deleting-a-folder">Deleting a folder<a class="headerlink" href="#deleting-a-folder" title="Permanent link"></a></h2>
+<p>You can delete an entire folder and its content in two ways</p>
+<ul>
+<li>Right click the folder and select <strong>Delete</strong></li>
+<li>On Macs, press <code>fn+backspace</code></li>
+<li>On anything else, press <code>shift+del</code></li>
+</ul>
+<h2 id="warning">Warning<a class="headerlink" href="#warning" title="Permanent link"></a></h2>
+<p>Deleting a folder cannot be undone.</p>
+<h2 id="dragging-files-folders">Dragging files &amp; folders<a class="headerlink" href="#dragging-files-folders" title="Permanent link"></a></h2>
+<p>You can drag individual or multiple files and folders around the filetree. Excercise caution when doing this as drag actions cannot be undone.</p>
+<p>Right-clicking also allows you to Copy/Paste existing files/folders.</p>
+<h2 id="readme-info-pages">Readme info pages<a class="headerlink" href="#readme-info-pages" title="Permanent link"></a></h2>
+<p>When you open up a project in the IDE, Codio will try to locate a file called readme.md in the root of the project. If it finds one and you have not opened the project beforehand, it will open and display it in 'markdown' mode.</p>
+<p><img alt="readme info page" src="/img/readme-md.png" /></p>
+<p>If you select the README.md file from the file tree, it will be opened up for editing using markdown. You can switch between markdown,  'preview' and you can run in SplitView mode as highlighted in the above image.</p>
+<p>The readme.md file should be written in markdown format. Here is a reference for markdown:</p>
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/basics">Daring Fireball</a> - the author of markdown</li>
+</ul>
+<h2 id="exporting-an-app">Exporting an app<a class="headerlink" href="#exporting-an-app" title="Permanent link"></a></h2>
+<p>You can export an app at any point by</p>
+<ul>
+<li>right-clicking the app in the file tree (click the top level item)</li>
+<li>or by selecting the <strong>Project&gt;Export as Zip</strong> menu item</li>
+<li>from the <a href="/ide/customization/project-settings">Project Settings</a></li>
+</ul>
+<p>You can also download individual files from your project. See <a href="/ide/navigation/download">Download Files</a> for more information.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -162,8 +247,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-12-17 10:59:47
--->

@@ -75,23 +75,123 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#creating-a-new-book">Creating a new book</a></li>
-        <li class="main "><a href="#editing-a-book-in-the-ide">Editing a book in the IDE</a></li>
-        <li class="main "><a href="#editing-a-books-settings">Editing a book's settings</a></li>
-        <li class="main "><a href="#deleting-a-book">Deleting a book</a></li>
+        <li class="main active"><a href="#creating-and-managing-books">Creating and managing books</a></li>
+            <li><a href="#creating-a-new-book">Creating a new book</a></li>
+            <li><a href="#editing-a-book-in-the-ide">Editing a book in the IDE</a></li>
+            <li><a href="#editing-a-books-settings">Editing a book's settings</a></li>
+            <li><a href="#deleting-a-book">Deleting a book</a></li>
+        <li class="main "><a href="#table-of-contents">Table of contents</a></li>
+        <li class="main "><a href="#editing-page-content">Editing page content</a></li>
+        <li class="main "><a href="#publishing-and-the-stack">Publishing and the stack</a></li>
+            <li><a href="#new-stack-no-modifications-or-only-code-workspace-changes-made">New stack (no modifications) or only code workspace changes made</a></li>
+            <li><a href="#stack-modified">Stack modified</a></li>
+            <li><a href="#stack-modified-new-stack-version">Stack modified : New Stack Version</a></li>
+            <li><a href="#stack-modified-new-stack">Stack modified: New Stack</a></li>
+            <li><a href="#later-book-modifications">Later book modifications</a></li>
+            <li><a href="#course-mapping">Course mapping</a></li>
+        <li class="main "><a href="#permissions-and-collaboration">Permissions and collaboration</a></li>
+            <li><a href="#private-public-visibility">Private / Public visibility</a></li>
+            <li><a href="#permissions-and-collaboration_1">Permissions and collaboration</a></li>
+        <li class="main "><a href="#creating-course-units">Creating course units</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="creating-a-new-book">Creating a new book<a class="headerlink" href="#creating-a-new-book" title="Permanent link"></a></h1>
+<h2 id="creating-and-managing-books">Creating and managing books<a class="headerlink" href="#creating-and-managing-books" title="Permanent link"></a></h2>
+<h3 id="creating-a-new-book">Creating a new book<a class="headerlink" href="#creating-a-new-book" title="Permanent link"></a></h3>
 <p>Creating a new book is done from the main books screen. Press the large blue <strong>New Book</strong> button in the top right of the screen.</p>
 <p>You will get the same options for creating a book as for a project, so you can start from scratch or import from a project or a Git repo. You also have control over visibility as with projects and courses.</p>
-<h1 id="editing-a-book-in-the-ide">Editing a book in the IDE<a class="headerlink" href="#editing-a-book-in-the-ide" title="Permanent link"></a></h1>
+<h3 id="editing-a-book-in-the-ide">Editing a book in the IDE<a class="headerlink" href="#editing-a-book-in-the-ide" title="Permanent link"></a></h3>
 <p>Once the book has been created, you can edit the book in the IDE by clicking on the book.</p>
-<h1 id="editing-a-books-settings">Editing a book's settings<a class="headerlink" href="#editing-a-books-settings" title="Permanent link"></a></h1>
+<h3 id="editing-a-books-settings">Editing a book's settings<a class="headerlink" href="#editing-a-books-settings" title="Permanent link"></a></h3>
 <p>Modify a book's settings by clicking on the gear icon.</p>
-<h1 id="deleting-a-book">Deleting a book<a class="headerlink" href="#deleting-a-book" title="Permanent link"></a></h1>
-<p>You can delete a book by clicking on the gear icon and then pressing the <strong>Delete</strong> button.</p></div>
+<h3 id="deleting-a-book">Deleting a book<a class="headerlink" href="#deleting-a-book" title="Permanent link"></a></h3>
+<p>You can delete a book by clicking on the gear icon and then pressing the <strong>Delete</strong> button.</p>
+<h2 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link"></a></h2>
+<p>The table of contents is edited using the Codio Guide authoring capability. This is the same functionality as available for authoring project and project unit content.</p>
+<p>Please <a href="/content/authoring/toc/">click here</a> for full details.</p>
+<h2 id="editing-page-content">Editing page content<a class="headerlink" href="#editing-page-content" title="Permanent link"></a></h2>
+<p>The page content is edited using the Codio Guide authoring capability. This is the same funcitonality as available for authoring project and project unit content.</p>
+<p>Please <a href="/content/authoring/page-edit/overview/">click here</a> for full details.</p>
+<h2 id="publishing-and-the-stack">Publishing and the stack<a class="headerlink" href="#publishing-and-the-stack" title="Permanent link"></a></h2>
+<p>It is important to understand how and why a book is published.</p>
+<p>Until you publish a book, it behaves exactly as a project does. You can open it up and work with it but it cannot be accessed by anyone or mapped to a course until it has been published. After a book is published, you can continue to work on the book without the published version being affected.</p>
+<p>Please note the following.</p>
+<ol>
+<li>Publishing creates a snapshot of the book and creates a new version.</li>
+<li>You can continue work on the book without affecting the published version.</li>
+<li>When you map a course unit to a book, it will only pull from a published version.</li>
+</ol>
+<p>When you press the <strong>Publish</strong> button, the following screen will appear.</p>
+<p><img alt="versions" src="/img/book_publish.png" /></p>
+<h3 id="new-stack-no-modifications-or-only-code-workspace-changes-made">New stack (no modifications) or only code workspace changes made<a class="headerlink" href="#new-stack-no-modifications-or-only-code-workspace-changes-made" title="Permanent link"></a></h3>
+<p>If, in your book, you have</p>
+<ul>
+<li>only made changes to the code workspace (the contents of the file tree in the IDE or <code>/home/codio/workspace</code>)</li>
+<li>or you have switched the stack but not made any stack modifications or installed any software since</li>
+</ul>
+<p>then you should</p>
+<ol>
+<li>Enter the changelog text, which is a description of the changes made since the last publish.</li>
+<li>Press the <strong>Stack Unchanged</strong> button.</li>
+<li>Press the <strong>Publish Book</strong> button.</li>
+</ol>
+<p><img alt="versions" src="/img/book_stack_notmodified.png" /></p>
+<h3 id="stack-modified">Stack modified<a class="headerlink" href="#stack-modified" title="Permanent link"></a></h3>
+<p>If you have made any changes to the stack then you should press the <strong>Stack modified</strong> button. Please be aware that changes to the stack can be made indirectly by applications as well as manual file changes. For example, if you modified a database's contents that is not configured to live in the workspace area then these count as stack changes.</p>
+<p><img alt="versions" src="/img/book_stack_modified.png" /></p>
+<p>You should now decide whether you want to</p>
+<ul>
+<li>create a new version of the stack used by the book</li>
+<li>create a brand new stack for this book.</li>
+</ul>
+<h3 id="stack-modified-new-stack-version">Stack modified : New Stack Version<a class="headerlink" href="#stack-modified-new-stack-version" title="Permanent link"></a></h3>
+<p>Note that if the stack you are using is not owned by you or you don't have permissions to modify the stack, then you will not be able to select this option. In this case you should create a new stack as explained below under <strong>Stack modified: New Stack</strong>.</p>
+<p>You should enter a description of the stack changes made and then press <strong>Publish Book</strong>. The new stack version will appear in your stacks listing in the normal way.</p>
+<p><img alt="versions" src="/img/book_stack_newversion.png" /></p>
+<h3 id="stack-modified-new-stack">Stack modified: New Stack<a class="headerlink" href="#stack-modified-new-stack" title="Permanent link"></a></h3>
+<p>If you do not have permissions to create a new stack version or you want to create a new stack that this and potentially other books, projects or units should use, then select this option.</p>
+<p>This will create a new stack with the permissions you specify. To give access only to others within your organization, select <strong>Private</strong> and then select the owner organization from the drop down list below.</p>
+<p>It will take a few minutes to prepare the stack, so please be patient. Once it is created, it will be visible your stacks listing.</p>
+<p><img alt="versions" src="/img/book_stack_newstack.png" /></p>
+<h3 id="later-book-modifications">Later book modifications<a class="headerlink" href="#later-book-modifications" title="Permanent link"></a></h3>
+<p>If, after publishing, you make further changes to our book then you will need to re-publish when you want those changes are available to courses. This will not happen automatically. You will need to update the project unit within your course to pull the published version by pressing <strong>Update to latest version</strong>.</p>
+<h3 id="course-mapping">Course mapping<a class="headerlink" href="#course-mapping" title="Permanent link"></a></h3>
+<p>A book cannot be assigned to a class without mapping it through a course. The advantage of this approach is that you can break your book into smaller chunks that map to lessons or lectures.</p>
+<p>You can map the entire book through a single course unit if you are not concerned about detailed unit mappings.</p>
+<p>Please refer to <a href="/courses/units/unit-add#createbook">Creating book based course units</a> page for details on how to do this.</p>
+<h2 id="permissions-and-collaboration">Permissions and collaboration<a class="headerlink" href="#permissions-and-collaboration" title="Permanent link"></a></h2>
+<p>By default, a book is only available to you for editing purposes and only you can create courses from a Book.</p>
+<p>You can change permissions to allow others</p>
+<ul>
+<li>to edit your book</li>
+<li>to create courses from your book.</li>
+</ul>
+<p>To modify the permissions, goto <strong>Books</strong> from the dashboard. Then select the settings icon.</p>
+<p><img alt="Book settings" src="/img/booksettings.png" /></p>
+<h3 id="private-public-visibility">Private / Public visibility<a class="headerlink" href="#private-public-visibility" title="Permanent link"></a></h3>
+<p>If the book is set to <strong>Private</strong>, unless you override the permissions, only you can modify a book contents and create course units from it. Private books cannot be assigned to public courses.</p>
+<p>If the book is set to <strong>Public</strong>, then any Codio user inside or outside your organization can create courses from your book but they will not be able to edit it.  The default organization setting restricts the ability to create Public books. To allow this, see <a href="/dashboard/create/public_private">Public/Private Settings</a>.</p>
+<p><img alt="Book settings page" src="/img/booksettingspage.png" /></p>
+<h3 id="permissions-and-collaboration_1">Permissions and collaboration<a class="headerlink" href="#permissions-and-collaboration_1" title="Permanent link"></a></h3>
+<p>If you want 2 or more people to collaborate on a book, you need to understand how Codio manages this process.</p>
+<p>You need to give explicit permission to other users or to an organization and apply write permissions.</p>
+<p>The permissions can be changed by selecting the <strong>Permissions</strong> tab on the book settings screen. You should first specify which user or organization you want to grant permissions to. You need to know the precise organization or user name and this is case sensitive. We do not support lookups as the potential for incorrect assignment is too great.</p>
+<p><img alt="Book permissions" src="/img/book-permissions.png" /></p>
+<p>You can grant the following permissions.</p>
+<ul>
+<li><strong>Read</strong> : this allows the user or organization specified to create course units from your book.</li>
+<li><strong>Write</strong> : this allows the user or organization to create course units and to edit your book. If you want to co-author/collaborate with another user on a book, then you an either follow the process described below or you can use git and a remote git repo.</li>
+</ul>
+<p>It is important to understand that each user editing a book is not actually editing the same physical project. Codio uses snapshotting of the latest published version. If using the basic collaboration approach described below and not git, then you should remember that <strong>only one user should make changes at a time</strong>.</p>
+<p>If User A and User B want to collaborate, then they each need to inform the other when they are working on the content. If they fail to do so, then one person will have to surrender their changes at some point.</p>
+<p>Let's say User A has created a book and authored some content. User A now wants User B to be able to work on the content. User A should first <a href="/books/publish">publish</a> the book. Be aware that if User A does not publish the book, then User B will start with an empty book.</p>
+<p>When User B accesses the book (from the <strong>Shared with me</strong> tab on the main books listing), Codio will take a snapshot of the published book and User B can start work on it. In other words, User B is <strong>not</strong> editing User A's book, User B is now working on a clone of the published book.</p>
+<p>User B now makes changes to the book. When done, User B should publish the book and inform User A that the changes are complete and published. At this point, when User A opens the project, a dialog will appear showing that User B has published new changes. User A can now update her own version of the book from this published version. And so the cycle continues.</p>
+<p><img alt="Book New Version" src="/img/bookversion.png" /></p>
+<p>You can do this with as many users as you like, provided that only one user is making changes at a time.</p>
+<h2 id="creating-course-units">Creating course units<a class="headerlink" href="#creating-course-units" title="Permanent link"></a></h2>
+<p>Books cannot be accessed directly by students. Once your book is <a href="/books/publish">published</a>, you need to <a href="/courses/units/unit-add#createbook">map parts of it to one or more course units</a>, which can then be <a href="/classes/unitmanagement/assign-module">assigned to a class</a>.</p></div>
         </div>
 
         <footer class="col-md-12">

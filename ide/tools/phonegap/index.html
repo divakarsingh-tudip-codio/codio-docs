@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Codio platform documentation">
+        
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/ide/tools/phonegap/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Codio Documentation</title>
+        <title>Phonegap - Codio Documentation</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -29,7 +29,7 @@
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -75,7 +75,13 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#in-this-section">In this section:</a></li>
+        <li class="main active"><a href="#authentication">Authentication</a></li>
+        <li class="main "><a href="#the-configxml-file">The config.xml file</a></li>
+        <li class="main "><a href="#build">Build</a></li>
+            <li><a href="#a-bit-about-keys">A bit about Keys</a></li>
+            <li><a href="#build-settings">Build Settings</a></li>
+            <li><a href="#initiate-build">Initiate Build</a></li>
+            <li><a href="#download-your-app">Download your App</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -83,12 +89,82 @@
 <p>You access Codio's <strong>Phonegap:Build</strong> features from the <strong>Tools-&gt;Phonegap</strong> menu.</p>
 <p>Our Phonegap support provides a comfortable integration with Adobe's Phonegap Build platform. You should first create an account at <a href="http://build.phonegap.com">http://build.phonegap.com</a>.</p>
 <p><strong>Note:</strong> At the time of writing, the <strong>PhoneGap:Build</strong> free plan supports a maximum project size of 50MB and 1000MB or 1GB for paid plans. Account plan details can be found <a href="https://build.phonegap.com/plans">here</a>.</p>
-<h2 id="in-this-section">In this section:<a class="headerlink" href="#in-this-section" title="Permanent link"></a></h2>
+<h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link"></a></h2>
+<p>To access Phonegap:Build from Codio you should set up an Authentication token. This is available in your Phonegap:Build account.</p>
+<p>Go to your Phonegap <a href="https://build.phonegap.com/people/edit">account details</a> and select the <strong>Client Application</strong> tab. If you do not see an authentication token, click <strong>Reset</strong> to obtain one.</p>
+<p><img alt="instructions" src="/img/phonegap-token-help.gif" /></p>
+<p>In Codio, select the <strong>Change Token</strong> button and paste in your key.</p>
+<p><img alt="authtoken" src="/img/authtoken.png" /></p>
+<h2 id="the-configxml-file">The config.xml file<a class="headerlink" href="#the-configxml-file" title="Permanent link"></a></h2>
+<p>To build apps at Phonegap:Build, a <code>config.xml</code> file is required in the root of your project. If one does not yet exist, Codio will ask if you want to create one.</p>
+<p><img alt="authtoken" src="/img/config.png" /></p>
+<p>This will create a default file for you and associated image resources for Splash Screen and Icon images in <code>pg-images</code> folder.</p>
+<p>Your <code>config.xml</code> needs to contain specific lines for each platform you want to target. For example, to build for iOS, Android and Windows Phone you need to include</p>
+<pre><code class="xml">&lt;gap:platforms&gt;
+    &lt;gap:platform name=&quot;ios&quot; /&gt;
+    &lt;gap:platform name=&quot;android&quot; /&gt;
+    &lt;gap:platform name=&quot;winphone&quot; /&gt;
+&lt;/gap:platforms&gt;
+</code></pre>
+
+<p>If you only want to build for one platform (for example Android) you would only need to include</p>
+<pre><code class="xml">&lt;gap:platforms&gt;
+    &lt;gap:platform name=&quot;android&quot; /&gt;
+&lt;/gap:platforms&gt;
+</code></pre>
+
+<p>Useful resources and references for the config.xml file can be found on the Phonegap site:</p>
 <ul>
-<li><a href="/ide/tools/phonegap/authtoken">Authentication Token</a></li>
-<li><a href="/ide/tools/phonegap/config">Config.xml</a></li>
-<li><a href="/ide/tools/phonegap/build">Build Area</a></li>
-</ul></div>
+<li><a href="http://docs.phonegap.com/phonegap-build/configuring/">config.xml</a></li>
+<li><a href="http://docs.phonegap.com/phonegap-build/configuring/preferences/">Custom preferences</a></li>
+<li><a href="http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/">Icons and Splash Screens</a></li>
+<li><a href="http://docs.phonegap.com/phonegap-build/configuring/plugins/">Phonegap:Build plugins</a></li>
+</ul>
+<h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link"></a></h2>
+<p>When you are ready to build your app, you press the <strong>Build</strong> button in the Phonegap Build Area section. Make sure you have <a href="/ide/tools/phonegap/config">created and configured your <code>config.xml</code> file</a>.</p>
+<p>You should have set up your code signing keys in your Phonegap:Build account (more on keys below) and you should select which keys you wish to use for each platform you defined in your <code>&lt;gap:platforms&gt;</code> tag in the <code>config.xml</code> file.</p>
+<p>Keys are configured from the <strong>Account &gt; Edit Setting &gt; Signing Keys</strong> tab in your Phonegap:Build account.</p>
+<p><img alt="Build settings" src="/img/buildsettings.png" /></p>
+<h3 id="a-bit-about-keys">A bit about Keys<a class="headerlink" href="#a-bit-about-keys" title="Permanent link"></a></h3>
+<p>Phonegap has very good documentation on how to generate your keys as well as how to configure your Phonegap:Build account.</p>
+<ul>
+<li><a href="http://docs.phonegap.com/phonegap-build/signing/android/">Android</a></li>
+<li><a href="http://docs.phonegap.com/phonegap-build/signing/ios/">iOS</a></li>
+</ul>
+<p><em>Note If you do not see anything in the <code>Keys</code> area, review your <code>&lt;gap:platforms&gt;</code> content in the config.xml file</em></p>
+<h4 id="android">Android<a class="headerlink" href="#android" title="Permanent link"></a></h4>
+<p>To build and test, you don't need to do anything. You can leave the field empty . If you want to deploy a codesigned App, (which you will need to deploy via Google Play) then you need to generate a proper Certificate.</p>
+<h4 id="ios">iOS<a class="headerlink" href="#ios" title="Permanent link"></a></h4>
+<p>Apple requires both a Codesigning Certificate and a Mobile Provisioning Profile. You need different ones for development and for App Store deployment.</p>
+<h4 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link"></a></h4>
+<p>Windows does not require any certificates to build.</p>
+<h3 id="build-settings">Build Settings<a class="headerlink" href="#build-settings" title="Permanent link"></a></h3>
+<h4 id="private-application">Private Application<a class="headerlink" href="#private-application" title="Permanent link"></a></h4>
+<p>Depending on the Phonegap:Build account plan you have, you can build a number of private applications. Check this box if you want to build as a private application. See <a href="https://build.phonegap.com/plans">here</a> for more information on Phonegap:Build plans</p>
+<h4 id="enable-debug">Enable Debug<a class="headerlink" href="#enable-debug" title="Permanent link"></a></h4>
+<p>Checking this box enables Phonegap Build debugging to allow you to use standard Web Inspector tools available from the PhoneGap Build site to debug PhoneGap apps while they are running on your device.</p>
+<p>For more information on this see <a href="http://docs.phonegap.com/references/developer-app/debugging/">Remote Debugging Tools</a></p>
+<h4 id="enable-hydrates">Enable Hydrates<a class="headerlink" href="#enable-hydrates" title="Permanent link"></a></h4>
+<p>Checking this box enables Phonegap:Build Hydration. Hydration is a tool that has two main benefits:</p>
+<ul>
+<li>Compilation times are improved significantly.</li>
+<li>Updates are pushed directly to the application installed on a device.</li>
+</ul>
+<p>For more information on this see <a href="http://docs.phonegap.com/phonegap-build/tools/hydration/">Hydration</a></p>
+<h3 id="initiate-build">Initiate Build<a class="headerlink" href="#initiate-build" title="Permanent link"></a></h3>
+<p>When you have selected keys and any settings, simply press the Build button. Codio now passes all information through to the Phonegap:Build platform, where the build is run in the background.</p>
+<p>If the status does not complete in a reasonable time, you can do one of the following</p>
+<ul>
+<li>go to your Phonegap:Build account and click the main Apps tab, where you should see your app and its status</li>
+<li>check the status of the Phonegap:Build service <a href="http://status.build.phonegap.com/">here</a></li>
+</ul>
+<h3 id="download-your-app">Download your App<a class="headerlink" href="#download-your-app" title="Permanent link"></a></h3>
+<p>When the build is completed you can deploy the app to your device in the following ways.</p>
+<ul>
+<li>download the native file and manually upload to your device</li>
+<li>scan the QR code to download from Phonegap:Build to your device</li>
+</ul>
+<p><img alt="Build" src="/img/build.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
@@ -169,8 +245,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-12-17 10:59:48
--->

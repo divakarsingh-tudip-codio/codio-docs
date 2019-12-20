@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/resources/schoolscontent/flode/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Flode - Codio Documentation</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Codio Documentation</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="https://www.codio.com">Codio</a>
+                            </li>
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#cheat-sheet">Cheat Sheet</a></li>
+        <li class="main "><a href="#dragging-in-blocks">Dragging in blocks</a></li>
+        <li class="main "><a href="#connecting-blocks-with-lines">Connecting blocks with lines</a></li>
+        <li class="main "><a href="#resizing-blocks">Resizing blocks</a></li>
+        <li class="main "><a href="#zooming-centering-your-chart">Zooming &amp; centering your chart</a></li>
+        <li class="main "><a href="#multi-selection">Multi selection</a></li>
+        <li class="main "><a href="#aligning-blocks">Aligning blocks</a></li>
+        <li class="main "><a href="#undo-redo">Undo &amp; Redo</a></li>
+        <li class="main "><a href="#adding-comments">Adding comments</a></li>
+        <li class="main "><a href="#video-overview">Video overview</a></li>
+        <li class="main "><a href="#flode-teaching-content">Flode teaching content</a></li>
+        <li class="main "><a href="#creating-and-editing-a-new-flode-file">Creating and editing a new Flode file</a></li>
+        <li class="main "><a href="#detailed-instructions">Detailed instructions</a></li>
+        <li class="main "><a href="#credits">Credits</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Flode is a course that creates executable flow charts. Flode is a great way to teach computational thinking and introduce students to programming. It can:</p>
+<ul>
+<li>create beautiful, annotated flow charts</li>
+<li>write proper code expressions, including decisions, in chart elements</li>
+<li>integrated debugger</li>
+<li>export your charts as images for project write-ups</li>
+<li>input and output elements so automated tests can auto-grade charts.</li>
+</ul>
+<p>Please see the sections below for details on how to access ready made course or how to create your own projects where students can create Flode charts within their own projects.</p>
+<h2 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link"></a></h2>
+<p>Here is a quick reference for commonly used actions.</p>
+<h2 id="dragging-in-blocks">Dragging in blocks<a class="headerlink" href="#dragging-in-blocks" title="Permanent link"></a></h2>
+<p>Drag from the top toolbar into the chart.</p>
+<h2 id="connecting-blocks-with-lines">Connecting blocks with lines<a class="headerlink" href="#connecting-blocks-with-lines" title="Permanent link"></a></h2>
+<ul>
+<li>Hover over a block to see the connection points</li>
+<li>Move the mouse over one of the small connection point circles</li>
+<li>Click and drag with the mouse to start creating the line</li>
+<li>Release the mouse to move in another direction then click to change direction again or connect to another connection point</li>
+</ul>
+<h2 id="resizing-blocks">Resizing blocks<a class="headerlink" href="#resizing-blocks" title="Permanent link"></a></h2>
+<p>Click on a block then drag a highlighted point</p>
+<h2 id="zooming-centering-your-chart">Zooming &amp; centering your chart<a class="headerlink" href="#zooming-centering-your-chart" title="Permanent link"></a></h2>
+<p>Zoom controls are in the toolbar or using the mouse wheel if you have one</p>
+<h2 id="multi-selection">Multi selection<a class="headerlink" href="#multi-selection" title="Permanent link"></a></h2>
+<ul>
+<li>Press the shift key then drag the mouse to surround blocks to multi-select</li>
+<li>Select one block then press the shift key then start dragging the mouse</li>
+</ul>
+<h2 id="aligning-blocks">Aligning blocks<a class="headerlink" href="#aligning-blocks" title="Permanent link"></a></h2>
+<ul>
+<li>Multi select the blocks to align</li>
+<li>Right click and select one of the alignment options</li>
+</ul>
+<h2 id="undo-redo">Undo &amp; Redo<a class="headerlink" href="#undo-redo" title="Permanent link"></a></h2>
+<ul>
+<li>Undo <code>Ctrl+Z</code> (PC) <code>Cmd+Z</code> (Mac)</li>
+<li>Redo <code>Shift+Ctrl+Z</code> (PC) <code>Shift+Cmd+Z</code> (Mac)</li>
+</ul>
+<h2 id="adding-comments">Adding comments<a class="headerlink" href="#adding-comments" title="Permanent link"></a></h2>
+<ul>
+<li>Click on a block then press the speech bubble icon to add a comment.</li>
+</ul>
+<h2 id="video-overview">Video overview<a class="headerlink" href="#video-overview" title="Permanent link"></a></h2>
+<div class="video">
+<div class="video-wrapper">
+<iframe src="//player.vimeo.com/video/138200825" width="600" height="370" frameborder="0" webkitallowfullscreen mozallowflscreen allowfullscreen></iframe>
+</div>
+</div>
+
+<h2 id="flode-teaching-content">Flode teaching content<a class="headerlink" href="#flode-teaching-content" title="Permanent link"></a></h2>
+<p>The content also contains many auto-graded assessments. Results can be seen instantly on the teacher <strong>My Classroom</strong> feature.</p>
+<ol>
+<li>Log into Codio</li>
+<li>Select <strong>Courses</strong> from the items on the left of the Dashboard</li>
+<li>Look for <strong>An Introduction to Programming</strong></li>
+</ol>
+<p><strong>An Introduction to Programming</strong> uses Flode extensively and provides an excellent way of introducing students to programming, computational thinking and Algorithms.</p>
+<h2 id="creating-and-editing-a-new-flode-file">Creating and editing a new Flode file<a class="headerlink" href="#creating-and-editing-a-new-flode-file" title="Permanent link"></a></h2>
+<p>If you want to create Flode charts independently of any Codio Course content, create a new project from the <strong>Dashboard &gt; My Projects</strong> area.</p>
+<p>Once inside a project, to create a new flow chart, simply create a new file with the extension <code>.flode</code>. A new Flode window will appear and you can start creating and editing your chart.</p>
+<p>A new file is created from either the File menu or by right-clicking on the project name line in the file tree.</p>
+<p><img alt="authtoken" src="/img/new-file.png" /></p>
+<p>To edit an existing <code>.flode</code> file, simply click on the file name to open the Flode editor.</p>
+<h2 id="detailed-instructions">Detailed instructions<a class="headerlink" href="#detailed-instructions" title="Permanent link"></a></h2>
+<p>To get detailed instructions on how to use Flode,</p>
+<ol>
+<li>Log into Codio</li>
+<li>Select <strong>Courses</strong> from the items on the left of the Dashboard</li>
+<li>Look for <strong>An Introduction to Programming</strong></li>
+<li>Select the first Module, <strong>Flode</strong></li>
+<li>Press <strong>Start Unit</strong> from the first Unit in the list <strong>Introduction to Flode</strong></li>
+</ol>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link"></a></h2>
+<p>Many thanks to the folks at <a href="http://www.jgraph.com/">JGraph</a> for their excellent flowcharting and diagramming tools.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

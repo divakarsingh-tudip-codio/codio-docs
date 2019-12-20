@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Codio platform documentation">
+        
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/ide/tools/ssh/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Codio Documentation</title>
+        <title>Remote SSH Terminal Access - Codio Documentation</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -29,7 +29,7 @@
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -76,8 +76,16 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#copy-paste-operations">Copy &amp; Paste operations</a></li>
-        <li class="main "><a href="#mac">Mac</a></li>
-        <li class="main "><a href="#windows-linux">Windows, Linux</a></li>
+            <li><a href="#mac">Mac</a></li>
+            <li><a href="#windows-linux">Windows, Linux</a></li>
+        <li class="main "><a href="#ssh-connection-manager">SSH connection manager</a></li>
+            <li><a href="#creating-and-editing-connections">Creating and Editing Connections</a></li>
+            <li><a href="#public-keys">Public Keys</a></li>
+            <li><a href="#making-a-connection">Making a connection</a></li>
+        <li class="main "><a href="#quick-connect">Quick connect</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#connect-save">Connect &amp; Save</a></li>
+            <li><a href="#public-keys_1">Public Keys</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -88,12 +96,35 @@
 <p>Codio provides the ability to connect to remote servers via SSH. You can open multiple connections and manage connections through the <a href="/ide/tools/ssh/ssh-manager">SSH Connection Manager</a>.</p>
 <p>A <a href="/ide/tools/ssh/quick-connect">Quick Connect</a> option lets you access remote servers on an ad hoc basis. The SSH Connection Manager lets you store connections for quick access later.</p>
 <p>You can do the same things you can do in a regular terminal window, including running text editors like Nano etc.</p>
-<h2 id="copy-paste-operations">Copy &amp; Paste operations<a class="headerlink" href="#copy-paste-operations" title="Permanent link"></a></h2>
+<h3 id="copy-paste-operations">Copy &amp; Paste operations<a class="headerlink" href="#copy-paste-operations" title="Permanent link"></a></h3>
 <p>Behavior varies between Macs and other operating systems. Using the right-click menu should work on all systems.</p>
-<h1 id="mac">Mac<a class="headerlink" href="#mac" title="Permanent link"></a></h1>
+<h4 id="mac">Mac<a class="headerlink" href="#mac" title="Permanent link"></a></h4>
 <p>Copy and paste both works as expected with <code>cmd+c</code> and <code>cmd+v</code>.</p>
-<h1 id="windows-linux">Windows, Linux<a class="headerlink" href="#windows-linux" title="Permanent link"></a></h1>
-<p>Pasting is done as expected with <code>ctrl+v</code> but copying (<code>ctrl+c</code>) cannot be done as it conflicts with the <code>kill process</code> command, so you should use the right-click menu.</p></div>
+<h4 id="windows-linux">Windows, Linux<a class="headerlink" href="#windows-linux" title="Permanent link"></a></h4>
+<p>Pasting is done as expected with <code>ctrl+v</code> but copying (<code>ctrl+c</code>) cannot be done as it conflicts with the <code>kill process</code> command, so you should use the right-click menu.</p>
+<h2 id="ssh-connection-manager">SSH connection manager<a class="headerlink" href="#ssh-connection-manager" title="Permanent link"></a></h2>
+<p>You can manage your SSH connections by going to the <strong>Tools &gt; SSH &gt; Connection Manager</strong> menu item. The Connection Manager lists all previously created connections, which you can then connect to or edit.
+<img alt="ssh connection list" src="/img/ssh-connection-list.png" /></p>
+<h3 id="creating-and-editing-connections">Creating and Editing Connections<a class="headerlink" href="#creating-and-editing-connections" title="Permanent link"></a></h3>
+<p>Press the Create New button to create a new connection or the pencil icon to edit an existing connection.</p>
+<p>You enter the remote server credentials : user name, hostname and optionally port. You can also specify a friendly name that will appear in the connections list.</p>
+<p><img alt="ssh connection edit" src="/img/ssh-connection-edit.png" /></p>
+<h3 id="public-keys">Public Keys<a class="headerlink" href="#public-keys" title="Permanent link"></a></h3>
+<p>If you want to add your Codio public key to the remote server, press the key icon in the main Connection Manager listing. This saves you from having to upload a public key manually and means you won't need to enter a password to authenticate.</p>
+<p>If you do want to add your public key manually, please refer to the <a href="/dashboard/account/publickey">Codio public key</a> documentation.</p>
+<h3 id="making-a-connection">Making a connection<a class="headerlink" href="#making-a-connection" title="Permanent link"></a></h3>
+<p>To make a connection, you click on the leftmost icon, which opens the connection in a new tab.</p>
+<h2 id="quick-connect">Quick connect<a class="headerlink" href="#quick-connect" title="Permanent link"></a></h2>
+<p>The Quick Connect Option (<strong>Tools &gt; SSH &gt; Quick Connect</strong>) lets you access remote servers on an ad hoc basis. You just enter the remote server credentials : user name, hostname and optionally port.</p>
+<p>Specify a friendly name if you want to save the connection details.</p>
+<p><img alt="ssh paramaters" src="/img/ssh-parms.png" /></p>
+<p>If you do not want to install a public key remotely, then Codio will connect to the remote server, which will prompt you for a password.</p>
+<h3 id="connect">Connect<a class="headerlink" href="#connect" title="Permanent link"></a></h3>
+<p>When you press Connect, a tab will open up in the current panel and off you go. The connection details will not be saved.</p>
+<h3 id="connect-save">Connect &amp; Save<a class="headerlink" href="#connect-save" title="Permanent link"></a></h3>
+<p>This connects but also saves the connection details to the <a href="/ide/tools/ssh/ssh-manager/">SSH Connection Manager</a>.</p>
+<h3 id="public-keys_1">Public Keys<a class="headerlink" href="#public-keys_1" title="Permanent link"></a></h3>
+<p>If you want to add your Codio public key to the remote server, then you should Connect &amp; Save. Then go to the SSH Connection Manager and press the public key button as <a href="/ide/tools/ssh/ssh-manager">described here</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -174,8 +205,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-12-17 10:59:48
--->
