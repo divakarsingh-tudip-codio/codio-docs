@@ -8,69 +8,312 @@
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/ide/boxes/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Accessing a Box - Codio Documentation</title>
+        <title>"Accessing a Box" - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../courses/assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/assessments/">"Assessments"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/authoring/">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/classes/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../courses/collaboration/">Collaborating on content</a>
+</li>
+                            
+<li >
+    <a href="../../courses/coursemanagement/">Courses</a>
+</li>
+                            
+<li >
+    <a href="../../courses/grading/">"Grading and accessing student projects"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_0/">"LTI 1.0 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_3/">"LTI 1.3 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/plagiarism/">Plagiarism checker</a>
+</li>
+                            
+<li >
+    <a href="../../courses/settings-actions/">"Settings and page actions"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">"Account"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">"Desktop App"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">"Navigating Codio"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organizations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">"Dashboard overview"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">"Support"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">"Accessing a Box"</a>
+</li>
+                            
+<li >
+    <a href="../editing/">Editing</a>
+</li>
+                            
+<li >
+    <a href="../features/">Features</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../panels/">Panels</a>
+</li>
+                            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../project/packs/">Packs</a>
+</li>
+                            
+<li >
+    <a href="../../project/projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../../project/stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../dashboard/support/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../editing/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -142,30 +385,31 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
+<hr />
 <p>Each Codio Project gets its own dedicated Ubuntu Server (Box). This chapter contains important information on accessing your box, how to administer it and how to install software dependencies.</p>
 <p>Details of your project Box can be found by opening the <strong>Project &gt; Box Info</strong> menu item, where information of your project URL(s) can be viewed.</p>
-<p><img alt="Box Info" src="/img/box_info.png" /></p>
+<p><img alt="Box Info" src="../../img/box_info.png" /></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
 <h3 id="waking-a-box">Waking a Box<a class="headerlink" href="#waking-a-box" title="Permanent link"></a></h3>
 <p>When you create a Codio Project, it is automatically assigned an Ubuntu server. You can think of this server as being asleep until you open up your Project in the IDE. As soon as the Project loads in the IDE, the Box is up and running.</p>
 <h3 id="when-is-the-server-put-back-to-sleep">When is the Server put back to sleep?<a class="headerlink" href="#when-is-the-server-put-back-to-sleep" title="Permanent link"></a></h3>
 <p>Your server is put to sleep within a few minutes of you exiting your Project or after 60mins of inactivity.</p>
 <h3 id="can-i-have-my-box-always-on">Can I have my Box 'Always on'?<a class="headerlink" href="#can-i-have-my-box-always-on" title="Permanent link"></a></h3>
-<p>Paid subscribers can use the <a href="/ide/boxes/always-on/">Always On Boxes</a> feature. This allows you to mark Projects that you don't want to be put to sleep when you exit your Project.</p>
+<p>Paid subscribers can use the <a href="../../ide/boxes/#always-on-boxes">Always On Boxes</a> feature. This allows you to mark Projects that you don't want to be put to sleep when you exit your Project.</p>
 <h3 id="can-i-ssh-into-my-box">Can I SSH into my Box?<a class="headerlink" href="#can-i-ssh-into-my-box" title="Permanent link"></a></h3>
-<p>Yes, see <a href="/ide/boxes/access/ssh-access/">SSH into your box</a> documentation.</p>
+<p>Yes, see <a href="../../ide/boxes/#ssh-and-code-access-ssh-into-your-box">SSH into your box</a> documentation.</p>
 <h3 id="can-i-reboot-my-box">Can I reboot my Box?<a class="headerlink" href="#can-i-reboot-my-box" title="Permanent link"></a></h3>
-<p>Yes. Please refer to the <a href="/ide/boxes/restart-reset/">Restart and Reset</a> documentation.</p>
+<p>Yes. Please refer to the <a href="../../ide/boxes/#restart-and-reset">Restart and Reset</a> documentation.</p>
 <h3 id="can-i-let-other-people-administer-my-box">Can I let other people administer my Box?<a class="headerlink" href="#can-i-let-other-people-administer-my-box" title="Permanent link"></a></h3>
-<p>Paid subscribers can use the Admin property of the <a href="/ide/customization/permissions">Permissions</a> feature to allow other Codio users to access their Project and have full access to your Codio Box as well as the code.</p>
+<p>Paid subscribers can use the Admin property of the <a href="../../ide/settings/#project-permissions">Permissions</a> feature to allow other Codio users to access their Project and have full access to your Codio Box as well as the code.</p>
 <h3 id="do-i-have-sudo-access">Do I have sudo access?<a class="headerlink" href="#do-i-have-sudo-access" title="Permanent link"></a></h3>
 <p>Yes, our Boxes provide sudo access.</p>
 <h3 id="how-do-i-install-software-dependencies">How do I install software dependencies?<a class="headerlink" href="#how-do-i-install-software-dependencies" title="Permanent link"></a></h3>
 <p>You have sudo access, so should use the full power of the <a href="https://help.ubuntu.com/community/AptGet/Howto">apt</a> package management system, and the packages it provides via the Ubuntu community.</p>
 <h3 id="how-do-i-access-my-box-from-code">How do I access my Box from code?<a class="headerlink" href="#how-do-i-access-my-box-from-code" title="Permanent link"></a></h3>
-<p>We have <a href="/ide/boxes/ext-access/">full documentation</a> on how to access your Box from code.</p>
+<p>We have <a href="../../ide/boxes/#accessing-boxes-and-ports">full documentation</a> on how to access your Box from code.</p>
 <h3 id="firewall-issues">Firewall issues<a class="headerlink" href="#firewall-issues" title="Permanent link"></a></h3>
-<p>Codio Boxes do not run on port 80. Some companies block outbound access to ports other than port 80. Please read <a href="/ide/boxes/ext-access/">this section</a> on how to work around this.</p>
+<p>Codio Boxes do not run on port 80. Some companies block outbound access to ports other than port 80. Please read <a href="../../ide/boxes/#accessing-boxes-and-ports">this section</a> on how to work around this.</p>
 <h3 id="important-localhost-configuration-information">Important 'localhost' configuration information<a class="headerlink" href="#important-localhost-configuration-information" title="Permanent link"></a></h3>
 <p>In many config files on your Box you would include a reference to <code>127.0.0.1</code> to access localhost. Please be sure to use <code>0.0.0.0</code> instead.</p>
 <h2 id="terminal-window">Terminal window<a class="headerlink" href="#terminal-window" title="Permanent link"></a></h2>
@@ -174,13 +418,13 @@
 <li>from the <strong>Tools-&gt;Terminal</strong> menu item</li>
 <li>or by pressing the terminal icon in the bar at the top of the file tree.</li>
 </ul>
-<p><img alt="terminal icon" src="/img/terminalicon.png" /></p>
+<p><img alt="terminal icon" src="../../img/terminalicon.png" /></p>
 <p>This will open up a terminal window in a new IDE panel. You can have multiple terminals open simultaneously.</p>
-<p>Note that you can create tabs and panels anywhere you like using Codio's <a href="/ide/panels/">Panels and Tabs</a> features.</p>
-<p><img alt="terminal" src="/img/terminal.png" /></p>
+<p>Note that you can create tabs and panels anywhere you like using Codio's <a href="../../ide/panels/">Panels and Tabs</a> features.</p>
+<p><img alt="terminal" src="../../img/terminal.png" /></p>
 <h3 id="terminal-settings">Terminal Settings<a class="headerlink" href="#terminal-settings" title="Permanent link"></a></h3>
 <p>You can modify various Terminal settings from the <strong>Codio-&gt;Preferences</strong> menu.</p>
-<p>The available settings (and their defaults) are listed below. Preferences can be modified at the User level as <a href="/ide/customization/codio-prefs">described here</a>. You can also force settings at the Project level but these will then override for all users looking at this project, so should be used sparingly.</p>
+<p>The available settings (and their defaults) are listed below. Preferences can be modified at the User level as <a href="../../ide/settings/#user-preferences">described here</a>. You can also force settings at the Project level but these will then override for all users looking at this project, so should be used sparingly.</p>
 <pre><code class="ini">[terminal]
 
 ;Font size.
@@ -234,7 +478,7 @@ backend-connection = Shift+Alt+T
 <h2 id="preview-menu">Preview Menu<a class="headerlink" href="#preview-menu" title="Permanent link"></a></h2>
 <p>Codio offers a fully customizable Preview menu so you can preview both static files (.html) and server side files (.php files, Ruby and Node apps etc.) with a single click.</p>
 <ul>
-<li><a href="/ide/features/inline-preview">Preview documentation</a></li>
+<li><a href="../../ide/features/#preview">Preview documentation</a></li>
 </ul>
 <p>This feature lets you set up any number of 'aliases' both for static files and Box cli commands.</p>
 <h2 id="preinstalled-software-packages">Preinstalled software packages<a class="headerlink" href="#preinstalled-software-packages" title="Permanent link"></a></h2>
@@ -242,8 +486,8 @@ backend-connection = Shift+Alt+T
 <ul>
 <li>Git</li>
 </ul>
-<p>If you want to have more software installed by default then you should use <a href="/project/stacks/listing/">Stacks</a> or select one of the standard stacks from the <strong>New Project</strong> screen.</p>
-<p>Please refer to the <a href="/ide/boxes/installsw/box-parts">Installing software packages</a> section for details on how to install many other languages, database, web servers and other system components.</p>
+<p>If you want to have more software installed by default then you should use <a href="../../project/stacks/#stack-listings">Stacks</a> or select one of the standard stacks from the <strong>New Project</strong> screen.</p>
+<p>Please refer to the <a href="../../ide/boxes/#installing-software-packages">Installing software packages</a> section for details on how to install many other languages, database, web servers and other system components.</p>
 <h2 id="file-software-locations">File &amp; software locations<a class="headerlink" href="#file-software-locations" title="Permanent link"></a></h2>
 <p>All Codio code workspace and software dependency files are located in the <code>/home/codio</code> folder, also reachable as <code>~</code>.</p>
 <p>Everything below this level can be accessed and is effectively read-only. You should not change anything here as it will not persist.</p>
@@ -252,11 +496,11 @@ backend-connection = Shift+Alt+T
 <p>The code workspace you see in the project file tree is located at <code>/home/codio/workspace</code> or <code>~/workspace</code>.</p>
 <h2 id="installing-software-packages">Installing software packages<a class="headerlink" href="#installing-software-packages" title="Permanent link"></a></h2>
 <p>The <strong>Tools-&gt;Install Software</strong> menu option gives you access to a dialog driven means of running scripts that can install, configure or reconfigure software components. This saves you the trouble of doing this manually from the command line.</p>
-<p><img alt="Install Software" src="/img/install-sw-g2.png" /></p>
+<p><img alt="Install Software" src="../../img/install-sw-g2.png" /></p>
 <p>On this page, you can locate the software you want to install and then click the install icon to start the installation.</p>
 <h3 id="installing-from-the-command-line">Installing from the command line<a class="headerlink" href="#installing-from-the-command-line" title="Permanent link"></a></h3>
 <p>Our boxes provide full <code>sudo</code> (root) access, so you can also use the Ubuntu <a href="https://help.ubuntu.com/community/AptGet/Howto">apt</a> package manager, which provides thousands of software packages that are maintained by the Ubuntu community.</p>
-<p>If you want to provide fully pre-configured boxes then you should use <a href="/project/stacks/listing/">Stacks</a> rather than the Install Software feature described on this page.</p>
+<p>If you want to provide fully pre-configured boxes then you should use <a href="../../project/stacks/#stack-listings">Stacks</a> rather than the Install Software feature described on this page.</p>
 <h3 id="adding-or-requesting-new-packages">Adding or requesting new packages<a class="headerlink" href="#adding-or-requesting-new-packages" title="Permanent link"></a></h3>
 <p>As of May 2016 the list of available packages is somewhat limited. However, we will be adding to these continuously and we also encourage you to request new ones.</p>
 <p>If you require a new script to be added to the Install Software list then you have two options.</p>
@@ -264,7 +508,7 @@ backend-connection = Shift+Alt+T
 <li>Visit the <a href="https://github.com/codio/install_software/issues">Issues</a> page on our GitHub repository and create a new issue detailing your requirements.</li>
 <li>You can fork our <a href="https://github.com/codio/install_software">GitHub repository</a>, add the script yourself and then submit a pull request.</li>
 </ol>
-<p>Instructions on how to add your own package scripts can be found <a href="/ide/boxes/installsw/parts-coding/">here</a>.</p>
+<p>Instructions on how to add your own package scripts can be found <a href="../../ide/boxes/#coding-installable-packages">here</a>.</p>
 <h3 id="autostarting">Autostarting<a class="headerlink" href="#autostarting" title="Permanent link"></a></h3>
 <p>Services that require to be started will auto start on installation.</p>
 <p>You can manually start, stop and restart services using the following terminal commands:</p>
@@ -355,23 +599,23 @@ echo &quot;Mysql password root user password is 'codio'&quot;
 <p>The Language Server protocol is used to integrate features like auto complete, go to definition, find all references.</p>
 <p><strong>Java, OCAML and Python</strong> are currently available.</p>
 <p>Python Example:
-<img alt="Python" src="/img/pythonexample.png" /></p>
+<img alt="Python" src="../../img/pythonexample.png" /></p>
 <h3 id="implementing-lsp-support">Implementing LSP support<a class="headerlink" href="#implementing-lsp-support" title="Permanent link"></a></h3>
-<p>Enable LSP support in your <a href="/ide/customization/codio-prefs/">User</a> (or <a href="/ide/customization/project-prefs/">Project</a>) Preferences, entering</p>
+<p>Enable LSP support in your <a href="../../ide/settings/#user-preferences">User</a> (or <a href="../../ide/settings/#project-preferences">Project</a>) Preferences, entering</p>
 <pre><code>[codio-lsp]
 enable_lsp_support = true
 </code></pre>
 
-<p>If you are <a href="/content/authoring/">authoring</a> content for use in a course/class, we recommend enabling as a <a href="/ide/customization/project-prefs/">project preference</a> as these will be applied over any preferences users may set</p>
+<p>If you are <a href="../../courses/authoring/">authoring</a> content for use in a course/class, we recommend enabling as a <a href="../../ide/settings/#project-preferences">project preference</a> as these will be applied over any preferences users may set</p>
 <h3 id="installing-language-server-protocols">Installing language server protocols<a class="headerlink" href="#installing-language-server-protocols" title="Permanent link"></a></h3>
-<p>To install language server protocols, go to the menu <strong>Tools-&gt;Install Software</strong> and locate the relevant component.  Press the install button in the relevant row. The installation may take a few minutes and you should then <a href="/ide/boxes/restart-reset/">Restart</a> your Box before proceeding.</p>
+<p>To install language server protocols, go to the menu <strong>Tools-&gt;Install Software</strong> and locate the relevant component.  Press the install button in the relevant row. The installation may take a few minutes and you should then <a href="../../ide/boxes/#restart-and-reset">Restart</a> your Box before proceeding.</p>
 <h2 id="autocomplete">Autocomplete<a class="headerlink" href="#autocomplete" title="Permanent link"></a></h2>
 <p>Autocomplete is not automatically triggered as in HTML/CSS/JS files. To invoke autocomplete for language server protocol implemented files, use :</p>
 <pre><code>Mac: Shift+Space
 Others: Ctrl+Space
 </code></pre>
 
-<p>If you wish to change the default preference to something else you can. See <a href="/ide/customization/codio-prefs/">User Preferences</a> for more on this</p>
+<p>If you wish to change the default preference to something else you can. See <a href="../../ide/settings/#user-preferences">User Preferences</a> for more on this</p>
 <h2 id="gui-based-output">GUI based output<a class="headerlink" href="#gui-based-output" title="Permanent link"></a></h2>
 <p>If you are writing or using programs that have a GUI based output then please read this section. Whether you are using UI libraries like tkinter, qt or simply ubuntu applications that have a non web based UI, this section explains how to setup a virtual desktop.</p>
 <h3 id="sample-project">Sample Project<a class="headerlink" href="#sample-project" title="Permanent link"></a></h3>
@@ -382,10 +626,10 @@ Others: Ctrl+Space
 <p>As you will see when trying out the sample applications in the demo project above, some of which have very complex UIs (notably SQLite and StartUML), you can get a very good experience indeed. The limitations start to be felt when using fast motion graphics where the virtual screen content is changing so fast that it cannot be rendered in real time over the internet. If you have better bandwidth you will experience better performance and vice-versa.</p>
 <h3 id="installing-your-own-projects">Installing your own projects<a class="headerlink" href="#installing-your-own-projects" title="Permanent link"></a></h3>
 <h4 id="installing-x-server">Installing X Server<a class="headerlink" href="#installing-x-server" title="Permanent link"></a></h4>
-<p>To install X Server, go to the menu <strong>Tools-&gt;Install Software</strong> and locate X Server. Press the install button in the X Server row. The installation may take a few minutes and you should then <a href="/ide/boxes/restart-reset/">Restart</a> your Box before proceeding.</p>
+<p>To install X Server, go to the menu <strong>Tools-&gt;Install Software</strong> and locate X Server. Press the install button in the X Server row. The installation may take a few minutes and you should then <a href="../../ide/boxes/#restart-and-reset">Restart</a> your Box before proceeding.</p>
 <h4 id="running-your-code">Running your code<a class="headerlink" href="#running-your-code" title="Permanent link"></a></h4>
 <p>Before you can view any output, your program needs to run, so you should first start your code. When you start the viewer (see below), the UI output will be shown automatically.</p>
-<p><img alt="GUI Output" src="/img/guioutput.png" /></p>
+<p><img alt="GUI Output" src="../../img/guioutput.png" /></p>
 <p>You also can start the viewer first but it will be empty until a program runs, whereupon it will refresh.</p>
 <h4 id="the-viewer">The viewer<a class="headerlink" href="#the-viewer" title="Permanent link"></a></h4>
 <p>The viewer is a special window that appears either inside Codio or in a separate browser tab. To open it, you should add <code>"Viewer": "https://{{domain3000}}/"</code> to the .codio file.</p>
@@ -430,11 +674,11 @@ Others: Ctrl+Space
 <h3 id="tmux">tmux<a class="headerlink" href="#tmux" title="Permanent link"></a></h3>
 <p>As an alternative, you can install tmux.</p>
 <h2 id="ssh-and-code-access-codio-box-ssh-keys">SSH and code access - Codio box SSH keys<a class="headerlink" href="#ssh-and-code-access-codio-box-ssh-keys" title="Permanent link"></a></h2>
-<p>Codio generates a key-pair that can be used for services like Github, so you can upload your public key to those systems (read <a href="/dashboard/account/github/">this section</a> for details on how to upload Github and Bitbucket public keys with a single button press).</p>
-<p>You can find your Codio public key as <a href="/dashboard/account/publickey">described here</a>.</p>
+<p>Codio generates a key-pair that can be used for services like Github, so you can upload your public key to those systems (read <a href="../../dashboard/account/#github">this section</a> for details on how to upload Github and Bitbucket public keys with a single button press).</p>
+<p>You can find your Codio public key as <a href="../../dashboard/account/#public-key">described here</a>.</p>
 <p>When you create a new Codio project, your user keys are automatically copied into your project and can be found in the <code>~/.ssh</code> folder. You will need to open up a Terminal window to access this folder and the keys stored in the <code>id_rsa</code> file.</p>
 <h2 id="ssh-and-code-access-ssh-into-your-box">SSH and code access -SSH into your box<a class="headerlink" href="#ssh-and-code-access-ssh-into-your-box" title="Permanent link"></a></h2>
-<p>Unless your project is utilising <a href="/ide/boxes/always-on/">Always On Boxes</a> you will need to open your Codio Project in order for the Box to be started and ready to receive incoming SSH connections.</p>
+<p>Unless your project is utilising <a href="../../ide/boxes/#always-on-boxes">Always On Boxes</a> you will need to open your Codio Project in order for the Box to be started and ready to receive incoming SSH connections.</p>
 <h3 id="generating-key-pairs">Generating Key Pairs<a class="headerlink" href="#generating-key-pairs" title="Permanent link"></a></h3>
 <p>There are several sites that explain generating SSH keys.</p>
 <ul>
@@ -454,7 +698,7 @@ Others: Ctrl+Space
 <p>You can view/check to see all/any Public key(s) you have uploaded into your project by opening the terminal and running <code>cat ~/.ssh/authorized_keys</code>.</p>
 <h3 id="enabling-and-connecting-to-your-box-from-your-local-machines-terminal">Enabling and Connecting to your Box from your local machine's Terminal<a class="headerlink" href="#enabling-and-connecting-to-your-box-from-your-local-machines-terminal" title="Permanent link"></a></h3>
 <ol>
-<li>Go to <strong>Project&gt;Settings</strong> and to the <a href="/ide/customization/project-settings/">Forwarding Settings</a> tab and click the 'Enable SSH Forwarding' button</li>
+<li>Go to <strong>Project&gt;Settings</strong> and to the <a href="../../ide/settings/#project-settings">Forwarding Settings</a> tab and click the 'Enable SSH Forwarding' button</li>
 <li>The connection string you need to use is shown there</li>
 </ol>
 <p>You will see connection details like this
@@ -466,9 +710,9 @@ Others: Ctrl+Space
 <h2 id="ide-access-permissions">IDE access permissions<a class="headerlink" href="#ide-access-permissions" title="Permanent link"></a></h2>
 <p>By default, other users with read and write permissions are not able to access your Box from the command line.</p>
 <p>You can grant access to other Codio users by assigning the Admin permission level. This feature requires a paid subscription.</p>
-<p>For full details, please refer to the <a href="/ide/customization/permissions">Permissions section</a> of the documentation.</p>
+<p>For full details, please refer to the <a href="../../ide/settings/#project-permissions">Permissions section</a> of the documentation.</p>
 <h2 id="auto-starting-services">Auto starting services<a class="headerlink" href="#auto-starting-services" title="Permanent link"></a></h2>
-<p>Your Box will be put to sleep under the conditions <a href="/ide/boxes/overview/">explained here</a>. When you open your project, the Box will start and services will start automatically.</p>
+<p>Your Box will be put to sleep under the conditions <a href="../../ide/boxes/#overview">explained here</a>. When you open your project, the Box will start and services will start automatically.</p>
 <h3 id="upstart">Upstart<a class="headerlink" href="#upstart" title="Permanent link"></a></h3>
 <p>Codio currently uses upstart. If you want to configure services to start when your box starts up, you should configure a <code>.conf</code> file. If you are not familiar with upstart, please Google it for configuration details.</p>
 <p><strong>Important</strong> - you need to specify the user account under which the service is run using <code>setuid codio</code>.</p>
@@ -516,7 +760,7 @@ exec your-service-name
 <h3 id="codio-file">.codio file<a class="headerlink" href="#codio-file" title="Permanent link"></a></h3>
 <p>The configuration for the <strong>Run</strong> (and <strong>Preview</strong>) button can be set by editing the <code>.codio</code> file in the root of your project.</p>
 <p>The following code below shows the <code>.codio</code> file configured to give this Run menu</p>
-<p><img alt="Run Menu" src="/img/run-menu.png" /></p>
+<p><img alt="Run Menu" src="../../img/run-menu.png" /></p>
 <p>which is driven by the following <code>.codio</code> file</p>
 <pre><code class="json">{
   // Configure your Run and Preview buttons here.
@@ -577,14 +821,12 @@ exec your-service-name
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -600,7 +842,7 @@ exec your-service-name
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -626,19 +868,19 @@ exec your-service-name
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -649,6 +891,7 @@ exec your-service-name
         </div>
     </div>
 </div>
+
 
     </body>
 </html>

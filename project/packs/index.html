@@ -8,69 +8,312 @@
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/project/packs/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>How to use starter packs - Codio Documentation</title>
+        <title>"How to use starter packs" - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../courses/assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/assessments/">"Assessments"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/authoring/">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/classes/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../courses/collaboration/">Collaborating on content</a>
+</li>
+                            
+<li >
+    <a href="../../courses/coursemanagement/">Courses</a>
+</li>
+                            
+<li >
+    <a href="../../courses/grading/">"Grading and accessing student projects"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_0/">"LTI 1.0 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_3/">"LTI 1.3 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/plagiarism/">Plagiarism checker</a>
+</li>
+                            
+<li >
+    <a href="../../courses/settings-actions/">"Settings and page actions"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">"Account"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">"Desktop App"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">"Navigating Codio"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organizations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">"Dashboard overview"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">"Support"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../ide/boxes/">"Accessing a Box"</a>
+</li>
+                            
+<li >
+    <a href="../../ide/editing/">Code Editing</a>
+</li>
+                            
+<li >
+    <a href="../../ide/features/">"Advanced IDE Features"</a>
+</li>
+                            
+<li >
+    <a href="../../ide/">"The Codio IDE"</a>
+</li>
+                            
+<li >
+    <a href="../../ide/introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../ide/navigation/">"Basic IDE Features"</a>
+</li>
+                            
+<li >
+    <a href="../../ide/panels/">"Panels & Tabs"</a>
+</li>
+                            
+<li >
+    <a href="../../ide/settings/">"Settings"</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ide/tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/guides/">"Guides"</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/ssh/">Remote SSH Terminal Access</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">"How to use starter packs"</a>
+</li>
+                            
+<li >
+    <a href="../projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../ide/tools/ssh/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../projects/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -101,19 +344,20 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
+<hr />
 <p>Starter Packs are a very powerful way to create and manage templated projects. Please read the following sections for full details.</p>
 <h2 id="what-is-a-starter-pack">What is a starter pack?<a class="headerlink" href="#what-is-a-starter-pack" title="Permanent link"></a></h2>
 <p>Starter Packs are a very powerful way to create and manage templated projects that include</p>
 <ul>
 <li>The base Ubuntu operating system. This is always present so you don't need to think about this really.</li>
-<li>A <a href="/project/stacks/">Stack</a> (base software dependencies such as databases, languages and other system components). This is entirely optional, but Codio's Stack features ensure that you don't have to laboriously configure the Stack.</li>
+<li>A <a href="../../project/stacks/">Stack</a> (base software dependencies such as databases, languages and other system components). This is entirely optional, but Codio's Stack features ensure that you don't have to laboriously configure the Stack.</li>
 <li>Any code present in your Project. It's entirely up to you what you include. It could be a Wordpress site, or a front-end framework or some working code examples.</li>
 </ul>
 <p>With Starter Packs, you can organize and share your own Starter Packs as well as find Codio Certified Packs and even Packs published by others.</p>
 <h2 id="certified-packs">Certified packs<a class="headerlink" href="#certified-packs" title="Permanent link"></a></h2>
 <p>To save you as much time as possible, we include a range of Codio certified Starter Packs. These have been tried and tested by the Codio team. We are adding to these all the time.</p>
 <p>To access these, click on the <strong>Certified</strong> header. You can then use the search field to look for technologies.</p>
-<p><img alt="Packs Certified" src="/img/packs_certified.png" /></p>
+<p><img alt="Packs Certified" src="../../img/packs_certified.png" /></p>
 <h2 id="requesting-additional-packs">Requesting additional packs<a class="headerlink" href="#requesting-additional-packs" title="Permanent link"></a></h2>
 <p>If you want additional Starter Packs, you can easily create your own. However, if you feel that we should add a new Codio Certified Pack, then please email us at help@codio.com with full details and we'll try to get it added for you.</p>
 <h2 id="selecting-a-pack">Selecting a pack<a class="headerlink" href="#selecting-a-pack" title="Permanent link"></a></h2>
@@ -121,10 +365,10 @@
 <ol>
 <li>Click on the name of the pack  to see full details about this Pack before pressing the <code>Use Pack</code> button in the top right of the information panel.</li>
 </ol>
-<p>You will then be transferred to the <a href="/project/creating/">Create Project</a> dialog, so Codio can create a new Project for you based on the selected Starter Pack.</p>
-<p><img alt="Packs Info" src="/img/packs_info.png" /></p>
+<p>You will then be transferred to the <a href="../../project/projects/#creating-and-importing-a-project">Create Project</a> dialog, so Codio can create a new Project for you based on the selected Starter Pack.</p>
+<p><img alt="Packs Info" src="../../img/packs_info.png" /></p>
 <h2 id="creating-a-pack">Creating a pack<a class="headerlink" href="#creating-a-pack" title="Permanent link"></a></h2>
-<p>You can create a new Starter Pack by pressing the <strong>New Pack</strong> button in the top right of the screen. Please refer to the <a href="/project/packs/guidelines">Pack Guidelines</a> for details in how to approach Starter Pack creation.</p>
+<p>You can create a new Starter Pack by pressing the <strong>New Pack</strong> button in the top right of the screen. Please refer to the <a href="../../project/packs/#pack-guidelines">Pack Guidelines</a> for details in how to approach Starter Pack creation.</p>
 <h3 id="selecting-the-source">Selecting the Source<a class="headerlink" href="#selecting-the-source" title="Permanent link"></a></h3>
 <p>You need to tell Codio where to get its source code from. There are two options</p>
 <ul>
@@ -132,25 +376,25 @@
 <li><strong>Git/Mercurial</strong> : you can specify a Git or Mercurial repo that gets pulled in afresh each time someone creates a new Project based on your Starter Pack.  <strong>Please Note</strong>: We strongly advise that you use the HTTPS URL to the repository. If you use the SSH URL any users that do not have their Codio SSH Key uploaded to the remote will not be able to create a project from this Starter Pack.</li>
 </ul>
 <h3 id="selecting-a-stack">Selecting a Stack<a class="headerlink" href="#selecting-a-stack" title="Permanent link"></a></h3>
-<p>Each Starter Pack requires a <a href="/project/stacks/">Stack</a>. If you only need a base Ubuntu Box, then you do not need to specify a Stack.</p>
+<p>Each Starter Pack requires a <a href="../../project/stacks/">Stack</a>. If you only need a base Ubuntu Box, then you do not need to specify a Stack.</p>
 <p>Please be aware that a Starter Pack is simply a Codio Stack plus a code workspace. If you based your Starter Pack on a Project that has had the Box modified (additional Box components installed, npm global install etc.), then these will not be present in a Project created from the Starter Pack.</p>
 <h3 id="description-details">Description Details<a class="headerlink" href="#description-details" title="Permanent link"></a></h3>
 <p>You can add short and long descriptions as well as an image and tags. Tags are important and will allow you and others to find Packs in a more targeted fashion.</p>
 <h3 id="visibilty">Visibilty<a class="headerlink" href="#visibilty" title="Permanent link"></a></h3>
 <p>By default, Starter Packs are kept private to your account until you make them public, at which point they will appear in the <strong>Popular</strong> and <strong>All</strong> Packs listings for all Codio Users.</p>
-<p>If you are a member of an Organization, the Organization owner can disable the ability for you to create public starter packs. See <a href="/dashboard/create/public_private">Public/Private Settings</a>.</p>
+<p>If you are a member of an Organization, the Organization owner can disable the ability for you to create public starter packs. See <a href="../../dashboard/organisations/#publicprivate-settings">Public/Private Settings</a>.</p>
 <p>If you want to keep your Starter Pack private to your Organization, you can select the Private option and set the Owner option to your Organization.</p>
 <p><strong>Important</strong> : please do not make your Packs public unless they are tried, tested and fit for public consumption so as not to fill the <strong>All</strong> listing with junk.</p>
 <h3 id="ownership">Ownership<a class="headerlink" href="#ownership" title="Permanent link"></a></h3>
 <p>You can specify whether other Codio Users within your Organization are able to access and Administer your Packs. If you are not a member of an Organization, this cannot be used.</p>
 <h2 id="write-a-tutorial">Write a tutorial<a class="headerlink" href="#write-a-tutorial" title="Permanent link"></a></h2>
-<p><a href="/content/authoring/">Codio guide</a> is a very powerful content authoring feature that lets you write course content that is fully integrated into the IDE. So if you are creating a starter pack for tuition purposes, this is extremely useful and easy to use.</p>
+<p><a href="../../courses/authoring/">Codio guide</a> is a very powerful content authoring feature that lets you write course content that is fully integrated into the IDE. So if you are creating a starter pack for tuition purposes, this is extremely useful and easy to use.</p>
 <h2 id="pack-guidelines">Pack guidelines<a class="headerlink" href="#pack-guidelines" title="Permanent link"></a></h2>
 <p>When creating a Starter Pack, here are some ideas on strategy and how to make them as useful as possible.</p>
 <h3 id="starting-stack">Starting Stack<a class="headerlink" href="#starting-stack" title="Permanent link"></a></h3>
-<p>When you create a Pack, you should first create a new Project from the closest Stack that meets your requirements. You can also use the Base Stack and then <a href="/ide/boxes/installsw/box-parts/">install your own components</a>.</p>
+<p>When you create a Pack, you should first create a new Project from the closest Stack that meets your requirements. You can also use the Base Stack and then <a href="../../ide/boxes/#installing-software-packages">install your own components</a>.</p>
 <h3 id="codio-file">.codio file<a class="headerlink" href="#codio-file" title="Permanent link"></a></h3>
-<p>It is often helpful to create a <code>.codio</code> file in the root of your project so that running common terminal commands and previewing can be accessed quickly and easily. <a href="/ide/boxes/runmenu/">Information on this can be found here</a>.</p>
+<p>It is often helpful to create a <code>.codio</code> file in the root of your project so that running common terminal commands and previewing can be accessed quickly and easily. <a href="../../ide/boxes/#customizable-run-menu">Information on this can be found here</a>.</p>
 <p>To enable your project to preview inside a Codio tab, you will need to configure the preview to run over https. We recommend this as being the default behavior as it will run both inside Codio and in a new browser tab this way. This will require you to configure any services to run on any port between 9500 and 9000.</p>
 <p>The following <code>.codio</code> file is typical:</p>
 <pre><code class="json">{
@@ -177,7 +421,7 @@
 <h3 id="long-description">Long Description<a class="headerlink" href="#long-description" title="Permanent link"></a></h3>
 <p>You should include a full description of your Starter Pack that appears when someone clicks on it within the Starter Packs listing. Check out some of Codio Certified Pack long descriptions.</p>
 <h3 id="write-a-codio-guide">Write a Codio Guide<a class="headerlink" href="#write-a-codio-guide" title="Permanent link"></a></h3>
-<p><a href="/content/authoring/">Codio Guides</a> is a very powerful content authoring feature that lets you write course content that is fully integrated into the IDE. So if you are creating a Starter Pack for tuition purposes, a Guide is extremely useful and easy to use.</p>
+<p><a href="../../courses/authoring/">Codio Guides</a> is a very powerful content authoring feature that lets you write course content that is fully integrated into the IDE. So if you are creating a Starter Pack for tuition purposes, a Guide is extremely useful and easy to use.</p>
 <h3 id="readmemd-file">README.md file<a class="headerlink" href="#readmemd-file" title="Permanent link"></a></h3>
 <p>You should create a <code>README.md</code> file in the root of your project that displays helpful information the user can see when they open the project.</p>
 <p>Below is a template you could use.</p>
@@ -232,14 +476,12 @@ npm install
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -255,7 +497,7 @@ npm install
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -281,19 +523,19 @@ npm install
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -304,6 +546,7 @@ npm install
         </div>
     </div>
 </div>
+
 
     </body>
 </html>

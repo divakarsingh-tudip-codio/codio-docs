@@ -10,67 +10,310 @@
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Plagiarism checker - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../assessments/">"Assessments"</a>
+</li>
+                            
+<li >
+    <a href="../authoring/">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../classes/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../collaboration/">Collaborating on content</a>
+</li>
+                            
+<li >
+    <a href="../coursemanagement/">Courses</a>
+</li>
+                            
+<li >
+    <a href="../grading/">"Grading and accessing student projects"</a>
+</li>
+                            
+<li >
+    <a href="../lti1_0/">"LTI 1.0 integration"</a>
+</li>
+                            
+<li >
+    <a href="../lti1_3/">"LTI 1.3 integration"</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Plagiarism checker</a>
+</li>
+                            
+<li >
+    <a href="../settings-actions/">Settings actions</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">Account</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">Desktop app</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organisations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">Support</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../ide/boxes/">Boxes</a>
+</li>
+                            
+<li >
+    <a href="../../ide/editing/">Editing</a>
+</li>
+                            
+<li >
+    <a href="../../ide/features/">Features</a>
+</li>
+                            
+<li >
+    <a href="../../ide/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../ide/introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../ide/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../ide/panels/">Panels</a>
+</li>
+                            
+<li >
+    <a href="../../ide/settings/">Settings</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ide/tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../project/packs/">Packs</a>
+</li>
+                            
+<li >
+    <a href="../../project/projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../../project/stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../lti1_3/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../settings-actions/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -90,20 +333,21 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
+<hr />
 <p>Plagiarism detection allows you to check for code copying and potential cases of cheating between members of a class. With the current version, Codio will compare the code projects of all students within a class for a specific teaching unit.</p>
 <p>If you want to include other reference code to include in the cross comparison, then you will need to create a dummy student account, add that dummy student to the class and upload the reference code as that student for that unit.</p>
 <p>Plagiarism detection is best used with programming project units rather than Codio authored projects. It will work in both cases but it is really designed to test general coding projects rather than lots of auto-graded assessments within a unit.</p>
 <p>Codio does not determine whether cheating has or has not taken place and leaves the decision making up to you.</p>
 <p>To run the Plagiarism checker you need to first select the Unit within the class and then press press the actions button next to the unit name.</p>
-<p><img alt="authtoken" src="/img/guides/plag-button.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-button.png" /></p>
 <h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link"></a></h2>
 <p>In order to use this feature you need to set up a class. If you are not using Codio as your main IDE and want to use only the plagiarism detection feature then you should still follow these instructions and ask your students to upload their code into the project using Git or by uploading files manually.</p>
 <h2 id="access-plagiarism-features">Access Plagiarism features<a class="headerlink" href="#access-plagiarism-features" title="Permanent link"></a></h2>
 <p>When in your class, select your unit and then click the <strong>Actions</strong> button (button to the top right of the screen) to show the available actions that includes Plagiarism</p>
-<p><img alt="authtoken" src="/img/guides/plag-button.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-button.png" /></p>
 <h2 id="run">Run<a class="headerlink" href="#run" title="Permanent link"></a></h2>
 <p>You can see the <strong>Plagiarism</strong> button near in the upper part of the screen. When you press this you are taken to the following screen.</p>
-<p><img alt="authtoken" src="/img/guides/plag-summary.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-summary.png" /></p>
 <p>This screen will show you any plagiarism reports that were run in the past. You can open these if you wish.</p>
 <p>On the left you can:</p>
 <ul>
@@ -116,20 +360,20 @@
 <p>Codio will include all code from all students in the report, irrespective of whether the assignment is marked by the student as completed.</p>
 <h2 id="the-report">The report<a class="headerlink" href="#the-report" title="Permanent link"></a></h2>
 <p>Once the report has been generated it can be opened by clicking the <strong>Open</strong> button. A typical report is shown below. The interpretation of the report is explained below.</p>
-<p><img alt="authtoken" src="/img/guides/plag-main-report.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-main-report.png" /></p>
 <h2 id="drilling-down">Drilling down<a class="headerlink" href="#drilling-down" title="Permanent link"></a></h2>
 <p>You can drill down in various ways. The two most common and useful ways are</p>
 <h3 id="edits">Edits<a class="headerlink" href="#edits" title="Permanent link"></a></h3>
 <p>Shows the differences between the two or more students with similarities. Things that have been added by one student are shown in green, things removed in red and those that are identical are not shaded at all.</p>
-<p><img alt="authtoken" src="/img/guides/plag-edits.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-edits.png" /></p>
 <h3 id="side-by-side">Side-by-side<a class="headerlink" href="#side-by-side" title="Permanent link"></a></h3>
 <p>This shows the code of those students with similarities in their code in a side-by-side viewer.</p>
-<p><img alt="authtoken" src="/img/guides/plag-sidebyside.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-sidebyside.png" /></p>
 <h2 id="downloading-raw-data">Downloading raw data<a class="headerlink" href="#downloading-raw-data" title="Permanent link"></a></h2>
 <p>Should you wish to analyse the report data in other software tools, Codio allows you to download a CSV file of the report output. You will find a button <strong>Download CSV</strong> located at the top right of the main report screen.</p>
 <h2 id="main-report-results">Main report results<a class="headerlink" href="#main-report-results" title="Permanent link"></a></h2>
 <p>The main report output is a ranking of the submissions. Several metrics are used, and then an overall rank is produced for each entry. The top line for each entry shows its overall rank as well as the score on each metric. Next to the score is the ranking within that metric.</p>
-<p><img alt="authtoken" src="/img/guides/plag-main-report.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/plag-main-report.png" /></p>
 <p>The metrics are</p>
 <ul>
 <li><strong>Points</strong> - every incidence of matching text generates some number of points, and the points metric shows the cumulative score for these entries.</li>
@@ -172,14 +416,12 @@
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -195,7 +437,7 @@
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -221,19 +463,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -244,6 +486,7 @@
         </div>
     </div>
 </div>
+
 
     </body>
 </html>

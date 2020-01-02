@@ -8,69 +8,312 @@
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/courses/grading/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Grading and accessing student projects - Codio Documentation</title>
+        <title>"Grading and accessing student projects" - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../assessments/">"Assessments"</a>
+</li>
+                            
+<li >
+    <a href="../authoring/">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../classes/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../collaboration/">Collaborating on content</a>
+</li>
+                            
+<li >
+    <a href="../coursemanagement/">Courses</a>
+</li>
+                            
+<li class="active">
+    <a href="./">"Grading and accessing student projects"</a>
+</li>
+                            
+<li >
+    <a href="../lti1_0/">Lti1 0</a>
+</li>
+                            
+<li >
+    <a href="../lti1_3/">Lti1 3</a>
+</li>
+                            
+<li >
+    <a href="../plagiarism/">Plagiarism</a>
+</li>
+                            
+<li >
+    <a href="../settings-actions/">Settings actions</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">Account</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">Desktop app</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organisations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">Support</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../ide/boxes/">Boxes</a>
+</li>
+                            
+<li >
+    <a href="../../ide/editing/">Editing</a>
+</li>
+                            
+<li >
+    <a href="../../ide/features/">Features</a>
+</li>
+                            
+<li >
+    <a href="../../ide/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../ide/introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../ide/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../ide/panels/">Panels</a>
+</li>
+                            
+<li >
+    <a href="../../ide/settings/">Settings</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ide/tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../project/packs/">Packs</a>
+</li>
+                            
+<li >
+    <a href="../../project/projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../../project/stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../coursemanagement/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../lti1_0/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -104,62 +347,63 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
+<hr />
 <p>You can monitor student progress and time spent on individual units.</p>
 <ol>
 <li>
 <p>From the <strong>Classes</strong> screen, click on your class to open it.
-<img alt="authtoken" src="/img/monitor_students/year10class.png" /></p>
+<img alt="authtoken" src="../../img/monitor_students/year10class.png" /></p>
 </li>
 <li>
 <p>Click on the <strong>Students</strong> tab, top centre of your screen.
-<img alt="authtoken" src="/img/monitor_students/studentstab.png" /></p>
+<img alt="authtoken" src="../../img/monitor_students/studentstab.png" /></p>
 </li>
 <li>
 <p>You will see all students in your class displayed on this screen. You will see progress data for units started and units completed alongside their names.</p>
 </li>
 <li>To see an individual student's progress in more detail click on their name. You will then see an individual breakdown of auto-graded assessment results, along with time spent on each unit.
-<img alt="authtoken" src="/img/monitor_students/breakdown.png" /></li>
+<img alt="authtoken" src="../../img/monitor_students/breakdown.png" /></li>
 <li>To see a more detailed breakdown of each unit the student has attempted, click on the unit name. You will be able to view a breakdown of the challenges attempted along with corresponding results.</li>
 </ol>
 <p><a name="downloadcsv"></a></p>
 <h2 id="download-csv-summary">Download CSV summary<a class="headerlink" href="#download-csv-summary" title="Permanent link"></a></h2>
 <p>You can also download a CSV file of your students progress. You can do this for individual units to see all your students by clicking on the blue triple dot icon to the right of the unit name:
-<img alt="authtoken" src="/img/downloadcsv_unit.png" /></p>
+<img alt="authtoken" src="../../img/downloadcsv_unit.png" /></p>
 <p>or you can download a CSV file for the Course to see all your students progress in all the units in each Module by hovering over the Module name to select <strong>Download CSV</strong> there:
-<img alt="authtoken" src="/img/downloadcsv_module.png" /></p>
-<p>or you can export all the data from a class (including the students workspaces) by exporting class data. See <a href="/classes/classmanagement/export/">export class data</a> for more details</p>
+<img alt="authtoken" src="../../img/downloadcsv_module.png" /></p>
+<p>or you can export all the data from a class (including the students workspaces) by exporting class data. See <a href="../../classes/classmanagement/export/">export class data</a> for more details</p>
 <h2 id="accessing-student-work">Accessing student work<a class="headerlink" href="#accessing-student-work" title="Permanent link"></a></h2>
 <p>As a teacher you have access to your students cloud area within Codio. This allows you to view and access any work your students have completed at any time.</p>
 <ol>
 <li>
 <p>From the <strong>Classes</strong> area, click on your class to open it.
-<img alt="Class" src="/img/monitor_students/year10class.png" /></p>
+<img alt="Class" src="../../img/monitor_students/year10class.png" /></p>
 </li>
 <li>
 <p>Click on the <strong>Students</strong> tab, top centre of your screen.
-<img alt="Students tab" src="/img/monitor_students/studentstab.png" /></p>
+<img alt="Students tab" src="../../img/monitor_students/studentstab.png" /></p>
 </li>
 <li>
 <p>You will see all students in your class displayed on this screen. By default they will show sorted alphabetically by first name but you can also sort them by last name if preferred</p>
 </li>
 <li>
 <p>To view/access an individual students work click on their name. On the far right of the screen, under the heading <strong>Open</strong>, click the blue arrow to open the students work.
-<img alt="Open student work" src="/img/openstudent.png" /></p>
+<img alt="Open student work" src="../../img/openstudent.png" /></p>
 </li>
 </ol>
 <h2 id="auto-graded-assessments">Auto-graded assessments<a class="headerlink" href="#auto-graded-assessments" title="Permanent link"></a></h2>
 <p>Auto-graded assessments will appear in the teacher dashboard.</p>
-<p><img alt="Teacher Dashboard" src="/img/teacherdash.png" /></p>
+<p><img alt="Teacher Dashboard" src="../../img/teacherdash.png" /></p>
 <h2 id="nbgrader-autograding">nbgrader autograding<a class="headerlink" href="#nbgrader-autograding" title="Permanent link"></a></h2>
 <p><strong><a href="https://jupyter.org/">Jupyter notebook</a></strong> has auto-grade functionality through <strong><a href="http://nbgrader.readthedocs.io/en/stable/index.html">nbgrader</a></strong> that Codio supports</p>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h3>
 <p>Unit creators create the unit with <a href="https://jupyter.org/">Jupyter notebook</a> files for the assignment.</p>
-<p><strong>nbgrader</strong> support doesn't require <a href="/content/authoring/">guides</a> or any other <a href="/content/authoring/assessments/">assessments</a>.</p>
+<p><strong>nbgrader</strong> support doesn't require <a href="../../content/authoring/">guides</a> or any other <a href="../../content/authoring/assessments/">assessments</a>.</p>
 <p>Any user configurations required should be stored in a <code>.codio-jupyter</code> file.</p>
 <p>if a <code>.codio-jupyter</code> file exists in a project we assume it is <strong>jupyter</strong> based grader, and therefore only <strong>nbgrader</strong> can be selected for the assessment scripts in the unit</p>
-<p>When the unit is published to a class, either as an <a href="/classes/unitmanagement/assign-project">individual project</a> or as part of a <a href="/classes/unitmanagement/assign-module">course/module</a>, the release version is created for the student.</p>
-<p>When the student submits the assignment by marking the unit as complete, it will be <a href="/classes/unitmanagement/settings-info/autograde">autograded</a> automatically.</p>
-<p><a href="/classes/monitor/grading/">Manual grading</a> is also available if required</p>
+<p>When the unit is published to a class, either as an <a href="../../classes/unitmanagement/assign-project">individual project</a> or as part of a <a href="../../classes/unitmanagement/assign-module">course/module</a>, the release version is created for the student.</p>
+<p>When the student submits the assignment by marking the unit as complete, it will be <a href="../../classes/unitmanagement/settings-info/autograde">autograded</a> automatically.</p>
+<p><a href="../../classes/monitor/grading/">Manual grading</a> is also available if required</p>
 <h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"></a></h3>
 <p><a name="nbgradertimeout"></a></p>
 <h3 id="extend-timeout-period">Extend Timeout period<a class="headerlink" href="#extend-timeout-period" title="Permanent link"></a></h3>
@@ -204,13 +448,13 @@
 </code></pre>
 
 <p>to the <code>.codio-jupyter</code> file</p>
-<p>If you require any assistance at all, or would like us to consider adding additional functions, please don't hesitate to <a href="/dashboard/support/">contact us</a></p>
+<p>If you require any assistance at all, or would like us to consider adding additional functions, please don't hesitate to <a href="../../dashboard/support/">contact us</a></p>
 <h2 id="grading-project-work">Grading project work<a class="headerlink" href="#grading-project-work" title="Permanent link"></a></h2>
 <p>Codio's grading features address four important aspects when grading student projects.</p>
 <ul>
 <li><strong>Assign grade</strong> - manually reviewing student projects and then assigning a grade.</li>
 <li><strong>Grading moderation</strong> - having other lecturers review grades already assigned in order to monitor consistency of grading.</li>
-<li><strong>Grading rubric</strong> - This provides a grading guideline framework for teachers. Please <a href="/classes/classmanagement/rubric">click here</a> for details.</li>
+<li><strong>Grading rubric</strong> - This provides a grading guideline framework for teachers. Please <a href="../../classes/classmanagement/rubric">click here</a> for details.</li>
 <li><strong>LMS gradebook sycnhronization</strong> - This feature ensures that when teachers release grades, the data is passed automatically to any LTI enabled LMS platform such as Moodle, Blackboard and Canvas.</li>
 </ul>
 <h3 id="video-overview">Video overview<a class="headerlink" href="#video-overview" title="Permanent link"></a></h3>
@@ -218,7 +462,7 @@
 <h3 id="the-grading-process">The grading process<a class="headerlink" href="#the-grading-process" title="Permanent link"></a></h3>
 <p>Once students have completed their assignments, they should notify the teacher of completion by going to the <strong>Education-&gt;Mark as Completed</strong> menu item within the IDE. The teacher is then able to see whose project is ready to be graded (see below image with completion status circled left).</p>
 <p>The teacher is also able to filter either finding specific students or to view students based on the status of the unit.
-<img alt="Filtering" src="/img/filter.png" /></p>
+<img alt="Filtering" src="../../img/filter.png" /></p>
 <p>Students can be filtered by:</p>
 <ul>
 <li>Any Status</li>
@@ -230,48 +474,48 @@
 <li>Uncompleted</li>
 </ul>
 <p>You can access the student's project from the same screen by clicking on the 3 blue dots on the extreme right (see below image with dots circled right). You can then review the project.</p>
-<p><img alt="Grading access" src="/img/grading-unit.png" /></p>
+<p><img alt="Grading access" src="../../img/grading-unit.png" /></p>
 <p>The teacher can also mark the unit as complete going to the <strong>Education-&gt;Mark as Completed</strong> menu item within the IDE and if already marked as complete, can change the status to incomplete</p>
 <p>There are two ways to assign the grade.</p>
 <ul>
 <li>Either you can grade from within the IDE itself from the Education menu item. You need to have a student project open in the IDE.</li>
 <li>Or you can grade from the class dashboard. You must first have selected the unit associated with the project and then press the grading icon.</li>
 </ul>
-<p>Also see <a href="/classes/unitmanagement/settings-info/autograde/">Autograding</a></p>
+<p>Also see <a href="../../classes/unitmanagement/settings-info/autograde/">Autograding</a></p>
 <p>To grade from the class dashboard, you should first select the assignment unit. You can see the check mark next to those students who have completed the assignment.</p>
 <p>To assign comments or a grade, you click on the Grade icon (see image above with grading icons circled center). You can then modify the comments and grade fields for any individual student.</p>
-<p><img alt="Assign Grades" src="/img/grading-assign.png" /></p>
+<p><img alt="Assign Grades" src="../../img/grading-assign.png" /></p>
 <p><a name="releasegrades"></a></p>
 <h3 id="releasing-grades">Releasing Grades<a class="headerlink" href="#releasing-grades" title="Permanent link"></a></h3>
 <p>By default students are not shown the grades until you decide to release them to the class. This allows you to hold back until you have completed the entire grading process and then release them in one go. If you want the students to see the grades as you go then simply flick the release grades switch before you start grading.</p>
-<p><img alt="Grading" src="/img/grading-release.png" /></p>
+<p><img alt="Grading" src="../../img/grading-release.png" /></p>
 <p>Students are able to see their grades either from their My Classroom view or by opening the unit and going to <strong>Education-&gt;Feedback</strong></p>
 <p>You can also release grades from the main Unit view right clicking on the 3 vertical dots and selecting <strong>Release grades</strong>.</p>
-<p><img alt="Release Grades" src="/img/grading-release2.png" /></p>
+<p><img alt="Release Grades" src="../../img/grading-release2.png" /></p>
 <p><a name="releasegradesstatus"></a></p>
 <h3 id="automatically-releasing-grades">Automatically releasing grades<a class="headerlink" href="#automatically-releasing-grades" title="Permanent link"></a></h3>
-<p>If you wish to automatically release grades when students complete a unit, you can enable this feature at the organisation level so when you create new <a href="/classes/classmanagement/create-class/">classes</a> this option is automatically enabled. See <a href="/dashboard/create/orgreleasegrades">organisation release grades</a> for more information.</p>
+<p>If you wish to automatically release grades when students complete a unit, you can enable this feature at the organisation level so when you create new <a href="../../classes/classmanagement/create-class/">classes</a> this option is automatically enabled. See <a href="../../dashboard/create/orgreleasegrades">organisation release grades</a> for more information.</p>
 <p>You can also change the status of this feature for individual classes if required on the admin tab of the class.
-<img alt="Class Release Grades" src="/img/changereleasegrades.png" /></p>
+<img alt="Class Release Grades" src="../../img/changereleasegrades.png" /></p>
 <h3 id="grading-moderation">Grading moderation<a class="headerlink" href="#grading-moderation" title="Permanent link"></a></h3>
 <p>In some situations you may want to monitor the accuracy of grading. This can become especially important if you have more than one lecturer or teacher grading student work. It is important that students can rely on a consistency of grades no matter which person actually assigns the grade.</p>
 <p>This is where grading moderation is a very useful tool. It allows other teachers to access a student's project, review it and then assign a grade and associated comments. Rather than reviewing all student projects, typically a smaller sample will be taken for review and from that it should become clear if there are any obvious discrepancies.</p>
 <p>A common approach is to take a few students who got top grades, a few with terrible grades and a few from the middle of the pack and then perform the grading moderation on those.</p>
 <p>The below screenshot shows an example of where a student project has been graded by Professor Babbage, who awarded an A-. The grade was then reviewed by Freddy May, who assigned a slightly better grade.</p>
-<p><img alt="Moderation" src="/img/grading-moderation.png" /></p>
+<p><img alt="Moderation" src="../../img/grading-moderation.png" /></p>
 <p>The moderated grade will not be shown to the class and can only be seen by teachers of that class.</p>
 <p>Teachers who you want to perform grading moderation will need to be added to the class from the <strong>Admin</strong> screen first.</p>
 <h2 id="grading-free-text-questions">Grading free text questions<a class="headerlink" href="#grading-free-text-questions" title="Permanent link"></a></h2>
 <p>Free text questions will normally require a manual grading process. In order to grade these questions, you should first select the unit. You will then be shown the student list, as you can see below.</p>
-<p><img alt="StudentList" src="/img/studentlist.png" /></p>
+<p><img alt="StudentList" src="../../img/studentlist.png" /></p>
 <p>You can now select a student. You will then be shown the list of all assessments for that student within the unit. Free text questions are denoted by the icon highlighted below.</p>
-<p><img alt="Free Text Grading" src="/img/guides/freetext-grading.png" /></p>
+<p><img alt="Free Text Grading" src="../../img/guides/freetext-grading.png" /></p>
 <p>Note that if a student has started to answer a question but not submitted the answer, then you will see <strong>DRAFT</strong> written next to it. Once they submit, you will see <strong>GRADE</strong> indicating that the question has been submitted and is ready to be graded.</p>
 <p><a name="partialpointrubric"></a></p>
 <h3 id="partial-point-rubric">Partial Point Rubric<a class="headerlink" href="#partial-point-rubric" title="Permanent link"></a></h3>
 <p>Where an answer is set to all partial points, a rubric is provided to allow graders to dynamically deduct points from the maximum score.
 A grader can add an item, change an item weight or remove an item at any time in grading. The change will be applied for all students in this unit, and any changes in rubric will upgrade already graded students to implement changes. The rubric is dynamic for each unit, and every new unit starts with an empty rubric.</p>
-<p><img alt="Free Text Grading" src="/img/guides/partialpointrubric.png" /></p>
+<p><img alt="Free Text Grading" src="../../img/guides/partialpointrubric.png" /></p>
 <h3 id="rubric">Rubric<a class="headerlink" href="#rubric" title="Permanent link"></a></h3>
 <p>Every rubric item is 2 fields, first is the rubric item weight and the second one line item name.</p>
 <ul>
@@ -293,20 +537,18 @@ A grader can add an item, change an item weight or remove an item at any time in
 <h3 id="feedback">Feedback<a class="headerlink" href="#feedback" title="Permanent link"></a></h3>
 <p>A comments field is provided to allow teacher/instructors manual feedback</p>
 <p>If a class deadline is reached, then you can grade questions that are  set to <strong>DRAFT</strong> and where the student may have forgotten to submit the answer fully.</p>
-<p>You can also see the date and time for each submitted answer as well as the date that the unit was <a href="/dashboard/student/guides#completed">marked as complete</a> by the student.</p></div>
+<p>You can also see the date and time for each submitted answer as well as the date that the unit was <a href="../../dashboard/student/guides#completed">marked as complete</a> by the student.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -322,7 +564,7 @@ A grader can add an item, change an item weight or remove an item at any time in
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -348,19 +590,19 @@ A grader can add an item, change an item weight or remove an item at any time in
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -371,6 +613,7 @@ A grader can add an item, change an item weight or remove an item at any time in
         </div>
     </div>
 </div>
+
 
     </body>
 </html>

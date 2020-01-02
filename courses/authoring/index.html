@@ -8,69 +8,312 @@
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/courses/authoring/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Content Authoring with Guides - Codio Documentation</title>
+        <title>"Content Authoring with Guides" - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../assessments/">"Assessments"</a>
+</li>
+                            
+<li class="active">
+    <a href="./">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../classes/">Classes</a>
+</li>
+                            
+<li >
+    <a href="../collaboration/">Collaboration</a>
+</li>
+                            
+<li >
+    <a href="../coursemanagement/">Coursemanagement</a>
+</li>
+                            
+<li >
+    <a href="../grading/">Grading</a>
+</li>
+                            
+<li >
+    <a href="../lti1_0/">Lti1 0</a>
+</li>
+                            
+<li >
+    <a href="../lti1_3/">Lti1 3</a>
+</li>
+                            
+<li >
+    <a href="../plagiarism/">Plagiarism</a>
+</li>
+                            
+<li >
+    <a href="../settings-actions/">Settings actions</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">Account</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">Desktop app</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organisations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">Support</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../ide/boxes/">Boxes</a>
+</li>
+                            
+<li >
+    <a href="../../ide/editing/">Editing</a>
+</li>
+                            
+<li >
+    <a href="../../ide/features/">Features</a>
+</li>
+                            
+<li >
+    <a href="../../ide/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../ide/introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../ide/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../ide/panels/">Panels</a>
+</li>
+                            
+<li >
+    <a href="../../ide/settings/">Settings</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../ide/tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../../ide/tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../project/packs/">Packs</a>
+</li>
+                            
+<li >
+    <a href="../../project/projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../../project/stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../assessments/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../classes/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -166,14 +409,15 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
+<hr />
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
 <p>Codio Guides is a powerful authoring tool creating rich tutorial and instructional content as well as assessments. Here are a few of the key features.</p>
 <ul>
-<li>Each page of content can <a href="/content/authoring/settings-actions/page/">control the layout of the IDE</a></li>
-<li><a href="/content/authoring/settings-actions/open-tabs/">Open and close files, terminal windows and html page previews</a></li>
-<li><a href="/content/authoring/page-edit/inline/">Launch commands</a> from the content page and pipe terminal output into the content page</li>
-<li>Create manually and automatically graded <a href="/content/authoring/assessments/">questions and assessments</a></li>
-<li>Manage a <a href="/content/authoring/guides">table of contents</a></li>
+<li>Each page of content can <a href="../../content/authoring/settings-actions/page/">control the layout of the IDE</a></li>
+<li><a href="../../content/authoring/settings-actions/open-tabs/">Open and close files, terminal windows and html page previews</a></li>
+<li><a href="../../content/authoring/page-edit/inline/">Launch commands</a> from the content page and pipe terminal output into the content page</li>
+<li>Create manually and automatically graded <a href="../../content/authoring/assessments/">questions and assessments</a></li>
+<li>Manage a <a href="../../content/authoring/guides">table of contents</a></li>
 </ul>
 <h3 id="where-is-it">Where is it?<a class="headerlink" href="#where-is-it" title="Permanent link"></a></h3>
 <p>You can launch the content authoring from</p>
@@ -181,18 +425,18 @@
 <li>The menu, <strong>Tools-&gt;Guide-&gt;Edit</strong></li>
 <li>The button at the top of the file tree as shown below</li>
 </ul>
-<p><img alt="Start Authoring" src="/img/guides/startguides.png" /></p>
+<p><img alt="Start Authoring" src="../../img/guides/startguides.png" /></p>
 <h2 id="project-course-unit-or-book">Project, course unit or book?<a class="headerlink" href="#project-course-unit-or-book" title="Permanent link"></a></h2>
 <p>Before you start to author content you should be aware of the three different places you can create content using guides. Let's look at each of the three ways to create content and why you might choose each one.</p>
 <h3 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link"></a></h3>
-<p>A <a href="/project/what-is-a-project">project</a> is simply a standalone Codio box. It may or may not have guides content. Projects are to be found in the <strong>Projects</strong> page on the main Codio dashboard.</p>
-<p><img alt="My Projects" src="/img/projectslist.png" /></p>
+<p>A <a href="../../project/what-is-a-project">project</a> is simply a standalone Codio box. It may or may not have guides content. Projects are to be found in the <strong>Projects</strong> page on the main Codio dashboard.</p>
+<p><img alt="My Projects" src="../../img/projectslist.png" /></p>
 <p>You would want to choose a project as the place to create your content if you have individual, ad hoc assignments or examples that do not constitute more extensive coursework or are not part of a larger series of associated projects.</p>
-<p>A project can be <a href="/classes/unitmanagement/assign-project">assigned to a class</a> at any time. All the students in that class will then be able to access that project and its content.</p>
+<p>A project can be <a href="../../classes/unitmanagement/assign-project">assigned to a class</a> at any time. All the students in that class will then be able to access that project and its content.</p>
 <p>There are drawbacks to using projects to assign to students. If you have related projects and the number of projects grows, it can be hard to quickly find a project you want to assign to a class. There is also no way to arrange your projects into chronological order. Courses and books offer excellent solutions to this organizational problem.</p>
 <h3 id="project-units">Project units<a class="headerlink" href="#project-units" title="Permanent link"></a></h3>
-<p>A <a href="/courses/units/unit-add#projectunit">project unit</a> is essentially the same as a project. The only difference is that your project units are located in the courses area in the main Codio dashboard. Project units are very easy to locate as they are tidily organized within the course they belong to. You can also arrange your project units chronologically within a course module.</p>
-<p><img alt="Courses" src="/img/courseslist.png" /></p>
+<p>A <a href="../../courses/units/unit-add#projectunit">project unit</a> is essentially the same as a project. The only difference is that your project units are located in the courses area in the main Codio dashboard. Project units are very easy to locate as they are tidily organized within the course they belong to. You can also arrange your project units chronologically within a course module.</p>
+<p><img alt="Courses" src="../../img/courseslist.png" /></p>
 <p>You would typically use a project unit if either of the following apply.</p>
 <ul>
 <li>You have a logically related series of projects that you want to assign to a student or to a class that together form a course.</li>
@@ -201,10 +445,10 @@
 <p>A course allows you to subdivide your course into modules and then chronologically arrange your project units within your modules. When you create a course, you have to create at least one module. A module does nothing special other than contain project units and are simply a nice way to group your units.</p>
 <p>There is one minor drawback to project units that you should be aware of. If students are working with a project unit and wants to look at tutorial content that is contained in another unit, they have to switch units. This can take several seconds and can be irritating during a revision phase when they want to frequently switch units. For this reason, we created the book, which we will look at next.</p>
 <h3 id="book-units">Book units<a class="headerlink" href="#book-units" title="Permanent link"></a></h3>
-<p>A <a href="/books/introduction">book</a> is intended to replicate a hard-copy book. It contains a lot of content, often an entire course of content. Let's look at the case of a course called <strong>Introduction to Java</strong>. If this was a regular book, it might contain 500 pages. If you used project units to create this content, you might end up with a very large number of units, say 50.  As we mentioned above, when students are revising and want to randomly move between different units to review content, the can get frustrated by the time it takes to switch units.</p>
+<p>A <a href="../../books/introduction">book</a> is intended to replicate a hard-copy book. It contains a lot of content, often an entire course of content. Let's look at the case of a course called <strong>Introduction to Java</strong>. If this was a regular book, it might contain 500 pages. If you used project units to create this content, you might end up with a very large number of units, say 50.  As we mentioned above, when students are revising and want to randomly move between different units to review content, the can get frustrated by the time it takes to switch units.</p>
 <p>A book addresses this issue by offering sophisticated table to contents management with nested chapters and sections. As a result, you can put all of your content into a single book, with a single box running in the background. This means that when students want to revise, they are able to move to any location in the book without any delays.</p>
-<p>However, faculty will still often want to teach a course based on a book. To do this, you use a course but rather than creating a project unit, you create a book based unit. This allows you to point to any parts of a book for that unit. Students can see the parts of the book that the unit related to in the table of contents. The course and class manager is also able to specify that parts of the book not mapped to by the unit either a) can be seen or b) cannot be seen in the class. See <a href="/classes/classmanagement/bookvisibility">Book Visibility</a> for more information.</p>
-<p><img alt="Books" src="/img/bookslist.png" /></p>
+<p>However, faculty will still often want to teach a course based on a book. To do this, you use a course but rather than creating a project unit, you create a book based unit. This allows you to point to any parts of a book for that unit. Students can see the parts of the book that the unit related to in the table of contents. The course and class manager is also able to specify that parts of the book not mapped to by the unit either a) can be seen or b) cannot be seen in the class. See <a href="../../classes/classmanagement/bookvisibility">Book Visibility</a> for more information.</p>
+<p><img alt="Books" src="../../img/bookslist.png" /></p>
 <h3 id="book-or-project-unit">Book or project unit?<a class="headerlink" href="#book-or-project-unit" title="Permanent link"></a></h3>
 <p>It can still be a little confusing whether you should use a book based unit or a project unit, so here are some typical use cases.</p>
 <ul>
@@ -220,12 +464,12 @@
 <p>The experience when authoring differs from that of a student. Students are not able to view the authoring tools. When they start a unit or project, if there is content present, it will automatically be shown. The author can also specify whether the student is able to close the content or not.</p>
 <p>If you are an author, you will often want to view the content as a student will see it.</p>
 <h3 id="editing">Editing<a class="headerlink" href="#editing" title="Permanent link"></a></h3>
-<p>Only an author is able to edit the content. Students and users with read-only rights will not be able to. <a href="/content/authoring/page-edit">Click here</a> for details on page editing.</p>
+<p>Only an author is able to edit the content. Students and users with read-only rights will not be able to. <a href="../../content/authoring/page-edit">Click here</a> for details on page editing.</p>
 <h3 id="preview">Preview<a class="headerlink" href="#preview" title="Permanent link"></a></h3>
 <p>You can press the preview button in the top right area of the edit pane. This will switch to preview mode. You can then switch back to editor mode by pressing the <strong>Editor</strong> button.</p>
 <p>You can also start the preview mode from the <strong>Tools-&gt;Guide-&gt;Play</strong>.</p>
 <p>Finally, there is also a button at the top of the file tree that launches the content.</p>
-<p><img alt="StartGuides" src="/img/guides/startguides.png" /></p>
+<p><img alt="StartGuides" src="../../img/guides/startguides.png" /></p>
 <p><a name="customisetopmenu"></a></p>
 <h3 id="customising-ide-menu">Customising IDE menu<a class="headerlink" href="#customising-ide-menu" title="Permanent link"></a></h3>
 <p>To simplify the educational process for students, the top menu can be customised to remove options from students that they cannot override.</p>
@@ -247,38 +491,38 @@ Example:</p>
 
 <p><strong>Please note that if setting Status=false, students will need to use the 'Back to Dashboard' button shown on the last page of the guides to return to their dashboard area</strong></p>
 <p>Setting up .codio-menu file:</p>
-<p><img alt="EditorMode" src="/img/guides/codiomenu.png" /></p>
+<p><img alt="EditorMode" src="../../img/guides/codiomenu.png" /></p>
 <p>Menu items that the student will see:</p>
-<p><img alt="PreviewMode" src="/img/guides/codiomenupreview.png" /></p>
+<p><img alt="PreviewMode" src="../../img/guides/codiomenupreview.png" /></p>
 <p>The student will not see the .codio-menu file to be able to edit/change it.</p>
 <h3 id="player-options">Player Options<a class="headerlink" href="#player-options" title="Permanent link"></a></h3>
-<p><img alt="authtoken" src="/img/guides/playmode.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/playmode.png" /></p>
 <p>When the content is rendered to a student, various options can be controlled</p>
 <ul>
 <li>The <strong>Collapse table of contents</strong>  button allows the user to collapse the content pane to provide larger working area if required.</li>
 <li><strong>Navigation Buttons</strong> allows the user to navigate forward/backward in the guide.</li>
-<li><strong>Settings</strong> allows the user to view the unit as a teacher (e.g. show solution information hidden to students) change the Theme (light/dyslexic), Mark as Complete, change the font size, reset both the theme and fonts and to restore the current files (see below). See <a href="/dashboard/student/dyslexia/">Dyslexia Support</a> section</li>
-<li><strong><a href="/content/authoring/guides/collapse/">Show/Hide Section List Hamburger Icon</a></strong> allows the user to show/hide the section list.</li>
+<li><strong>Settings</strong> allows the user to view the unit as a teacher (e.g. show solution information hidden to students) change the Theme (light/dyslexic), Mark as Complete, change the font size, reset both the theme and fonts and to restore the current files (see below). See <a href="../../dashboard/student/dyslexia/">Dyslexia Support</a> section</li>
+<li><strong><a href="../../content/authoring/guides/collapse/">Show/Hide Section List Hamburger Icon</a></strong> allows the user to show/hide the section list.</li>
 </ul>
 <h4 id="restore-current-files">Restore current files<a class="headerlink" href="#restore-current-files" title="Permanent link"></a></h4>
 <p>The Restore Current Files feature is a great way to reset/restore any files on that page to its initial state after hacking sample code around. Files can be restored from the menu as shown below.</p>
-<p><img alt="authtoken" src="/img/guides/reset.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/reset.png" /></p>
 <h2 id="table-of-contents-management">Table of contents management<a class="headerlink" href="#table-of-contents-management" title="Permanent link"></a></h2>
 <p>Once you are in the Codio IDE, you are able to create and manage content. There are two ways to access the Codio Guide.</p>
 <ul>
 <li>Press then right arrow at the top of the file tree.
-<img alt="startauthouring" src="/img/guides/startguides.png" /></li>
+<img alt="startauthouring" src="../../img/guides/startguides.png" /></li>
 <li>From the menu, select <strong>Tools-&gt;Guide-&gt;Edit</strong>.</li>
 </ul>
 <h3 id="editing-page-content-and-actions">Editing page content and actions<a class="headerlink" href="#editing-page-content-and-actions" title="Permanent link"></a></h3>
 <p>Please refer to the following pages for details in how to edit page content and control page actions.</p>
 <ul>
-<li><a href="/content/authoring/page-edit/">Page Editing</a> for details on how to edit a pages content using markdown or HTML, hiding folders and other actions.</li>
-<li><a href="/content/authoring/settings-actions">Settings and page actions</a> : Opening and closing files, panel configuration and other settings</li>
+<li><a href="../../content/authoring/page-edit/">Page Editing</a> for details on how to edit a pages content using markdown or HTML, hiding folders and other actions.</li>
+<li><a href="../../content/authoring/settings-actions">Settings and page actions</a> : Opening and closing files, panel configuration and other settings</li>
 </ul>
 <h3 id="editing-content">Editing content<a class="headerlink" href="#editing-content" title="Permanent link"></a></h3>
 <p>The image below highlights the main components of the editing page.</p>
-<p><img alt="Edit Book" src="/img/guides/editbook.png" /></p>
+<p><img alt="Edit Book" src="../../img/guides/editbook.png" /></p>
 <h3 id="accessing-the-table-of-contents">Accessing the table of contents<a class="headerlink" href="#accessing-the-table-of-contents" title="Permanent link"></a></h3>
 <p>To open and close the table of contents, press the <strong>Hamburger Icon</strong> at the top right. From here you can add and organize content.</p>
 <p><a name="chapters"></a></p>
@@ -311,22 +555,22 @@ Example:</p>
 <p>To create new content or to edit existing content, go to the <strong>Tools-&gt;Guide-&gt;Edit</strong> menu option.</p>
 <p>Use the layout modes to switch between editor, preview, and split view modes.</p>
 <p>When in preview mode, you can quickly switch back to editor mode by selecting the <strong>Editor</strong> button:</p>
-<p><img alt="authtoken" src="/img/guides/editor.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/editor.png" /></p>
 <h3 id="anatomy-of-the-content-editor">Anatomy of the content editor<a class="headerlink" href="#anatomy-of-the-content-editor" title="Permanent link"></a></h3>
 <p>Below is a screenshot of the editor with the main components highlighted.
-<img alt="overview" src="/img/guides/overview.png" /></p>
+<img alt="overview" src="../../img/guides/overview.png" /></p>
 <h3 id="editor-settings">Editor settings<a class="headerlink" href="#editor-settings" title="Permanent link"></a></h3>
 <p>Editor settings gives you access to the key functions:</p>
 <h4 id="page">Page<a class="headerlink" href="#page" title="Permanent link"></a></h4>
 <ul>
-<li><strong><a href="/content/authoring/settings-actions/page">Layout</a></strong> allows you to specify the panel layout you want to choose for this section,</li>
-<li><strong><a href="/content/authoring/page-edit/hide-folder/">Show Folders</a></strong> allows you to define specific folders in your project that you wish to be visible when the current section is displayed,</li>
-<li><strong><a href="/content/authoring/page-edit/inline/">Close Tabs</a></strong> allows you to close all tabs open from previous section,</li>
-<li><strong><a href="/content/authoring/guides/chapter/">Set Section as Chapter</a></strong> allows you to set the section as a chapter in your content,</li>
-<li><strong><a href="/content/authoring/page-edit/solutions/">Teacher Only</a></strong> allows you to show content that only teachers are able to see.</li>
-<li><strong>Content Type</strong> allows you to write your content in either <a href="/content/authoring/page-edit/edit/">Markdown</a> or <a href="/content/authoring/page-edit/edit-html/">HTML</a></li>
+<li><strong><a href="../../content/authoring/settings-actions/page">Layout</a></strong> allows you to specify the panel layout you want to choose for this section,</li>
+<li><strong><a href="../../content/authoring/page-edit/hide-folder/">Show Folders</a></strong> allows you to define specific folders in your project that you wish to be visible when the current section is displayed,</li>
+<li><strong><a href="../../content/authoring/page-edit/inline/">Close Tabs</a></strong> allows you to close all tabs open from previous section,</li>
+<li><strong><a href="../../content/authoring/guides/chapter/">Set Section as Chapter</a></strong> allows you to set the section as a chapter in your content,</li>
+<li><strong><a href="../../content/authoring/page-edit/solutions/">Teacher Only</a></strong> allows you to show content that only teachers are able to see.</li>
+<li><strong>Content Type</strong> allows you to write your content in either <a href="../../content/authoring/page-edit/edit/">Markdown</a> or <a href="../../content/authoring/page-edit/edit-html/">HTML</a></li>
 </ul>
-<h4 id="open-tabs"><a href="/content/authoring/settings-actions/open-tabs/">Open Tabs</a><a class="headerlink" href="#open-tabs" title="Permanent link"></a></h4>
+<h4 id="open-tabs"><a href="../../content/authoring/settings-actions/open-tabs/">Open Tabs</a><a class="headerlink" href="#open-tabs" title="Permanent link"></a></h4>
 <p>This allows you to specify:</p>
 <ul>
 <li>which files you want to automatically open when the current section is displayed,</li>
@@ -334,26 +578,26 @@ Example:</p>
 <li>Open a Terminal window (including running a terminal command),</li>
 <li>which lines (if any) you wish to highlight within each file.</li>
 </ul>
-<h4 id="assessments"><a href="/content/authoring/assessments/">Assessments</a><a class="headerlink" href="#assessments" title="Permanent link"></a></h4>
+<h4 id="assessments"><a href="../../content/authoring/assessments/">Assessments</a><a class="headerlink" href="#assessments" title="Permanent link"></a></h4>
 <p>This allows you to set up assessments.</p>
-<h4 id="media"><a href="/content/authoring/page-edit/imvid">Media</a><a class="headerlink" href="#media" title="Permanent link"></a></h4>
+<h4 id="media"><a href="../../content/authoring/page-edit/imvid">Media</a><a class="headerlink" href="#media" title="Permanent link"></a></h4>
 <p>This allows you to play audio files within your project.</p>
-<h4 id="global"><a href="/content/authoring/settings-actions/global/">Global</a><a class="headerlink" href="#global" title="Permanent link"></a></h4>
-<p><img alt="Global Settings" src="/img/guides/globalsettings.png" />
+<h4 id="global"><a href="../../content/authoring/settings-actions/global/">Global</a><a class="headerlink" href="#global" title="Permanent link"></a></h4>
+<p><img alt="Global Settings" src="../../img/guides/globalsettings.png" />
 - <strong>Scripts</strong> allows you to point to one or more <code>.js</code> files in your project (usually you would have this somewhere within the <code>.guides</code> folder) that is run when the page is shown. This is especially useful when interacting with a button in a page of content.
 - <strong>Theme</strong> allows you to select the default theme for people viewing the content. We currently have a light theme and will be adding a dark theme shortly. Dyslexic users can also choose a special theme from the Settings drop down in the content player.
-- <strong><a href="/misc/schoolscontent/lexikon">Lexicon Topic</a></strong>  if you use this option, an icon will appear in the toolbar that will load the Lexikon window with the selected topic automatically selected.
+- <strong><a href="../../misc/schoolscontent/lexikon">Lexicon Topic</a></strong>  if you use this option, an icon will appear in the toolbar that will load the Lexikon window with the selected topic automatically selected.
 - <strong>Suppress page numbering</strong> allows you to suppress the section page numbers when in Play Mode.
-- <strong>Hide Menu</strong> allows you to hide the main Codio menu items in the IDE (Codio/Project/File/Edit etc) when the unit is run in a <a href="/classes/unitmanagement/assign-project">Class</a>.
+- <strong>Hide Menu</strong> allows you to hide the main Codio menu items in the IDE (Codio/Project/File/Edit etc) when the unit is run in a <a href="../../classes/unitmanagement/assign-project">Class</a>.
 - <strong>Allow guide to be closed</strong> allows students to be able to close the content. It can be restarted by selecting the Start icon in the file tree:
-<img alt="StartGuides" src="/img/guides/startguides.png" />
-- <strong>Use submit buttons</strong> see <a href="/content/authoring/assessments/submitcomplete/">Student submission options</a> for more information
-- <strong>Use mark as completed</strong> see <a href="/content/authoring/assessments/submitcomplete/">Student submission options</a> for more information
+<img alt="StartGuides" src="../../img/guides/startguides.png" />
+- <strong>Use submit buttons</strong> see <a href="../../content/authoring/assessments/submitcomplete/">Student submission options</a> for more information
+- <strong>Use mark as completed</strong> see <a href="../../content/authoring/assessments/submitcomplete/">Student submission options</a> for more information
 - <strong>Collapsed on start</strong> starts the unit with the guides pane collapsed. Students can show the content clicking on the hamburger icon on the right
-<img alt="OpenGuides" src="/img/guides/guidecollapse.png" /></p>
+<img alt="OpenGuides" src="../../img/guides/guidecollapse.png" /></p>
 <ul>
 <li><strong>Hamburger Icon</strong> can be pressed to show or hide the Section List.</li>
-<li><strong><a href="/content/authoring/guides/add-section/">Section List</a></strong> lists the sections in your content. You can add new ones and re-order the list by dragging a page.</li>
+<li><strong><a href="../../content/authoring/guides/add-section/">Section List</a></strong> lists the sections in your content. You can add new ones and re-order the list by dragging a page.</li>
 </ul>
 <h2 id="authoring-guidelines">Authoring guidelines<a class="headerlink" href="#authoring-guidelines" title="Permanent link"></a></h2>
 <p>Here are some guidelines for creating good quality content.</p>
@@ -361,7 +605,7 @@ Example:</p>
 <p>The best way to author content is using markdown. It is extremely easy to write content that renders very nicely and without having to fiddle with HTML. You can embed HTML snippets into a markdown as well where you need full control.</p>
 <p>We have a Cheat Sheet project that you can use to see the full capabilities. To fork this starter pack into your own account, please <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">click here</a>. You should select the <strong>Use Pack</strong> option to create the project.</p>
 <h3 id="courses-and-books">Courses and Books<a class="headerlink" href="#courses-and-books" title="Permanent link"></a></h3>
-<p>We strongly recommend that when you are creating content at scale then you have a thorough understanding of <a href="/content/authoring/3ways">the differences between projects, course units and books</a>.</p>
+<p>We strongly recommend that when you are creating content at scale then you have a thorough understanding of <a href="../../content/authoring/3ways">the differences between projects, course units and books</a>.</p>
 <h3 id="media-assets">Media assets<a class="headerlink" href="#media-assets" title="Permanent link"></a></h3>
 <p>When creating a book or a guide, you will often be working with images, video and other media. We recommend the following.</p>
 <ul>
@@ -377,15 +621,15 @@ Example:</p>
 <h3 id="hidden-folders">Hidden folders<a class="headerlink" href="#hidden-folders" title="Permanent link"></a></h3>
 <p>Your content will often want to show code samples. Codio's recommended approach is to put each set of code samples into a dedicated folder. Then, using the page settings, you can specify this folder with the consequence that all non-specified folders are hidden from view in the file tree (if you choose to show it).</p>
 <p>The benefit of hiding folders is that the student is not distracted by folders and files that are not relevant to the topic you are explaining.</p>
-<p><a href="/content/authoring/page-edit/hide-folder">Click here</a> for more details on folder hiding.</p>
+<p><a href="../../content/authoring/page-edit/hide-folder">Click here</a> for more details on folder hiding.</p>
 <h3 id="assessments_1">Assessments<a class="headerlink" href="#assessments_1" title="Permanent link"></a></h3>
-<p>Codio offers a range of <a href="/content/authoring/assessments">manually and auto-graded assessments</a>. When used as a part of content, assessments are a very important way of giving students challenges and exercises that help internalize what they have been learning.</p>
+<p>Codio offers a range of <a href="../../content/authoring/assessments">manually and auto-graded assessments</a>. When used as a part of content, assessments are a very important way of giving students challenges and exercises that help internalize what they have been learning.</p>
 <p>When used in a class situation, assessments are extremely helpful to the teacher as all assessment results are fed automatically through to the teacher class dashboard, allowing them to monitor students' progress across a Course.</p>
 <p>Many of Codio's assessment types (code tests, multiple choice questions, text, fill in the blank and list-based) are auto-graded, saving teachers considerable amounts of time and can also offer students instant feedback on the correct answers.</p>
-<p>You can also use the <a href="/content/authoring/assessments/assessments-free">free-text</a> assessment type for answers that require a typed answer that can be manually graded by faculty. The free text type also support Latex, so math questions can be answered and graded.</p>
+<p>You can also use the <a href="../../content/authoring/assessments/assessments-free">free-text</a> assessment type for answers that require a typed answer that can be manually graded by faculty. The free text type also support Latex, so math questions can be answered and graded.</p>
 <h3 id="layouts">Layouts<a class="headerlink" href="#layouts" title="Permanent link"></a></h3>
 <p>The editor lets you create different panel layouts for your guide content and the layout can change from section to section.</p>
-<p><a href="/content/authoring/settings-actions/page">Click here</a> for more information on panel layouts.</p>
+<p><a href="../../content/authoring/settings-actions/page">Click here</a> for more information on panel layouts.</p>
 <h2 id="markdown-content-editing">Markdown content editing<a class="headerlink" href="#markdown-content-editing" title="Permanent link"></a></h2>
 <h3 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link"></a></h3>
 <p>Please refer to the <strong>Callout</strong> section of the Cheat Sheet. If you have not done so already, fork <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">this starter pack</a> into your own account. You should select the <strong>Use Pack</strong> option to create the project.</p>
@@ -399,7 +643,7 @@ Example:</p>
 <li>using the navigation buttons in the header area</li>
 <li>selecting a section from the section list</li>
 </ul>
-<p><img alt="editnav" src="/img/guides/editnav.png" /></p>
+<p><img alt="editnav" src="../../img/guides/editnav.png" /></p>
 <h3 id="renaming-the-section">Renaming the Section<a class="headerlink" href="#renaming-the-section" title="Permanent link"></a></h3>
 <p>You can rename your section by clicking on the section title in the header area.</p>
 <h3 id="writing-content">Writing content<a class="headerlink" href="#writing-content" title="Permanent link"></a></h3>
@@ -407,9 +651,9 @@ Example:</p>
 <h3 id="markdown_1">Markdown<a class="headerlink" href="#markdown_1" title="Permanent link"></a></h3>
 <p>For those of you not familiar with Markdown, it is an extremely easy way of writing content without having to worry about HTML.</p>
 <p>When in play Mode, your content is rendered as students will see it. You can also override the default CSS styling. Go to Tools&gt;Guide&gt;Add Custom CSS
-<img alt="Guide CSS" src="/img/guides/guidecss.png" /></p>
+<img alt="Guide CSS" src="../../img/guides/guidecss.png" /></p>
 <p>'Reset Custom CSS' will restore the default CSS styling</p>
-<p>Click here for details on how to insert <a href="/content/authoring/page-edit/imvid">images, videos and hyperlinks</a>.</p>
+<p>Click here for details on how to insert <a href="../../content/authoring/page-edit/imvid">images, videos and hyperlinks</a>.</p>
 <p>Here is a summary of the Markdown formatting codes</p>
 <h3 id="headerstitles">Headers/Titles<a class="headerlink" href="#headerstitles" title="Permanent link"></a></h3>
 <p>To display a header or title, you can use the <code>#</code> character at the start of the line. The more <code>#</code> characters you add, the smaller the font.</p>
@@ -497,10 +741,10 @@ Some text
 |||
 </code></pre>
 
-<p><img alt="calloutinfo" src="/img/guides/callout_info.png" /></p>
+<p><img alt="calloutinfo" src="../../img/guides/callout_info.png" /></p>
 <p>The <strong>Guidance</strong> callout block is only visible in play mode to designated teachers within a class. It is not visible for students.</p>
 <h3 id="hyperlinks-images-videos-iframes">Hyperlinks, Images, Videos &amp; iframes<a class="headerlink" href="#hyperlinks-images-videos-iframes" title="Permanent link"></a></h3>
-<p>We describe these in <a href="/content/authoring/page-edit/imvid">this section</a>.</p>
+<p>We describe these in <a href="../../content/authoring/page-edit/imvid">this section</a>.</p>
 <h3 id="html">HTML<a class="headerlink" href="#html" title="Permanent link"></a></h3>
 <p>You can include HTML tags</p>
 <h3 id="latex-mathjax">Latex / MathJax<a class="headerlink" href="#latex-mathjax" title="Permanent link"></a></h3>
@@ -515,20 +759,20 @@ y=\frac{x^2}{x+1}
 $$
 </code></pre>
 
-<p><a href="/content/authoring/page-edit/latex">Click here</a> for more details on Latex and Mathjax.</p>
-<p><img alt="MathJax" src="/img/guides/mathjax.png" /></p>
+<p><a href="../../content/authoring/page-edit/latex">Click here</a> for more details on Latex and Mathjax.</p>
+<p><img alt="MathJax" src="../../img/guides/mathjax.png" /></p>
 <p>Inline math equations are encapsulated in a single <code>$</code> like this: $\omega = d\phi / dt$.</p>
 <h3 id="cheat-sheet_1">Cheat Sheet<a class="headerlink" href="#cheat-sheet_1" title="Permanent link"></a></h3>
 <p>Check out our <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">Cheat Sheet</a> and <strong>Use Pack</strong> to create the Cheet Sheet project in your Codio account.</p>
 <h2 id="previewing-content">Previewing content<a class="headerlink" href="#previewing-content" title="Permanent link"></a></h2>
 <h3 id="preview-mode">Preview mode<a class="headerlink" href="#preview-mode" title="Permanent link"></a></h3>
 <p>You will regularly want to switch from editing your page content to preview it as users will see it. The best way to do this is to press the preview button in the top right of the content window. When the guide renders, it would open at the current page you were editing.</p>
-<p><img alt="authtoken" src="/img/guides/preview-button.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/preview-button.png" /></p>
 <p>To return to the edit mode, press the <strong>Editor</strong> button and you will be returned to edit mode on the page that you were viewing in Play mode.</p>
-<p><img alt="authtoken" src="/img/guides/editor-button.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/editor-button.png" /></p>
 <h3 id="split-screen">Split screen<a class="headerlink" href="#split-screen" title="Permanent link"></a></h3>
 <p>Another approach that works for the current page is to switch layout mode to split view mode by selecting the 2nd from left button in the header bar.</p>
-<p><img alt="authtoken" src="/img/guides/split-button.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/split-button.png" /></p>
 <h3 id="play">Play<a class="headerlink" href="#play" title="Permanent link"></a></h3>
 <p>You can also start the Guide player from the <strong>Tools-&gt;Guide-&gt;Play</strong> menu.</p>
 <h2 id="html-content-editing">HTML content editing<a class="headerlink" href="#html-content-editing" title="Permanent link"></a></h2>
@@ -577,10 +821,10 @@ $$
 <h2 id="teacher-only-content">Teacher only content<a class="headerlink" href="#teacher-only-content" title="Permanent link"></a></h2>
 <p>Teacher only content can be viewed by teachers when:</p>
 <ul>
-<li>using <a href="/classes/unitmanagement/settings-info/teachersolutions">open as teacher</a> opening a unit within a course module in a class</li>
-<li><a href="/classes/monitor/studentcode">viewing student code</a> within a class</li>
-<li>working on a unit in a <a href="/courses/working-with/">course</a> with the 'View as teacher' function enabled
-<img alt="View as Teacher" src="/img/teachersolutions.png" /></li>
+<li>using <a href="../../classes/unitmanagement/settings-info/teachersolutions">open as teacher</a> opening a unit within a course module in a class</li>
+<li><a href="../../classes/monitor/studentcode">viewing student code</a> within a class</li>
+<li>working on a unit in a <a href="../../courses/working-with/">course</a> with the 'View as teacher' function enabled
+<img alt="View as Teacher" src="../../img/teachersolutions.png" /></li>
 </ul>
 <p>Warning</p>
 <ul>
@@ -588,7 +832,7 @@ $$
 </ul>
 <p>You can make content available on to class teachers in the following ways.</p>
 <h3 id="entire-page">Entire page<a class="headerlink" href="#entire-page" title="Permanent link"></a></h3>
-<p>If you want a page and its appearance in the table of contents to be only visible to a teacher, then you should enable the <strong>Teacher Only</strong> slider in the <a href="/content/authoring/settings-actions/page#teacheronly">page settings</a>.</p>
+<p>If you want a page and its appearance in the table of contents to be only visible to a teacher, then you should enable the <strong>Teacher Only</strong> slider in the <a href="../../content/authoring/settings-actions/page#teacheronly">page settings</a>.</p>
 <h3 id="selected-content-within-page">Selected content within page<a class="headerlink" href="#selected-content-within-page" title="Permanent link"></a></h3>
 <p>If you want to hide a certain piece of information <em>within a page</em> from students then you should include all such content within a page within <code>|||guidance ..... |||</code>. An example is shown below.</p>
 <pre><code>|||guidance
@@ -602,7 +846,7 @@ This solution will only be shown
 |||
 </code></pre>
 
-<p>Teacher only content can also be shown to teachers within an assessment question. This allows an question's answer rationale to be shown. Please refer to the <a href="/content/authoring/assessments">assessments section</a> for more details.</p>
+<p>Teacher only content can also be shown to teachers within an assessment question. This allows an question's answer rationale to be shown. Please refer to the <a href="../../content/authoring/assessments">assessments section</a> for more details.</p>
 <h2 id="custom-buttons">Custom Buttons<a class="headerlink" href="#custom-buttons" title="Permanent link"></a></h2>
 <p>Custom buttons are a powerful feature that let you insert a button into your guide content that when pressed can carry out any custom action.</p>
 <p>There are a number of ways to use a custom button</p>
@@ -632,7 +876,7 @@ This solution will only be shown
 
 <p><a name="restorebutton"></a></p>
 <h3 id="to-restore-current-files-in-guides">To restore current files in guides<a class="headerlink" href="#to-restore-current-files-in-guides" title="Permanent link"></a></h3>
-<p>Students can restore current files to the default setting from the <a href="/dashboard/student/guides/">setting</a> menu but you can also offer them a button within your guides content as well.</p>
+<p>Students can restore current files to the default setting from the <a href="../../dashboard/student/guides/">setting</a> menu but you can also offer them a button within your guides content as well.</p>
 <pre><code class="bash">{Button text | reset}(optional commands to run)
 </code></pre>
 
@@ -652,7 +896,7 @@ This solution will only be shown
 
 <h3 id="loading-scripts">Loading Scripts<a class="headerlink" href="#loading-scripts" title="Permanent link"></a></h3>
 <p>You should point your content page to a script file to load javascript scripts. You can do this from <strong>Settings&gt;Global&gt;Scripts</strong>.</p>
-<p><img alt="authtoken" src="/img/guides/scripts.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/scripts.png" /></p>
 <p><a name="eventlistener"></a></p>
 <h3 id="event-listener">Event Listener<a class="headerlink" href="#event-listener" title="Permanent link"></a></h3>
 <p>The event listener is able to execute your custom task. It will display a custom message area beneath it into which you can write your own results data. The message data can be a custom message that a test might return and can be plain text or HTML.</p>
@@ -694,7 +938,7 @@ codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
 <h3 id="audio">Audio<a class="headerlink" href="#audio" title="Permanent link"></a></h3>
 <p>You can insert and play audio files within your project.</p>
 <p>On the page you wish to play Audio, go to the <strong>Settings</strong> area where you can define the source audio file along with any actions the should be triggered at specific times during playback.</p>
-<p><img alt="authtoken" src="/img/guides/media.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/media.png" /></p>
 <ul>
 <li><strong>Source Name</strong> - select the source file either from <code>.guides/media</code> folder if already uploaded to the project or upload directly from your PC where it will then be stored in the <code>.guides/media</code> folder.</li>
 <li><strong>Add Action</strong> - specifies actions that are triggeted at specific times during playback. The following options are available.</li>
@@ -728,13 +972,13 @@ codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
 <p>Including embedded videos are also possible using the standard <code>&lt;iframe&gt;</code> html tag.</p>
 <h4 id="youtube">YouTube<a class="headerlink" href="#youtube" title="Permanent link"></a></h4>
 <p>If you wish to embed a YouTube video, go to the Share option and select <strong>Embed</strong> to obtain the code snippet.</p>
-<p><img alt="authtoken" src="/img/guides/guides_youtube.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/guides_youtube.png" /></p>
 <pre><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/1JNhoVbmNAo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
 
 <h4 id="vimeo">Vimeo<a class="headerlink" href="#vimeo" title="Permanent link"></a></h4>
 <p>If you wish to embed a Vimeo video, go to the Share option and select <strong>Embed</strong> to obtain the code snippet.</p>
-<p><img alt="authtoken" src="/img/guides/guides_vimeo.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/guides_vimeo.png" /></p>
 <pre><code>&lt;iframe src=&quot;//player.vimeo.com/video/110479088&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href=&quot;http://vimeo.com/110479088&quot;&gt;Codio - Innovation in Computer Programming Education&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/user20752628&quot;&gt;Codio&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 </code></pre>
 
@@ -746,11 +990,11 @@ codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
 <h3 id="iframes">iframes<a class="headerlink" href="#iframes" title="Permanent link"></a></h3>
 <p>You can embed content in an iframe using the <code>&lt;iframe&gt;</code> html tag.</p>
 <p>To embed from Google Docs, go to <strong>File&gt;Publish</strong> to Web and select <strong>Embed</strong> to get the code snippet</p>
-<p><img alt="authtoken" src="/img/guides/guides_publish.png" /></p>
+<p><img alt="authtoken" src="../../img/guides/guides_publish.png" /></p>
 <h3 id="example-projects">Example Projects<a class="headerlink" href="#example-projects" title="Permanent link"></a></h3>
-<p>https://codio.com/codio-units/java-example is a project that you can <a href="/ide/features/fork/">fork</a> into your own Codio account and shows you how to create code tests and setup automatic marking. We would also recommend that you check out our <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">Guides Cheat Sheet</a> and <strong>Use Pack</strong> to create into your Codio account to review.</p>
+<p>https://codio.com/codio-units/java-example is a project that you can <a href="../../ide/features/fork/">fork</a> into your own Codio account and shows you how to create code tests and setup automatic marking. We would also recommend that you check out our <a href="https://codio.com/home/starter-packs/cb114a27-d88e-4b74-a2a0-518ccb30dc44/">Guides Cheat Sheet</a> and <strong>Use Pack</strong> to create into your Codio account to review.</p>
 <h2 id="openclose-tabs-from-content">Open/close tabs from content<a class="headerlink" href="#openclose-tabs-from-content" title="Permanent link"></a></h2>
-<p>You can include links in your content to perform the same open and close actions as you do from the <a href="/content/authoring/settings-actions/open-tabs#opentabs">open tabs</a> dialog.</p>
+<p>You can include links in your content to perform the same open and close actions as you do from the <a href="../../content/authoring/settings-actions/open-tabs#opentabs">open tabs</a> dialog.</p>
 <h3 id="syntax-summary">Syntax Summary<a class="headerlink" href="#syntax-summary" title="Permanent link"></a></h3>
 <p>The syntax is as follows and actions can be chained together using, separated by a <code>;</code>.</p>
 <pre><code>[Hyperlink text](open_file file1, file2; cmd ls -al)
@@ -762,7 +1006,7 @@ codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
 <li><code>open_preview file panel=0</code> where panel is optional, in which case the default panel (0) will be used if not specified.</li>
 <li><code>open_terminal command panel=0</code> where command (a system command) is optional and where panel is optional, in which case the default panel (0) will be used if not specified.</li>
 <li><code>cmd systemcommand argument1 argument2 argumentN</code></li>
-<li><code>open_tutor file panel=0</code> to open <a href="/content/authoring/settings-actions/open-tabs/#visualiser">visualiser</a> and where panel is optional, in which case the default panel (0) will be used if not specified.</li>
+<li><code>open_tutor file panel=0</code> to open <a href="../../content/authoring/settings-actions/open-tabs/#visualiser">visualiser</a> and where panel is optional, in which case the default panel (0) will be used if not specified.</li>
 </ul>
 <h3 id="closing-directives">Closing directives<a class="headerlink" href="#closing-directives" title="Permanent link"></a></h3>
 <ul>
@@ -829,7 +1073,7 @@ codio.setButtonValue(ev.id, codio.BUTTON_STATE.INVALID, 'Internal error');
 </code></pre>
 
 <h2 id="hiding-folders">Hiding folders<a class="headerlink" href="#hiding-folders" title="Permanent link"></a></h2>
-<p>Your content will often want to show code samples. Codio's recommended approach is to put each set of code samples into a dedicated folder. Then, using <strong>Show Folders</strong> on <a href="/content/authoring/settings-actions/page#show-hide">page settings </a>, you can specify this folder. All non-specified folders are hidden from view in the file tree.</p>
+<p>Your content will often want to show code samples. Codio's recommended approach is to put each set of code samples into a dedicated folder. Then, using <strong>Show Folders</strong> on <a href="../../content/authoring/settings-actions/page#show-hide">page settings </a>, you can specify this folder. All non-specified folders are hidden from view in the file tree.</p>
 <h2 id="latex-for-math-expressions">Latex for math expressions<a class="headerlink" href="#latex-for-math-expressions" title="Permanent link"></a></h2>
 <p>Latex is ideal for entering mathematical expressions into your pages. You can also insert Latex expressions into many assessment fields. Codio uses <a href="http://www.mathjax.org/">Mathjax</a> for the rendering of all Latex expressions, so certain macros are not supported.</p>
 <h3 id="inline-latex-expressions">Inline Latex expressions<a class="headerlink" href="#inline-latex-expressions" title="Permanent link"></a></h3>
@@ -851,21 +1095,19 @@ $$
 <p>Click here :<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">Stack Exchange</a></p>
 <h4 id="detextify">Detextify<a class="headerlink" href="#detextify" title="Permanent link"></a></h4>
 <p><a href="http://detexify.kirelabs.org/classify.html">Detextify</a> is an excellent way of finding a Latex symbol by free hand drawing it on the screen using your mouse or touchpad.</p>
-<p><img alt="Detextify" src="/img/detextify.png" /></p>
+<p><img alt="Detextify" src="../../img/detextify.png" /></p>
 <p><strong>Important:</strong> you should not use commands that are not in the standard package. In the image above, you can see the last one has a \usepackage command. Symbols in a special package may not work.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -881,7 +1123,7 @@ $$
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -907,19 +1149,19 @@ $$
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -930,6 +1172,7 @@ $$
         </div>
     </div>
 </div>
+
 
     </body>
 </html>

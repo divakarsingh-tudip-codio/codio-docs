@@ -8,69 +8,312 @@
         <meta name="author" content="Codio team">
         <link rel="canonical" href="https://docs.codio.com/ide/panels/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Panels & Tabs - Codio Documentation</title>
+        <title>"Panels & Tabs" - Codio Documentation</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javscript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+    <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Codio Documentation</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="https://www.codio.com">Codio</a>
-                            </li>
-                            <li >
-                                <a href="../..">Home</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li>
-                                <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Codio Documentation</a>
         </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">The Codio Dashboard</a>
+                    </li>
+                    <li >
+                        <a href="../../studentview/">"The Student View"</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/introduction/">"Books"</a>
+</li>
+                            
+<li >
+    <a href="../../books/limitations/">Limitations</a>
+</li>
+                            
+<li >
+    <a href="../../books/manage/">"Creating and managing books"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../courses/assessments-library/">"Assessments Library"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/assessments/">"Assessments"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/authoring/">"Content Authoring with Guides"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/classes/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../courses/collaboration/">Collaborating on content</a>
+</li>
+                            
+<li >
+    <a href="../../courses/coursemanagement/">Courses</a>
+</li>
+                            
+<li >
+    <a href="../../courses/grading/">"Grading and accessing student projects"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_0/">"LTI 1.0 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/lti1_3/">"LTI 1.3 integration"</a>
+</li>
+                            
+<li >
+    <a href="../../courses/plagiarism/">Plagiarism checker</a>
+</li>
+                            
+<li >
+    <a href="../../courses/settings-actions/">"Settings and page actions"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../dashboard/account/">"Account"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/desktop app/">"Desktop App"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/navigation/">"Navigating Codio"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/organisations/">Organizations</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/overview/">"Dashboard overview"</a>
+</li>
+                            
+<li >
+    <a href="../../dashboard/support/">"Support"</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../boxes/">"Accessing a Box"</a>
+</li>
+                            
+<li >
+    <a href="../editing/">Code Editing</a>
+</li>
+                            
+<li >
+    <a href="../features/">"Advanced IDE Features"</a>
+</li>
+                            
+<li >
+    <a href="../">"The Codio IDE"</a>
+</li>
+                            
+<li >
+    <a href="../introduction/">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../navigation/">"Basic IDE Features"</a>
+</li>
+                            
+<li class="active">
+    <a href="./">"Panels & Tabs"</a>
+</li>
+                            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../project/packs/">Packs</a>
+</li>
+                            
+<li >
+    <a href="../../project/projects/">Projects</a>
+</li>
+                            
+<li >
+    <a href="../../project/stacks/">Stacks</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../navigation/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../settings/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -91,9 +334,10 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<p>IDE panels let you create any panel configuration you want for both code editing and also other features (such as <a href="/ide/editing/git">Git</a>, <a href="/ide/tools/deployment">Deployment</a> etc.).</p>
+<hr />
+<p>IDE panels let you create any panel configuration you want for both code editing and also other features (such as <a href="../../ide/editing/#git-mercurial-svn">Git</a>, <a href="../../ide/tools/deployment">Deployment</a> etc.).</p>
 <p>This gives you complete control over the layout of your project. Whenever you leave you project, its precise pane configuration is saved and reloaded when you come back to it.</p>
-<p><img alt="Panels" src="/img/panel-overview.png" /></p>
+<p><img alt="Panels" src="../../img/panel-overview.png" /></p>
 <h3 id="file-tree">File Tree<a class="headerlink" href="#file-tree" title="Permanent link"></a></h3>
 <p>The main file tree itself is a tab within a panel. If you look carefully, you will see that it can receive focus and the Filetree text is in a tab.</p>
 <p>As a result, you can perform the exact same set of operations on it as with any other tab content. It can be moved around, removed, reinstated etc.</p>
@@ -135,24 +379,22 @@ Win : Ctrl+Alt+C
 <h3 id="restore-file-tree">Restore File Tree<a class="headerlink" href="#restore-file-tree" title="Permanent link"></a></h3>
 <p>If you deliberately or inadvertently close the file tree, you can restore it from the <strong>View &gt; Open/Show File Tree</strong> menu.</p>
 <h3 id="switch-tabs">Switch Tabs<a class="headerlink" href="#switch-tabs" title="Permanent link"></a></h3>
-<p>You can cycle between tabs in a panel using the keyboard. <code>Alt+Shift+.</code> takes you to the previous tab and <code>Alt+Shift+.</code> to the next. If you don't like those key bindings, open up your <a href="/ide/customization/codio-prefs">preferences</a> and change the <code>tab_switch_left</code> and <code>tab_switch_right</code> item.</p>
+<p>You can cycle between tabs in a panel using the keyboard. <code>Alt+Shift+.</code> takes you to the previous tab and <code>Alt+Shift+.</code> to the next. If you don't like those key bindings, open up your <a href="../../ide/settings/#user-preferences">preferences</a> and change the <code>tab_switch_left</code> and <code>tab_switch_right</code> item.</p>
 <h2 id="expand-tabs-full-screen">Expand tabs full screen<a class="headerlink" href="#expand-tabs-full-screen" title="Permanent link"></a></h2>
 <p>If you have multiple panels open, you may find that you like the arrangement but some of the panels are too small for code editing.</p>
 <p>Full screen mode is activated by selecting a tab and then pressing (by default) <code>F11</code>. You can shrink it back into the tab by pressing <code>F11</code> again.</p>
-<p>Some Mac users may find that F11 is blocked. You can easily modify the keyboard shortcut in <a href="/ide/customization/codio-prefs">Codio Preferences</a>.</p></div>
+<p>Some Mac users may find that F11 is blocked. You can easily modify the keyboard shortcut in <a href="../../ide/settings/#user-preferences">Codio Preferences</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
                 <p>Copyright &copy; 2019 Codio Inc.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -168,7 +410,7 @@ Win : Ctrl+Alt+C
                 </p>
                 <form role="form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -194,19 +436,19 @@ Win : Ctrl+Alt+C
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td><kbd>?</kbd></td>
                     <td>Open this help</td>
                   </tr>
                   <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td><kbd>&larr;</kbd></td>
                     <td>Previous page</td>
                   </tr>
                   <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
                     <td>Search</td>
                   </tr>
                 </tbody>
@@ -217,6 +459,7 @@ Win : Ctrl+Alt+C
         </div>
     </div>
 </div>
+
 
     </body>
 </html>
