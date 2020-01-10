@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/project/ide/navigation/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Basic IDE Features - Codio Documentation</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../..">Codio Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../../../students/">Students</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../courses/assessments-library/">Assessments Library</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/assessments/">Codio Assessments</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/authoring/">Content Authoring with Guides</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/classes/">Understanding Courses</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/coursemanagement/">Creating Course Content</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/grading/">Grading and accessing student projects</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/lti1_0/">Integrating with LTI 1.1 systems</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/lti1_3/">Integrating with LTI 1.3 systems</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/plagiarism/">Plagiarism Checker</a>
+</li>
+                            
+<li >
+    <a href="../../../courses/settings-actions/">Guides Settings and Page actions</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../dashboard/account/">Account</a>
+</li>
+                            
+<li >
+    <a href="../../../dashboard/desktopapp/">Desktop App</a>
+</li>
+                            
+<li >
+    <a href="../../../dashboard/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../../dashboard/organisations/">Organizations</a>
+</li>
+                            
+<li >
+    <a href="../../../dashboard/overview/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../../dashboard/support/">Support</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../books/">Books</a>
+</li>
+                            
+<li >
+    <a href="../../packs/">How to use starter packs</a>
+</li>
+                            
+<li >
+    <a href="../../projects/">Project Templates</a>
+</li>
+                            
+<li >
+    <a href="../../stacks/">Stacks</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Ide</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../boxes/">Accessing a Box</a>
+</li>
+            
+<li >
+    <a href="../editing/">Code Editing</a>
+</li>
+            
+<li >
+    <a href="../features/">Advanced IDE Features</a>
+</li>
+            
+<li >
+    <a href="../">The Codio IDE</a>
+</li>
+            
+<li >
+    <a href="../introduction/">Introduction</a>
+</li>
+            
+<li class="active">
+    <a href="./">Basic IDE Features</a>
+</li>
+            
+<li >
+    <a href="../panels/">Panels</a>
+</li>
+            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tools/deployment/">Deployment</a>
+</li>
+            
+<li >
+    <a href="../tools/guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../tools/phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../tools/ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../introduction/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../panels/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#exiting-the-ide">Exiting the IDE</a></li>
+        <li class="main "><a href="#editing-a-file">Editing a file</a></li>
+        <li class="main "><a href="#uploading-files">Uploading files</a></li>
+        <li class="main "><a href="#downloading-files">Downloading files</a></li>
+        <li class="main "><a href="#adding-files">Adding files</a></li>
+        <li class="main "><a href="#creating-a-folder">Creating a folder</a></li>
+        <li class="main "><a href="#deleting-a-folder">Deleting a folder</a></li>
+        <li class="main "><a href="#warning">Warning</a></li>
+        <li class="main "><a href="#dragging-files-folders">Dragging files &amp; folders</a></li>
+        <li class="main "><a href="#readme-info-pages">Readme info pages</a></li>
+        <li class="main "><a href="#exporting-an-app">Exporting an app</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<hr />
+<p>No special knowledge is needed to use Codio’s IDE.</p>
+<p>It's easy enough for beginners who are learning to code.</p>
+<p>Because it’s web-based, there’s nothing to download, install or update.</p>
+<h2 id="exiting-the-ide">Exiting the IDE<a class="headerlink" href="#exiting-the-ide" title="Permanent link"></a></h2>
+<p>You can exit the IDE and return to the Dasboard in one of the following ways</p>
+<ul>
+<li>Select <strong>Project &gt; Close</strong> from the menu</li>
+<li>Click on the Gravatar in the top bar</li>
+<li>Click on your user name in the top bar</li>
+</ul>
+<h2 id="editing-a-file">Editing a file<a class="headerlink" href="#editing-a-file" title="Permanent link"></a></h2>
+<p>You can open an existing file from the tree or create a new one from either the <strong>File &gt; New File</strong> menu or by right-clicking in the file tree.</p>
+<p>When you open a file, it will appear in a tab in the currently active <a href="../../../ide/panels">Panel</a>.</p>
+<p>Codio will syntax highlight based on the file type. You can see the detected file type in the status bar. Clicking on that file type will allow you to force the syntax highlighting to another language format.</p>
+<h2 id="uploading-files">Uploading files<a class="headerlink" href="#uploading-files" title="Permanent link"></a></h2>
+<p>You can upload a file into your project in the following ways</p>
+<p><img alt="show" src="../../../img/right-click.png" /></p>
+<ul>
+<li>Right-click within the file tree, taking into account folders</li>
+<li>Select the <strong>File &gt; Upload</strong> menu option, having first selected a folder in the file tree.</li>
+</ul>
+<p>Having selected on of these options, you can upload files by</p>
+<ul>
+<li>Pressing the <strong>browse for files</strong> button and selecting your files</li>
+<li>Dragging files from your destop or file explorer into the dialog. Dragging of a folder and its contents is only supported in Chrome.</li>
+</ul>
+<p><strong>Important:</strong> if you select both files and folders to upload, only the files within the main folder will get uploaded. You will need to upload one folder at a time.</p>
+<h2 id="downloading-files">Downloading files<a class="headerlink" href="#downloading-files" title="Permanent link"></a></h2>
+<p>You can download individual files from your project.</p>
+<p><img alt="show" src="../../../img/downloadfile.png" /></p>
+<ul>
+<li>Right-click the file from the file tree,</li>
+<li>Select the <strong>Download</strong> option.</li>
+</ul>
+<h2 id="adding-files">Adding files<a class="headerlink" href="#adding-files" title="Permanent link"></a></h2>
+<p>Adding a file is done in one of two ways. First, make sure you have selected the folder within the file tree where you want the file created.</p>
+<ul>
+<li>Right-click within the file tree, taking into account your folders</li>
+<li><strong>Select File &gt; New</strong> from the menu</li>
+</ul>
+<p>You should specify both the file name and the extension.</p>
+<p>Right-clicking also allows you to Copy/Paste existing files.</p>
+<h2 id="creating-a-folder">Creating a folder<a class="headerlink" href="#creating-a-folder" title="Permanent link"></a></h2>
+<p>Creating a new folder is done in one of two ways:</p>
+<ul>
+<li>Right-click within the file tree, taking into account the existing folder structure</li>
+<li>Select the <strong>File &gt; New folder</strong> item from the menu</li>
+</ul>
+<p>Right-clicking also allows you to Copy/Paste existing folders along with its contents.</p>
+<h2 id="deleting-a-folder">Deleting a folder<a class="headerlink" href="#deleting-a-folder" title="Permanent link"></a></h2>
+<p>You can delete an entire folder and its content in two ways</p>
+<ul>
+<li>Right click the folder and select <strong>Delete</strong></li>
+<li>On Macs, press <code>fn+backspace</code></li>
+<li>On anything else, press <code>shift+del</code></li>
+</ul>
+<h2 id="warning">Warning<a class="headerlink" href="#warning" title="Permanent link"></a></h2>
+<p>Deleting a folder cannot be undone.</p>
+<h2 id="dragging-files-folders">Dragging files &amp; folders<a class="headerlink" href="#dragging-files-folders" title="Permanent link"></a></h2>
+<p>You can drag individual or multiple files and folders around the filetree. Excercise caution when doing this as drag actions cannot be undone.</p>
+<p>Right-clicking also allows you to Copy/Paste existing files/folders.</p>
+<h2 id="readme-info-pages">Readme info pages<a class="headerlink" href="#readme-info-pages" title="Permanent link"></a></h2>
+<p>When you open up a project in the IDE, Codio will try to locate a file called readme.md in the root of the project. If it finds one and you have not opened the project beforehand, it will open and display it in 'markdown' mode.</p>
+<p><img alt="readme info page" src="../../../img/readme-md.png" /></p>
+<p>If you select the README.md file from the file tree, it will be opened up for editing using markdown. You can switch between markdown,  'preview' and you can run in SplitView mode as highlighted in the above image.</p>
+<p>The readme.md file should be written in markdown format. Here is a reference for markdown:</p>
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/basics">Daring Fireball</a> - the author of markdown</li>
+</ul>
+<h2 id="exporting-an-app">Exporting an app<a class="headerlink" href="#exporting-an-app" title="Permanent link"></a></h2>
+<p>You can export an app at any point by</p>
+<ul>
+<li>right-clicking the app in the file tree (click the top level item)</li>
+<li>or by selecting the <strong>Project&gt;Export as Zip</strong> menu item</li>
+<li>from the <a href="../../../ide/settings/#project-settings">Project Settings</a></li>
+</ul>
+<p>You can also download individual files from your project. See <a href="../../../ide/navigation/#downloading-files">Download Files</a> for more information.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/require.js"></script>
+        <script src="../../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>

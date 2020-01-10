@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Codio team">
+        <link rel="canonical" href="https://docs.codio.com/project/ide/tools/deployment/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Deployment - Codio Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">Codio Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../../../../students/">Students</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../courses/assessments-library/">Assessments Library</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/assessments/">Codio Assessments</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/authoring/">Content Authoring with Guides</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/classes/">Understanding Courses</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/coursemanagement/">Creating Course Content</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/grading/">Grading and accessing student projects</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/lti1_0/">Integrating with LTI 1.1 systems</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/lti1_3/">Integrating with LTI 1.3 systems</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/plagiarism/">Plagiarism Checker</a>
+</li>
+                            
+<li >
+    <a href="../../../../courses/settings-actions/">Guides Settings and Page actions</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../dashboard/account/">Account</a>
+</li>
+                            
+<li >
+    <a href="../../../../dashboard/desktopapp/">Desktop App</a>
+</li>
+                            
+<li >
+    <a href="../../../../dashboard/navigation/">Navigation</a>
+</li>
+                            
+<li >
+    <a href="../../../../dashboard/organisations/">Organizations</a>
+</li>
+                            
+<li >
+    <a href="../../../../dashboard/overview/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../../../dashboard/support/">Support</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../books/">Books</a>
+</li>
+                            
+<li >
+    <a href="../../../packs/">How to use starter packs</a>
+</li>
+                            
+<li >
+    <a href="../../../projects/">Project Templates</a>
+</li>
+                            
+<li >
+    <a href="../../../stacks/">Stacks</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Ide</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../boxes/">Accessing a Box</a>
+</li>
+            
+<li >
+    <a href="../../editing/">Code Editing</a>
+</li>
+            
+<li >
+    <a href="../../features/">Advanced IDE Features</a>
+</li>
+            
+<li >
+    <a href="../../">The Codio IDE</a>
+</li>
+            
+<li >
+    <a href="../../introduction/">Introduction</a>
+</li>
+            
+<li >
+    <a href="../../navigation/">Basic IDE Features</a>
+</li>
+            
+<li >
+    <a href="../../panels/">Panels & Tabs</a>
+</li>
+            
+<li >
+    <a href="../../settings/">Settings</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Tools</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Deployment</a>
+</li>
+            
+<li >
+    <a href="../guides/">Guides</a>
+</li>
+            
+<li >
+    <a href="../phonegap/">Phonegap</a>
+</li>
+            
+<li >
+    <a href="../ssh/">Ssh</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../../../resources/changelog/">Changelog</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Schoolscontent</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../resources/schoolscontent/coursefind/">Coursefind</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/courseview/">Courseview</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/crunch/">Crunch</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/currmap2012/">Currmap2012</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/currmap2016/">Currmap2016</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/currmapcstahigh/">Currmapcstahigh</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/currmapcstamiddle/">Currmapcstamiddle</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/flode/">Flode</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/">Home</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/lexikon/">Lexikon</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/organization/">Organization</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/recommended/">Recommended</a>
+</li>
+            
+<li >
+    <a href="../../../../resources/schoolscontent/tkinter/">Tkinter</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../settings/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../guides/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/codio/codio-docs"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#createmanage-a-target">Create/manage a target</a></li>
+            <li><a href="#destination">Destination</a></li>
+        <li class="main "><a href="#base-path-field">Base path field</a></li>
+        <li class="main "><a href="#public-keys-for-remote-servers">Public keys for remote servers</a></li>
+        <li class="main "><a href="#terminal-access-to-remotes">Terminal access to remotes</a></li>
+        <li class="main "><a href="#deploying-to-a-target">Deploying to a target</a></li>
+            <li><a href="#tools-deployment-deploy-menu">Tools-&gt;Deployment-&gt;Deploy menu</a></li>
+            <li><a href="#right-click-in-the-file-tree">Right Click in the file tree</a></li>
+            <li><a href="#command-line">Command Line</a></li>
+        <li class="main "><a href="#rsync-target-type">Rsync target type</a></li>
+            <li><a href="#base-path">Base Path</a></li>
+            <li><a href="#public-key-authentication">Public Key Authentication</a></li>
+            <li><a href="#protocol">Protocol</a></li>
+            <li><a href="#specifying-a-port">Specifying a Port</a></li>
+            <li><a href="#user-name">User Name</a></li>
+            <li><a href="#password-authentication">Password Authentication</a></li>
+            <li><a href="#delete-missing-folders">Delete Missing Folders</a></li>
+        <li class="main "><a href="#ftp-target-type">FTP target type</a></li>
+            <li><a href="#base-path_1">Base Path</a></li>
+            <li><a href="#specifying-a-port_1">Specifying a Port</a></li>
+            <li><a href="#transfer-mode">Transfer Mode</a></li>
+            <li><a href="#sftp-target-type">SFTP target type</a></li>
+            <li><a href="#base-path_2">Base Path</a></li>
+            <li><a href="#public-key-authentication_1">Public Key Authentication</a></li>
+            <li><a href="#specifying-a-port_2">Specifying a Port</a></li>
+            <li><a href="#user-name_1">User Name</a></li>
+            <li><a href="#password-authentication_1">Password Authentication</a></li>
+            <li><a href="#empty-destination-path">Empty Destination Path</a></li>
+        <li class="main "><a href="#nodejitsu-target-type">Nodejitsu target type</a></li>
+            <li><a href="#base-path_3">Base Path</a></li>
+        <li class="main "><a href="#git-target-type">Git target type</a></li>
+            <li><a href="#existing-remote">Existing Remote</a></li>
+            <li><a href="#adding-a-remote">Adding a Remote</a></li>
+            <li><a href="#committed-files">Committed Files</a></li>
+        <li class="main "><a href="#deployment-history">Deployment history</a></li>
+        <li class="main "><a href="#deploying-specific-files-folders">Deploying specific files &amp; folders</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<hr />
+<p>You do not to need to deploy when you are developing your project. Front-end code is automatically served up over Port 80. Access to back-end code (PHP, Ruby etc.) is done by accessing your <a href="../../../../ide/boxes/#accessing-boxes-and-ports">Box</a>.</p>
+<p>You can deploy from the command line (<strong>Tools-&gt;Terminal</strong> menu), but Codio has a great Deployment Manager that lets you deploy all or any part of your project, with a single click ,to a custom 'deployment target'. We support deployment to the following platforms.</p>
+<ul>
+<li><a href="../../../../project/ide/tools/deployment/#ftp-target-type">FTP</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#sftp-target-type">SFTP</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#rsync-target-type">RSYNC</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#nodejitsu-target-type">Nodejitsu</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#git-target-type">Generic Git deployment</a></li>
+</ul>
+<h2 id="createmanage-a-target">Create/manage a target<a class="headerlink" href="#createmanage-a-target" title="Permanent link"></a></h2>
+<p>The Manage Targets options are accessed via <strong>Tools &gt; Deployment &gt; Manage Targets</strong> menu. All Deployment dialogs will be displayed in the currently active <a href="../../../../ide/panels">Panel</a>.</p>
+<p>If you have not yet created any deployment targets then you will be prompted to create one.</p>
+<p><img alt="Deployment List" src="../../../../img/deploy-details.png" /></p>
+<p>In the Deployment Targets dialog, you can:</p>
+<ul>
+<li>list all defined deployment targets</li>
+<li>modify existing targets</li>
+<li>create new targets</li>
+</ul>
+<h3 id="destination">Destination<a class="headerlink" href="#destination" title="Permanent link"></a></h3>
+<p>The Destination drop down specifies the type of the target you are deploying to. Currently we support the following destinations (click on each one to find out about its associated parameters)</p>
+<ul>
+<li><a href="../../../../project/ide/tools/deployment/#ftp-target-type">FTP</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#rsync-target-type">RYSNC</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#sftp-target-type">SFTP</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#nodejitsu-target-type">Nodejitsu</a></li>
+<li><a href="../../../../project/ide/tools/deployment/#git-target-type">Git</a></li>
+</ul>
+<h2 id="base-path-field">Base path field<a class="headerlink" href="#base-path-field" title="Permanent link"></a></h2>
+<p>You will notice that all deployment targets, except Codio, have a <strong>Preview Base Path</strong> field.</p>
+<p><img alt="base path" src="../../../../img/deploy-basepath.png" /></p>
+<p>It is important to complete this field for all target types involving remote servers so that the Preview option knows how to access your project once deployed.</p>
+<p>For example, you might deploy to a remote server at a folder location <code>/home/fmay/www</code>. Accessing this application via a browser, however, depends on how you configure your remote web server.</p>
+<p>So it could be <code>http://123.456.789</code> or <code>fmay.mydomain.com</code> is the correct location.</p>
+<p>Please see the <a href="../../../../ide/features/#preview">Preview</a> section for more information.</p>
+<h2 id="public-keys-for-remote-servers">Public keys for remote servers<a class="headerlink" href="#public-keys-for-remote-servers" title="Permanent link"></a></h2>
+<p>When you are setting up a remote server, Codio can automatically install the Codio public key on your remote server, which saves a tedious manual process.</p>
+<ul>
+<li>You can copy a key from the <strong>Codio &gt; Account</strong> dialog as <a href="../../../../dashboard/account/#public-key">described here</a></li>
+<li>You can set up an SSH Connection and use the <a href="../../../../ide/tools/ssh/#ssh-connection-manager">Connection Manger</a> to do the same thing.</li>
+</ul>
+<h2 id="terminal-access-to-remotes">Terminal access to remotes<a class="headerlink" href="#terminal-access-to-remotes" title="Permanent link"></a></h2>
+<p>If you are working with remote servers, you may find it useful to be able to SSH into your remote server.</p>
+<p>Codio supports the ability to open an SSH terminal in a Codio tab. <a href="../../../../ide/tools/ssh/#ssh-connection-manager">Click here</a> for further details.</p>
+<h2 id="deploying-to-a-target">Deploying to a target<a class="headerlink" href="#deploying-to-a-target" title="Permanent link"></a></h2>
+<p>There are three ways to deploy projects.</p>
+<h3 id="tools-deployment-deploy-menu">Tools-&gt;Deployment-&gt;Deploy menu<a class="headerlink" href="#tools-deployment-deploy-menu" title="Permanent link"></a></h3>
+<p>This let's you deploy to any of your deployment targets you created in <a href="../../../../ide/tools/deployment/#createmanage-a-target">Manage Targets</a>. You are shown a log if any errors occur.</p>
+<p><img alt="deploy screen" src="../../../../img/deploy-menu.png" /></p>
+<h3 id="right-click-in-the-file-tree">Right Click in the file tree<a class="headerlink" href="#right-click-in-the-file-tree" title="Permanent link"></a></h3>
+<p>You can deploy an individual file or folder by right-clicking in the file tree.</p>
+<h3 id="command-line">Command Line<a class="headerlink" href="#command-line" title="Permanent link"></a></h3>
+<p>You can use the command line directly but you can also add your custom deployment actions by <a href="../../../../ide/boxes/#customizable-run-menu">modifying the Run Menu</a>.</p>
+<h2 id="rsync-target-type">Rsync target type<a class="headerlink" href="#rsync-target-type" title="Permanent link"></a></h2>
+<p>Rsync is a great way of working with remote servers. It behaves much the same as the SFTP deployment type but rather than deploying all files, it deploys only files that have changed.</p>
+<p>You can use a password and/or a public key for authentication.</p>
+<p><img alt="rsync dialog" src="../../../../img/deploy-rsync.png" /></p>
+<h3 id="base-path">Base Path<a class="headerlink" href="#base-path" title="Permanent link"></a></h3>
+<p>We recommend you set the base path field for remote servers as <a href="../../../../ide/tools/deployment/#base-path-field">described here</a>. This will be useful when using the <a href="../../../../ide/features/#preview">Preview</a> feature.</p>
+<h3 id="public-key-authentication">Public Key Authentication<a class="headerlink" href="#public-key-authentication" title="Permanent link"></a></h3>
+<p>Codio auto-generates a public key that is uniquely associated with your user account. You can find this public key in the <a href="../../../../dashboard/account/#public-key">User Settings dialog</a>. You should make sure that this public key is added to your remote server.</p>
+<h3 id="protocol">Protocol<a class="headerlink" href="#protocol" title="Permanent link"></a></h3>
+<p>There are two options available</p>
+<ul>
+<li><strong>SSH</strong> : (recommended) uses an SSH connection to transfer</li>
+<li><strong>RSYNC Daemon</strong> : this requires you to set up an rsync daemon on the remote server. This is a more complex procedure and so should generally be avoided.</li>
+</ul>
+<h3 id="specifying-a-port">Specifying a Port<a class="headerlink" href="#specifying-a-port" title="Permanent link"></a></h3>
+<p>If you want to override the default SFTP port (22) then you can add the port number to the domain name as shown below</p>
+<pre><code>mydomain.com:1234
+</code></pre>
+
+<h3 id="user-name">User Name<a class="headerlink" href="#user-name" title="Permanent link"></a></h3>
+<p>You will need to supply a valid user name for your remote server regardless of the authentication method.</p>
+<h3 id="password-authentication">Password Authentication<a class="headerlink" href="#password-authentication" title="Permanent link"></a></h3>
+<p>If you are using a public key then you can leave the password field empty.</p>
+<p>If you do not want to use a public key, then you will need to use a password for authentication. Simply provide the details in the Codio dialog.</p>
+<h3 id="delete-missing-folders">Delete Missing Folders<a class="headerlink" href="#delete-missing-folders" title="Permanent link"></a></h3>
+<p>This removes any folders from the remote server that are not present in the Codio project.</p>
+<h2 id="ftp-target-type">FTP target type<a class="headerlink" href="#ftp-target-type" title="Permanent link"></a></h2>
+<p>The FTP target type allows you to deploy to any FTP server. You supply the usual FTP access details.</p>
+<p><img alt="authtoken" src="../../../../img/deploy-ftp.png" /></p>
+<h3 id="base-path_1">Base Path<a class="headerlink" href="#base-path_1" title="Permanent link"></a></h3>
+<p>We recommend you set the base path field for remote servers as <a href="../../../../ide/tools/deployment/#base-path-field">described here</a>. This will be useful when using the <a href="../../../../ide/features/#preview">Preview</a> feature.</p>
+<h3 id="specifying-a-port_1">Specifying a Port<a class="headerlink" href="#specifying-a-port_1" title="Permanent link"></a></h3>
+<p>If you want to override the default FTP port (21) then you can add the port number to the domain name as shown below</p>
+<pre><code>mydomain.com:1234
+</code></pre>
+
+<h3 id="transfer-mode">Transfer Mode<a class="headerlink" href="#transfer-mode" title="Permanent link"></a></h3>
+<p>FTP can operate in 'Active' or 'Passive' mode. Codio will attempt to connect in passive mode by default. If it fails, then it will automatically try active mode. If that fails then you will get an error.</p>
+<p>However, if you get an error then try changing the setting to Active. This will ensure that Codio will only try to connect in active mode without a risk of confusing the target server.</p>
+<h3 id="sftp-target-type">SFTP target type<a class="headerlink" href="#sftp-target-type" title="Permanent link"></a></h3>
+<p>The SFTP target type allows you to deploy to any SFTP server. You can use a password and/or a public key for authentication.</p>
+<p><img alt="authtoken" src="../../../../img/deploy-sftp.png" /></p>
+<h3 id="base-path_2">Base Path<a class="headerlink" href="#base-path_2" title="Permanent link"></a></h3>
+<p>We recommend you set the base path field for remote servers as <a href="../../../../ide/tools/deployment/#base-path-field">described here</a>. This will be useful when using the <a href="../../../../ide/features/#preview">Preview</a> feature.</p>
+<h3 id="public-key-authentication_1">Public Key Authentication<a class="headerlink" href="#public-key-authentication_1" title="Permanent link"></a></h3>
+<p>Codio auto-generates a public key that is uniquely associated with your user account. You can find this public key in the <a href="../../../../dashboard/account/#public-key">User Settings dialog</a>. You should make sure that this public key is added to your remote server.</p>
+<h3 id="specifying-a-port_2">Specifying a Port<a class="headerlink" href="#specifying-a-port_2" title="Permanent link"></a></h3>
+<p>If you want to override the default SFTP port (22) then you can add the port number to the domain name as shown below</p>
+<pre><code>mydomain.com:1234
+</code></pre>
+
+<h3 id="user-name_1">User Name<a class="headerlink" href="#user-name_1" title="Permanent link"></a></h3>
+<p>You will need to supply a valid user name for your remote server regardless of the authentication method.</p>
+<h3 id="password-authentication_1">Password Authentication<a class="headerlink" href="#password-authentication_1" title="Permanent link"></a></h3>
+<p>If you are using a public key then you can leave the password field empty.</p>
+<p>If you do not want to use a public key, then you will need to use a password for authentication. Simply provide the details in the Codio dialog. You can use both a public key and a password if you like.</p>
+<h3 id="empty-destination-path">Empty Destination Path<a class="headerlink" href="#empty-destination-path" title="Permanent link"></a></h3>
+<p>Be very careful when checking this box. It will brutally remove all content from specified location on the remote server before the deploy starts.</p>
+<h2 id="nodejitsu-target-type">Nodejitsu target type<a class="headerlink" href="#nodejitsu-target-type" title="Permanent link"></a></h2>
+<p><a href="https://www.nodejitsu.com/">Nodejitsu</a> is a high quality third party Node.js production platform, so we built a dedicated deployment target that makes life as easy as possible.</p>
+<p>You will need to sign up for a Nodejitsu account before you use it.</p>
+<p><img alt="authtoken" src="../../../../img/deploy-nj.png" /></p>
+<p>Select Nodejitsu from the Destination drop down and then make sure you either provide an API Token in the highlighted field or just press the Generate button and we'll create one for you.</p>
+<h3 id="base-path_3">Base Path<a class="headerlink" href="#base-path_3" title="Permanent link"></a></h3>
+<p>We recommend you set the base path field for remote servers as <a href="../../../../ide/tools/deployment/#base-path-field">described here</a>. This will be useful when using the <a href="../../../../ide/features/#preview">Preview</a> feature.</p>
+<p>That's all you will need to do. You're now ready to deploy.</p>
+<h2 id="git-target-type">Git target type<a class="headerlink" href="#git-target-type" title="Permanent link"></a></h2>
+<p>The Git target type allows you to deploy to any remote Git server. You supply the usual Git access details.</p>
+<p>If you prefer, you can deploy to any remote Git server using the command line. Simply <a href="../../../../ide/boxes/#terminal-window">access your Box Terminal</a>.</p>
+<h3 id="existing-remote">Existing Remote<a class="headerlink" href="#existing-remote" title="Permanent link"></a></h3>
+<p>If you imported your project from a remote Git repo or used <code>git add remote</code> from the command line, you will see existing remotes listed in the <strong>Remote</strong> dropdown box and you can select it.</p>
+<h3 id="adding-a-remote">Adding a Remote<a class="headerlink" href="#adding-a-remote" title="Permanent link"></a></h3>
+<p>You can add a new remote by selecting <strong>Add remote ...</strong> from the dropdown. You can then enter your remote details.</p>
+<h3 id="committed-files">Committed Files<a class="headerlink" href="#committed-files" title="Permanent link"></a></h3>
+<p>Codio will only do the equivalent of <code>git push remote-name current-branch</code> and so you need to have staged and committed your files first from the Command Line.</p>
+<h2 id="deployment-history">Deployment history<a class="headerlink" href="#deployment-history" title="Permanent link"></a></h2>
+<p>Each time you do a deploy, a history entry is created so you have a full record of deploys and who did them.</p>
+<p><img alt="authtoken" src="../../../../img/deploy-history.png" /></p>
+<p>If you have not selected any specific targets, then all deploys across all targets will be shown. If you select the history button for a specific target, then the history for that specific target is shown.</p>
+<h2 id="deploying-specific-files-folders">Deploying specific files &amp; folders<a class="headerlink" href="#deploying-specific-files-folders" title="Permanent link"></a></h2>
+<p>If you are using a 3rd party hosting provider that does not support RSYNC (the recommended approach), then you can avoid Codio deploying your entire project by only deploying the files or folders that you specify.</p>
+<p>Select any files and folders from the file tree and then use the right-click menu to deploy them.</p>
+<p><img alt="authtoken" src="../../../../img/deploy-specific.png" /></p>
+<p>All defined deployment targets will be listed in the submenu. Click the target you want to deploy to.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2019 Codio Inc.</p>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/require.js"></script>
+        <script src="../../../../search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
